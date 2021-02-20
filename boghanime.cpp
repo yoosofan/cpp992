@@ -22,35 +22,25 @@ int showMenu(void);
 int main()
 {
 
-    char choice;
+    int choice;
     do
     {
         choice = showMenu();
         switch(choice)
         {
-        case '1':
+        case 1:
             add_c();
             break;
-        case '2':
+        case 2':
             search_c();
             break;
-        case '3':
+        case 3:
             exit(0);
             break;
         default:
             break;
         }
-        printf("Do you want to continue?\n");
-        printf("Press y or Y for yes...\n");
-        printf("Press n or N for no...\n");
-        printf("Press c or C for clearing the screen...\n");
-        scanf(" %c",&choice);
-        if(choice=='c' || choice=='C')
-        {
-            system("cls");
-        }
-
-    }while(choice !='n' && choice !='N');
+    }while(choice != 0);
 
 }
 
@@ -59,6 +49,9 @@ int showMenu(void){
   printf("1.Add Contact\t");
   printf("2.Search Contact\t");
   printf("3.Exit\n");
+  printf("Do you want to continue?\n");
+  printf("Press 10 for yes...\n");
+  printf("Press 0 for no...\n");
   scanf("%d", &choice);
   return choice;
 }

@@ -31,7 +31,7 @@ int main()
         case 1:
             add_c();
             break;
-        case 2':
+        case 2:
             search_c();
             break;
         case 3:

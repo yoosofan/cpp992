@@ -12,6 +12,7 @@ struct contacts
     attributes arr[100];
     int numofcontacts;
 };
+
 contacts cont;
 
 void search_c();

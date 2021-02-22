@@ -1,6 +1,43 @@
 exercise01$ g++ amin.cpp 
-amin.cpp:3:9: fatal error: conio.h: No such file or directory
-    3 | #include<conio.h>
-      |         ^~~~~~~~~
-compilation terminated.
-exercis
+amin.cpp: In function ‘int main()’:
+amin.cpp:20:9: error: ‘start’ was not declared in this scope
+   20 |         start();
+      |         ^~~~~
+amin.cpp:22:19: error: ‘add’ was not declared in this scope
+   22 |         if (n==1) add(&phonebook);
+      |                   ^~~
+amin.cpp:24:24: error: ‘search’ was not declared in this scope
+   24 |         else if (n==3) search(&phonebook);
+      |                        ^~~~~~
+amin.cpp: In function ‘void add(page*)’:
+amin.cpp:44:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
+   44 |     scanf("%s",&tmp.name);
+      |            ~^  ~~~~~~~~~
+      |             |  |
+      |             |  char (*)[50]
+      |             char*
+amin.cpp:47:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
+   47 |     scanf("%s",&tmp.family_name);
+      |            ~^  ~~~~~~~~~~~~~~~~
+      |             |  |
+      |             |  char (*)[50]
+      |             char*
+amin.cpp:50:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
+   50 |     scanf("%s",&tmp.phone_number);
+      |            ~^  ~~~~~~~~~~~~~~~~~
+      |             |  |
+      |             |  char (*)[50]
+      |             char*
+amin.cpp: At global scope:
+amin.cpp:59:6: error: expected unqualified-id before ‘delete’
+   59 | void delete(struct page phonebook[]){
+      |      ^~~~~~
+amin.cpp: In function ‘void search(page*)’:
+amin.cpp:76:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
+   76 |     scanf("%s",&tmp);
+      |            ~^  ~~~~
+      |             |  |
+      |             |  char (*)[50]
+      |             char*
+exercise01$ 
+

@@ -45,13 +45,13 @@ void add(struct page phonebook[]){
     tmp.flag=1;
 
     printf("name : ");
-    scanf("%s",&tmp.name);
+    scanf("%s", tmp.name);
 
     printf("family_name : ");
-    scanf("%s",&tmp.family_name);
+    scanf("%s", tmp.family_name);
 
     printf("phone_number : ");
-    scanf("%s",&tmp.phone_number);
+    scanf("%s", tmp.phone_number);
 
     int i;
     for (i=0;i<100;i++)

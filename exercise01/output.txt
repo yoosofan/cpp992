@@ -1,23 +1,4 @@
 xercise01$ g++ amin.cpp 
-amin.cpp: In function ‘void add(page*)’:
-amin.cpp:48:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
-   48 |     scanf("%s",&tmp.name);
-      |            ~^  ~~~~~~~~~
-      |             |  |
-      |             |  char (*)[50]
-      |             char*
-amin.cpp:51:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
-   51 |     scanf("%s",&tmp.family_name);
-      |            ~^  ~~~~~~~~~~~~~~~~
-      |             |  |
-      |             |  char (*)[50]
-      |             char*
-amin.cpp:54:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
-   54 |     scanf("%s",&tmp.phone_number);
-      |            ~^  ~~~~~~~~~~~~~~~~~
-      |             |  |
-      |             |  char (*)[50]
-      |             char*
 amin.cpp: In function ‘void remove(page*)’:
 amin.cpp:67:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
    67 |     scanf("%s",&tmp);
@@ -33,4 +14,5 @@ amin.cpp:80:13: warning: format ‘%s’ expects argument of type ‘char*’, b
       |             |  char (*)[50]
       |             char*
 exercise01$ 
+
 

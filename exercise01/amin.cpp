@@ -11,7 +11,7 @@ struct page{
 
 void start(void);
 void add(struct page phonebook[]);
-void delete(struct page phonebook[]);
+void remove(struct page phonebook[]);
 void search(struct page phonebook[]);
   
 int main()
@@ -24,7 +24,7 @@ int main()
         start();
         scanf("%d",&n);
         if (n==1) add(&phonebook);
-        else if (n==2) delete(&phonebook);
+        else if (n==2) remove(&phonebook);
         else if (n==3) search(&phonebook);
     }
 
@@ -34,7 +34,7 @@ int main()
 void start(void){
     printf("What do you want to do ?\n");
     printf("    1.add\n");
-    printf("    2.delete\n");
+    printf("    2.remove\n");
     printf("    3.search\n");
     printf("    0.exit\n");
 }
@@ -60,7 +60,7 @@ void add(struct page phonebook[]){
             break;
         }
 }
-void delete(struct page phonebook[]){
+void remove(struct page phonebook[]){
     char tmp[50];
 
     printf("Enter phone number or name : ");

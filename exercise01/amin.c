@@ -9,6 +9,24 @@ struct page{
     char phone_number[50];
 };
 
+
+int main()
+{
+    struct page phonebook[100];
+    int i=0,n=1;
+    for (;i<100;i++) phonebook[i].flag=0;
+
+    while (n!=0){
+        start();
+        scanf("%d",&n);
+        if (n==1) add(&phonebook);
+        else if (n==2) delete(&phonebook);
+        else if (n==3) search(&phonebook);
+    }
+
+    return 0;
+}
+
 void start(){
     printf("What do you want to do ?\n");
     printf("    1.add\n");
@@ -68,21 +86,4 @@ void search(struct page phonebook[]){
         }
     }
     if (i==100) printf("NOT FOUND\n");
-}
-
-int main()
-{
-    struct page phonebook[100];
-    int i=0,n=1;
-    for (;i<100;i++) phonebook[i].flag=0;
-
-    while (n!=0){
-        start();
-        scanf("%d",&n);
-        if (n==1) add(&phonebook);
-        else if (n==2) delete(&phonebook);
-        else if (n==3) search(&phonebook);
-    }
-
-    return 0;
 }

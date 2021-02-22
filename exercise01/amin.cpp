@@ -1,6 +1,6 @@
-#include<stdio.h>
-#include<string.h>
-#include<conio.h>
+#include<cstdio>
+#include<cstring>
+// #include<conio.h>
 
 struct page{
     int flag;

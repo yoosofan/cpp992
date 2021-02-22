@@ -64,7 +64,7 @@ void remove(struct page phonebook[]){
     char tmp[50];
 
     printf("Enter phone number or name : ");
-    scanf("%s",&tmp);
+    scanf("%s", tmp);
 
     int i;
     for (i=0;i<100;i++)

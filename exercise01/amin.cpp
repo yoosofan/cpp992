@@ -9,7 +9,11 @@ struct page{
     char phone_number[50];
 };
 
-
+void start(void);
+void add(struct page phonebook[]);
+void delete(struct page phonebook[]);
+void search(struct page phonebook[]);
+  
 int main()
 {
     struct page phonebook[100];
@@ -27,7 +31,7 @@ int main()
     return 0;
 }
 
-void start(){
+void start(void){
     printf("What do you want to do ?\n");
     printf("    1.add\n");
     printf("    2.delete\n");

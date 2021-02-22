@@ -1,40 +1,50 @@
-exercise01$ g++ amin.cpp 
+xercise01$ g++ amin.cpp 
+amin.cpp:14:6: error: expected unqualified-id before ‘delete’
+   14 | void delete(struct page phonebook[]);
+      |      ^~~~~~
 amin.cpp: In function ‘int main()’:
-amin.cpp:20:9: error: ‘start’ was not declared in this scope
-   20 |         start();
-      |         ^~~~~
-amin.cpp:22:19: error: ‘add’ was not declared in this scope
-   22 |         if (n==1) add(&phonebook);
-      |                   ^~~
-amin.cpp:24:24: error: ‘search’ was not declared in this scope
-   24 |         else if (n==3) search(&phonebook);
-      |                        ^~~~~~
+amin.cpp:26:23: error: cannot convert ‘page (*)[100]’ to ‘page*’
+   26 |         if (n==1) add(&phonebook);
+      |                       ^~~~~~~~~~
+      |                       |
+      |                       page (*)[100]
+amin.cpp:13:22: note:   initializing argument 1 of ‘void add(page*)’
+   13 | void add(struct page phonebook[]);
+      |          ~~~~~~~~~~~~^~~~~~~~~~~
+amin.cpp:28:31: error: cannot convert ‘page (*)[100]’ to ‘page*’
+   28 |         else if (n==3) search(&phonebook);
+      |                               ^~~~~~~~~~
+      |                               |
+      |                               page (*)[100]
+amin.cpp:15:25: note:   initializing argument 1 of ‘void search(page*)’
+   15 | void search(struct page phonebook[]);
+      |             ~~~~~~~~~~~~^~~~~~~~~~~
 amin.cpp: In function ‘void add(page*)’:
-amin.cpp:44:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
-   44 |     scanf("%s",&tmp.name);
+amin.cpp:48:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
+   48 |     scanf("%s",&tmp.name);
       |            ~^  ~~~~~~~~~
       |             |  |
       |             |  char (*)[50]
       |             char*
-amin.cpp:47:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
-   47 |     scanf("%s",&tmp.family_name);
+amin.cpp:51:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
+   51 |     scanf("%s",&tmp.family_name);
       |            ~^  ~~~~~~~~~~~~~~~~
       |             |  |
       |             |  char (*)[50]
       |             char*
-amin.cpp:50:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
-   50 |     scanf("%s",&tmp.phone_number);
+amin.cpp:54:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
+   54 |     scanf("%s",&tmp.phone_number);
       |            ~^  ~~~~~~~~~~~~~~~~~
       |             |  |
       |             |  char (*)[50]
       |             char*
 amin.cpp: At global scope:
-amin.cpp:59:6: error: expected unqualified-id before ‘delete’
-   59 | void delete(struct page phonebook[]){
+amin.cpp:63:6: error: expected unqualified-id before ‘delete’
+   63 | void delete(struct page phonebook[]){
       |      ^~~~~~
 amin.cpp: In function ‘void search(page*)’:
-amin.cpp:76:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
-   76 |     scanf("%s",&tmp);
+amin.cpp:80:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
+   80 |     scanf("%s",&tmp);
       |            ~^  ~~~~
       |             |  |
       |             |  char (*)[50]

@@ -23,9 +23,9 @@ int main()
     while (n!=0){
         start();
         scanf("%d",&n);
-        if (n==1) add(&phonebook);
-        else if (n==2) remove(&phonebook);
-        else if (n==3) search(&phonebook);
+        if (n==1) add(phonebook);
+        else if (n==2) remove(phonebook);
+        else if (n==3) search(phonebook);
     }
 
     return 0;

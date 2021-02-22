@@ -1,37 +1,4 @@
-in.cpp: In function ‘int main()’:
-amin.cpp:26:23: error: cannot convert ‘page (*)[100]’ to ‘page*’
-   26 |         if (n==1) add(&phonebook);
-      |                       ^~~~~~~~~~
-      |                       |
-      |                       page (*)[100]
-amin.cpp:13:22: note:   initializing argument 1 of ‘void add(page*)’
-   13 | void add(struct page phonebook[]);
-      |          ~~~~~~~~~~~~^~~~~~~~~~~
-amin.cpp:27:41: error: no matching function for call to ‘remove(page (*)[100])’
-   27 |         else if (n==2) remove(&phonebook);
-      |                                         ^
-In file included from /usr/include/c++/9/cstdio:42,
-                 from amin.cpp:1:
-/usr/include/stdio.h:146:12: note: candidate: ‘int remove(const char*)’
-  146 | extern int remove (const char *__filename) __THROW;
-      |            ^~~~~~
-/usr/include/stdio.h:146:32: note:   no known conversion for argument 1 from ‘page (*)[100]’ to ‘const char*’
-  146 | extern int remove (const char *__filename) __THROW;
-      |                    ~~~~~~~~~~~~^~~~~~~~~~
-amin.cpp:14:6: note: candidate: ‘void remove(page*)’
-   14 | void remove(struct page phonebook[]);
-      |      ^~~~~~
-amin.cpp:14:25: note:   no known conversion for argument 1 from ‘page (*)[100]’ to ‘page*’
-   14 | void remove(struct page phonebook[]);
-      |             ~~~~~~~~~~~~^~~~~~~~~~~
-amin.cpp:28:31: error: cannot convert ‘page (*)[100]’ to ‘page*’
-   28 |         else if (n==3) search(&phonebook);
-      |                               ^~~~~~~~~~
-      |                               |
-      |                               page (*)[100]
-amin.cpp:15:25: note:   initializing argument 1 of ‘void search(page*)’
-   15 | void search(struct page phonebook[]);
-      |             ~~~~~~~~~~~~^~~~~~~~~~~
+xercise01$ g++ amin.cpp 
 amin.cpp: In function ‘void add(page*)’:
 amin.cpp:48:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
    48 |     scanf("%s",&tmp.name);

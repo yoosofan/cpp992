@@ -1,10 +1,28 @@
-exercise01$ g++ amin.cpp 
-amin.cpp: In function ‘void search(page*)’:
-amin.cpp:80:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
-   80 |     scanf("%s",&tmp);
-      |            ~^  ~~~~
-      |             |  |
-      |             |  char (*)[50]
-      |             char*
+exercise01$ g++ mahdipor.cpp 
+mahdipor.cpp: In function ‘int main()’:
+mahdipor.cpp:45:16: error: ‘c’ was not declared in this scope; did you mean ‘c1’?
+   45 |   scanf("%c", &c);
+      |                ^
+      |                c1
+mahdipor.cpp: In function ‘void ListingContacts()’:
+mahdipor.cpp:109:12: warning: too many arguments for format [-Wformat-extra-args]
+  109 |     printf("============================================================\n",
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mahdipor.cpp:135:18: error: ‘c1’ was not declared in this scope
+  135 |     scanf("%c", &c1);
+      |                  ^~
+mahdipor.cpp: In function ‘void SearchingContacts()’:
+mahdipor.cpp:159:11: error: ‘strcmp’ was not declared in this scope
+  159 |       if (strcmp(SearchName, MyPhoneBook.ArInformations[i].name) == 0) {
+      |           ^~~~~~
+mahdipor.cpp:4:1: note: ‘strcmp’ is defined in header ‘<cstring>’; did you forget to ‘#include <cstring>’?
+    3 | #include <cstdlib>
+  +++ |+#include <cstring>
+    4 | 
+mahdipor.cpp:178:18: error: ‘c1’ was not declared in this scope
+  178 |     scanf("%c", &c1);
+      |                  ^~
+mahdipor.cpp:192:18: error: ‘c1’ was not declared in this scope
+  192 |     scanf("%c", &c1);
+      |                  ^~
 exercise01$ 
-

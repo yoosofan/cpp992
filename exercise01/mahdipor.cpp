@@ -1,31 +1,37 @@
 // Developed By Ali Mehdipour
-#include <stdio.h>
-#include <stdlib.h>
-#include <conio.h>
+#include <cstdio>
+#include <cstdlib>
+
 #define PhoneBookSize 100
 #define StringsSize 20
 //------------------Initialize The Structures and methods
-// Persons Struct
-typedef struct {
+
+struct Student{
   char name[StringsSize];
   char family[StringsSize];
   char number[StringsSize];
-}Student;
+};
+
 // Array &Quantity Struct For Persons.
-typedef struct {
+struct PhoneBook{
   Student ArInformations[PhoneBookSize];
   unsigned int quantity;
-}PhoneBook;
+};
+
 // This Method Add Students to Array.
-void StudentAdder();
+void StudentAdder(void);
+
 // This Method Displays Current Students Line By Line.
-void ListingContacts();
+void ListingContacts(void);
+
 // This Method Searches Names From All Of the List And Display Student
 // Information If he Exists.
-void SearchingContacts();
+void SearchingContacts(void);
+
 // This Statement Makes A NEW PhoneBook.We can Make infinite PhoneBook because its a data type that structure with 2 properties.
 PhoneBook MyPhoneBook;
 // END------------------Initialize The Structures and methods
+
 // Start----------------The Program start from here
 int main() {
   printf("-------STUDENTS PHONEBOOK v1.0 -------mehdipour\n");
@@ -35,7 +41,9 @@ int main() {
   printf(" 3- Search Contacts : \n");
   printf(" 4- EXIT : \n");
   //-----------------------------------------------
-  switch (getchar()) {
+  char c1;
+  scanf("%c", &c);
+  switch (c) {
     case '1':
       ListingContacts();
       break;
@@ -50,7 +58,6 @@ int main() {
       return 0;
       break;
     default:
-      system("cls");
       printf("invalid value\n");
       main();
   }
@@ -60,21 +67,20 @@ int main() {
 // This Function ADD new people to the list by means of quantity and array
 // properties
 void StudentAdder() {
-  system("cls");
   printf("-----------ADD CONTACTS---------");
   printf("\nCurrent PhoneBook Quantity: %d", MyPhoneBook.quantity);
   char name[StringsSize];
   char lastname[StringsSize];
   char telephone[StringsSize];
-  printf("\nEnter Student Name:        ");
+  printf("\nEnter Student Name:\t\t");
   scanf("%19s", name);
-  printf("\nEnter Student LastName:    ");
+  printf("\nEnter Student LastName:\t\t    ");
   scanf("%19s", lastname);
   printf("\nEnter Student PhoneNumber: ");
   scanf("%19s", telephone);
 
   for (int i = 0; i < StringsSize; i++) {
-    MyPhoneBook.ArInformations[MyPhoneBook.quantity].name[i] = name[i];
+    MyPhoneBook.ArInformations[MyPhoneBook.quantity].name[i] = name[i];  // wrong
     MyPhoneBook.ArInformations[MyPhoneBook.quantity].family[i] = lastname[i];
     MyPhoneBook.ArInformations[MyPhoneBook.quantity].number[i] = telephone[i];
   }
@@ -82,7 +88,9 @@ void StudentAdder() {
   printf("Contact Added Successfully\n");
   MyPhoneBook.quantity += 1;
   printf("1-ADD new One?\t 2-Menu");
-  switch (getch()) {
+  char c1;
+  scanf("%c", &c1);
+  switch (c1) {
     case '1':
       StudentAdder();
       break;
@@ -95,7 +103,6 @@ void StudentAdder() {
 }
 // this function display contacts and their information.
 void ListingContacts() {
-  system("cls");
   if (MyPhoneBook.quantity > 0) {
     printf("Current PhoneBook Quantity is: %d\n", MyPhoneBook.quantity);
     printf("NAME\t\t       LASTNAME\t         TELEPHONENUMBER      \n");
@@ -108,7 +115,9 @@ void ListingContacts() {
     }
 
     printf("1-ADD New Member?\t\t 2-Menu\n");
-    switch (getch()) {
+    char c1;
+    scanf("%c", &c1);
+    switch (c1){
       case '1':
         StudentAdder();
         break;
@@ -123,7 +132,8 @@ void ListingContacts() {
         "There is not any Contacts in this PhoneBook yet ! Want ADD new "
         "One?\n\n");
     printf("1-ADD\t\t 2-Menu\n");
-    switch (getch()) {
+    scanf("%c", &c1);
+    switch (c1) {
       case '1':
         StudentAdder();
         break;
@@ -138,7 +148,6 @@ void ListingContacts() {
 // this function search for contacts by their name and show the result with all
 // of informations about that person
 void SearchingContacts() {
-  system("cls");
   printf("-------SEARCHING------\n");
   printf("Current PhoneBook Quantity is: %d\n", MyPhoneBook.quantity);
   if (MyPhoneBook.quantity != 0) {
@@ -166,7 +175,8 @@ void SearchingContacts() {
     }
 
     printf("1-Again\t 2-Menu\n");
-    switch (getch()) {
+    scanf("%c", &c1);
+    switch (c1) {
       case '1':
         SearchingContacts();
         break;
@@ -179,7 +189,8 @@ void SearchingContacts() {
   } else {
     printf(
         "There is Not Any Data In this PhoneBook!!\n1-ADD someone?\t 2-Menu\n");
-    switch (getch()) {
+    scanf("%c", &c1);
+    switch (c1) {
       case '1':
         StudentAdder();
         break;

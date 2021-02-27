@@ -47,41 +47,36 @@ int main()
     return 0;
 }
 
-
 void Add()
-{
-    
+{  
     printf("\ninput Name : ");
-    scanf(" %s",new_phone.Name);
+    scanf("%s", new_phone.Name);
     
     printf("input LastName : ");
-    scanf(" %s",new_phone.LastName);
+    scanf("%s", new_phone.LastName);
 
     printf("input Number : ");
-    scanf(" %s",new_phone.Numbeer);
+    scanf("%s", new_phone.Numbeer);
 
     Persons[global_index] = new_phone;
     global_index ++;
     
     printf("\nAdd successful.\n");
-
 }
 int Search ()
 {
     char input[50] ;
 
     printf("input Lastname to serch : ");
-    scanf("%s",input);
+    scanf("%s", input);
 
     for (int i = 0; i < global_index; i++)
     {
         if (strcmp( Persons[i].LastName , input) == 0){
-
-            printf("\nNumber : %s\n",Persons[i].Numbeer);
+            printf("\nNumber : %s\n", Persons[i].Numbeer);
             return 1;
         }
     }
-
     printf("\nuser not find !!\n");
     return 0;
 }
@@ -98,7 +93,3 @@ void View_phonebook()
     
 
 }
-
-
-
-

@@ -81,7 +81,7 @@ void StudentAdder() {
   scanf("%19s", telephone);
 
   for (int i = 0; i < StringsSize; i++) {
-    MyPhoneBook.ArInformations[MyPhoneBook.quantity].name[i] = name[i];  // wrong
+    MyPhoneBook.ArInformations[MyPhoneBook.quantity].name[i] = name[i]; 
     MyPhoneBook.ArInformations[MyPhoneBook.quantity].family[i] = lastname[i];
     MyPhoneBook.ArInformations[MyPhoneBook.quantity].number[i] = telephone[i];
   }

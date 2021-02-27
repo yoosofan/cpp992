@@ -1,7 +1,5 @@
-#include <stdio.h>
-#include <string.h>
-
-
+#include <cstdio>
+#include <cstring>
 
 struct Phonebook
 {
@@ -9,46 +7,38 @@ struct Phonebook
     char LastName[50];
     char Numbeer[20];
 
-}Persons[100] , new_phone;
+} Persons[100], new_phone;
 
 static int global_index = 0;
-
 
 void Add();
 int Search ();
 void View_phonebook();
 
-
 int main()
 {
     int input = 0; 
-
-    printf("Welcome\n");
-    
+    printf("Welcome\n");  
     while (1)
     {
-    
         printf("\n1 - Add Number\n");
         printf("2 - Search by lastname\n");
         printf("3 - View phonebook\n");
 
         printf("\ninput : ");
-        scanf("%d",&input);
+        scanf("%d", &input);
 
         switch (input)
         {
             case 1:
                 Add();
                 break;
-            
             case 2:
                 Search();
                 break;
-            
             case 3:
                 View_phonebook();
                 break;
-
             default:
                 printf("\ninput is wrong !!   try again.\n");
                 break;

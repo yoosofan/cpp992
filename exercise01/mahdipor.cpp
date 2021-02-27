@@ -192,6 +192,7 @@ void SearchingContacts() {
   } else {
     printf(
         "There is Not Any Data In this PhoneBook!!\n1-ADD someone?\t 2-Menu\n");
+    char c1;
     scanf("%c", &c1);
     switch (c1) {
       case '1':

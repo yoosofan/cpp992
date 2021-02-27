@@ -1,6 +1,1 @@
-exercise01$ g++ mahdipor.cpp 
-mahdipor.cpp: In function ‘void SearchingContacts()’:
-mahdipor.cpp:195:18: error: ‘c1’ was not declared in this scope
-  195 |     scanf("%c", &c1);
-      |                  ^~
-exercise01$ 
+

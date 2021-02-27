@@ -107,7 +107,7 @@ void ListingContacts() {
   if (MyPhoneBook.quantity > 0) {
     printf("Current PhoneBook Quantity is: %d\n", MyPhoneBook.quantity);
     printf("NAME\t\t       LASTNAME\t         TELEPHONENUMBER      \n");
-    printf("============================================================\n")
+    printf("============================================================\n");
     printf("%d", MyPhoneBook.quantity);
     for (int i = 0; i < MyPhoneBook.quantity; i++) {
       printf("%d- %-20s", i + 1, MyPhoneBook.ArInformations[i].name);
@@ -177,6 +177,7 @@ void SearchingContacts() {
     }
 
     printf("1-Again\t 2-Menu\n");
+    char c1;
     scanf("%c", &c1);
     switch (c1) {
       case '1':

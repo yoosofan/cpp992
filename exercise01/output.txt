@@ -1,16 +1,6 @@
 exercise01$ g++ mahdipor.cpp 
-mahdipor.cpp: In function ‘void ListingContacts()’:
-mahdipor.cpp:110:77: error: expected ‘;’ before ‘printf’
-  110 |     printf("============================================================\n")
-      |                                                                             ^
-      |                                                                             ;
-  111 |     printf("%d", MyPhoneBook.quantity);
-      |     ~~~~~~                                                                   
 mahdipor.cpp: In function ‘void SearchingContacts()’:
-mahdipor.cpp:180:18: error: ‘c1’ was not declared in this scope
-  180 |     scanf("%c", &c1);
-      |                  ^~
-mahdipor.cpp:194:18: error: ‘c1’ was not declared in this scope
-  194 |     scanf("%c", &c1);
+mahdipor.cpp:195:18: error: ‘c1’ was not declared in this scope
+  195 |     scanf("%c", &c1);
       |                  ^~
 exercise01$ 

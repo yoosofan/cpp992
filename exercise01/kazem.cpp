@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstring>
+#include <cstdlib>
 
 struct phone
 {
@@ -9,20 +9,16 @@ struct phone
     char number[20];
 };
 
-
 struct func
 {
     struct phone arr[100];
     int tedad;
-
 };
 
 void add();
-
 void searchfunc();
 
 struct func info;
-
 
 int main()
 {
@@ -30,34 +26,27 @@ int main()
     add();
     searchfunc();
     return 0;
-
-
 }
 
 void add()
 {
     info.tedad=0;
-
     int amount;
-
     printf("how many elements will you add?");
-
     scanf("%d",&amount);
-
     for(int i=(info.tedad);i<amount;i++)
     {
-    printf("please enter the first name:");
-    scanf("%s",info.arr[i].fname);
+      printf("please enter the first name:");
+      scanf("%s",info.arr[i].fname);
 
-    printf("please enter the last name:");
-    scanf("%s",info.arr[i].lname);
+      printf("please enter the last name:");
+      scanf("%s",info.arr[i].lname);
 
-    printf("please enter the phone number:");
-    scanf("%s",info.arr[i].number);
-    info.tedad+=1;
+      printf("please enter the phone number:");
+      scanf("%s",info.arr[i].number);
+      info.tedad+=1;
     }
 }
-
 
 void searchfunc()
 {

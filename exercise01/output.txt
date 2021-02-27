@@ -1,12 +1,7 @@
-
 exercise01$ g++ zehri.cpp 
 zehri.cpp: In function ‘int main()’:
 zehri.cpp:20:5: error: ‘menu’ was not declared in this scope; did you mean ‘manu’?
    20 |     menu();
       |     ^~~~
       |     manu
-zehri.cpp: In function ‘int menu()’:
-zehri.cpp:39:1: warning: no return statement in function returning non-void [-Wreturn-type]
-   39 | }
-      | ^
 exercise01$ 

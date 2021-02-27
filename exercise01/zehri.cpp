@@ -2,9 +2,9 @@
 #include <cstring>
 #include <cstdlib>
 
-void searchph();
-void extra();
-int manu();
+void searchph(void);
+void extra(void);
+void manu(void);
 
 struct Phone
 {
@@ -21,7 +21,7 @@ int main()
     return 0;
 }
 
-int menu()
+void menu(void)
 {
     int a;
     printf("1_add phone number\n2_search phone number\n");
@@ -38,13 +38,11 @@ int menu()
     }
 }
 
-void extra()
-{
+void extra(void){
     int b,i,s;
     printf("how much phone number:");
     scanf("\n%d",&b);
-    for( i=0 ; i<b ; i++)
-    {
+    for( i=0 ; i<b ; i++){
         printf("enter name:");
         scanf("%s",people[i].name);
         printf("enter family:");
@@ -55,7 +53,7 @@ void extra()
     }
     menu();
 }
-void searchph(){
+void searchph(void){
     int j,n;
     printf("enter phone number for search:");
     scanf("%d",&j);

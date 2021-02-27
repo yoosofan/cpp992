@@ -4,7 +4,7 @@
 
 void searchph(void);
 void extra(void);
-void manu(void);
+void menu(void);
 
 struct Phone
 {

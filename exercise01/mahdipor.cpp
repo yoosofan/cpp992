@@ -1,6 +1,7 @@
 // Developed By Ali Mehdipour
 #include <cstdio>
 #include <cstdlib>
+#include <cstring>
 
 #define PhoneBookSize 100
 #define StringsSize 20
@@ -42,8 +43,8 @@ int main() {
   printf(" 4- EXIT : \n");
   //-----------------------------------------------
   char c1;
-  scanf("%c", &c);
-  switch (c) {
+  scanf("%c", &c1);
+  switch (c1) {
     case '1':
       ListingContacts();
       break;
@@ -106,8 +107,8 @@ void ListingContacts() {
   if (MyPhoneBook.quantity > 0) {
     printf("Current PhoneBook Quantity is: %d\n", MyPhoneBook.quantity);
     printf("NAME\t\t       LASTNAME\t         TELEPHONENUMBER      \n");
-    printf("============================================================\n",
-           MyPhoneBook.quantity);
+    printf("============================================================\n")
+    printf("%d", MyPhoneBook.quantity);
     for (int i = 0; i < MyPhoneBook.quantity; i++) {
       printf("%d- %-20s", i + 1, MyPhoneBook.ArInformations[i].name);
       printf("%-20s", MyPhoneBook.ArInformations[i].family);
@@ -132,6 +133,7 @@ void ListingContacts() {
         "There is not any Contacts in this PhoneBook yet ! Want ADD new "
         "One?\n\n");
     printf("1-ADD\t\t 2-Menu\n");
+    char c1;
     scanf("%c", &c1);
     switch (c1) {
       case '1':

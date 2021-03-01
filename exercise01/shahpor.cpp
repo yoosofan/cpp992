@@ -1,5 +1,6 @@
 #include <cstdio>
 #include <cstdlib>
+#include <cstring>
 
 struct info
 {
@@ -27,18 +28,17 @@ void add(int* s)
     int i;
     for(i=0;i<who;i++)
     {
+      printf("Enter info of contact %d\n" ,i+1);
 
-    printf("Enter info of contact %d\n" ,i+1);
+      printf("Enter first name:\n");
+      scanf("%s", mt.array[*s].name);
 
-    printf("Enter first name:\n");
-    scanf("%s",&mt.array[*s].name);
+      printf("Enter last name:\n");
+      scanf("%s", mt.array[*s].last);
 
-    printf("Enter last name:\n");
-    scanf("%s",&mt.array[*s].last);
-
-    printf("Enter phone number:\n");
-    scanf("%s",&mt.array[*s].number);
-    (*s)++;
+      printf("Enter phone number:\n");
+      scanf("%s", mt.array[*s].number);
+      (*s)++;
     }
 }
 
@@ -54,7 +54,7 @@ void serch(int* n)
         char d[30];
         int v57=0;
         printf("Enter last name:\n");
-        gets(d);
+        scanf("%[\n]", d);
         for(int j = 0; j < (*n); j++)
         {
             if(strcmp(d, mt.array[j].last)== 0)
@@ -74,7 +74,8 @@ void serch(int* n)
         else
         {
             printf("Press any key to return to menu:");
-            char d= getch();
+            char d;
+            scanf("%c", &d);
             return;
         }
     }
@@ -83,7 +84,7 @@ void serch(int* n)
         char f[30];
         int v58=0;
         printf("Enter phone number:\n");
-        gets(f);
+        scanf("%29[\n]", f);
         for(int j= 0; j< (*n); j++)
         {
             if(strcmp(f, mt.array[j].number)== 0)

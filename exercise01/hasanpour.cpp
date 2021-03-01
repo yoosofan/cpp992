@@ -31,7 +31,7 @@ int main()
         add();
         break;
     case 2:
-        Searchs();
+        Search();
         break;
     default:
         cout << "Enter a valid number!";
@@ -40,7 +40,7 @@ int main()
     return 0;
 }
 
-void add()
+void add(void)
 {
     int i;
     cout << "How many people do u want to add?\n";
@@ -63,7 +63,7 @@ void add()
 }
 
 
-void Searchs()
+void Search(void)
 {
     char lname[20];
     int i;

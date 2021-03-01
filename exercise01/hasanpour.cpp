@@ -22,20 +22,27 @@ struct infoArr
 
 int main()
 {
-    //printf("1-Adding new person number\n2-Search a telephone number\n");
-    cout << "1-Adding new person number\n2-Search a telephone number\n";
-    int num;
-    cin >> num;
-    switch(num){
-    case 1:
-        add();
+    int num = 1;
+    while( num != 0){
+      //printf("1-Adding new person number\n2-Search a telephone number\n");
+      cout << "1-Adding new person number\n2-Search a telephone number\n";
+      cout << "0 - exit\n";
+
+      cin >> num;
+      switch(num){
+      case 1:
+          add();
+          break;
+      case 2:
+          Search();
+          break;
+      case 0:
+        cout << "End\n";
         break;
-    case 2:
-        Search();
-        break;
-    default:
-        cout << "Enter a valid number!";
-        break;
+      default:
+          cout << "Enter a valid number!";
+          break;
+      }
     }
     return 0;
 }

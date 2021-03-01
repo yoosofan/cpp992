@@ -1,13 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <windows.h>
+#include <cstdio>
+#include <cstdlib>
 
-typedef struct
+struct info
 {
     char name[30];
     char last[30];
     char number[20];
-}info;
+};
 
 struct vam
 {
@@ -17,7 +16,6 @@ struct vam
 
 void add(int* s)
 {
-    system("cls");
     int who;
     printf("How many contact do you wanna add?\n");
     scanf("%d",&who);
@@ -43,10 +41,6 @@ void add(int* s)
     scanf("%s",&mt.array[*s].number);
     (*s)++;
     }
-
-
-
-
 }
 
 void serch(int* n)
@@ -55,16 +49,14 @@ void serch(int* n)
     printf("Choose a Search mode:\n");
     printf("\n(1)By last name:");
     printf("\n(2)By phone number:\n");
-    fflush(stdin);
     scanf("%d",&w);
-    if(w== 1)
+    if(w == 1)
     {
         char d[30];
         int v57=0;
         printf("Enter last name:\n");
-        fflush(stdin);
         gets(d);
-        for(int j= 0; j< (*n); j++)
+        for(int j = 0; j < (*n); j++)
         {
             if(strcmp(d, mt.array[j].last)== 0)
             {
@@ -75,11 +67,10 @@ void serch(int* n)
                 v57++;
             }
         }
-        if(v57==0)
+        if(v57 == 0)
         {
             printf("0\n");
             Sleep(2000);
-            system("cls");
             return;
         }
         else
@@ -94,7 +85,6 @@ void serch(int* n)
         char f[30];
         int v58=0;
         printf("Enter phone number:\n");
-        fflush(stdin);
         gets(f);
         for(int j= 0; j< (*n); j++)
         {
@@ -111,47 +101,39 @@ void serch(int* n)
         {
             printf("0\n");
             Sleep(2000);
-            system("cls");
             return;
         }
         else
         {
             printf("Press any key to return to menu:");
-            char d= getch();
-            system("cls");
+            char d;
+            scanf("%c", &d);
             return;
         }
-
     }
     else
     {
         printf("Input is incorrect.");
         Sleep(2000);
-        system("cls");
         serch(n);
     }
 }
 
 int main()
 {
-
     int why;
-
     mt.num=0;
     thi:
     printf("Choose a number:\n");
-    int* n=&mt.num;
+    int* n = &mt.num;
     printf("\n(1)Add new contact");
     printf("\n(2)Search a contact \n");
-    fflush(stdin);
     scanf("%d",&why);
-
     if(why==1)
     {
         add(n);
         printf("your information get successful \n\n");
         Sleep(2000);
-        system("cls");
         goto thi;
     }
 

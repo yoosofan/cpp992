@@ -22,7 +22,6 @@ void add(int* s)
     if((who+*s)>100)
     {
         printf("not enough space hear!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        Sleep(1000);
         add(s);
     }
     int i;
@@ -70,7 +69,6 @@ void serch(int* n)
         if(v57 == 0)
         {
             printf("0\n");
-            Sleep(2000);
             return;
         }
         else
@@ -100,7 +98,6 @@ void serch(int* n)
         if(v58==0)
         {
             printf("0\n");
-            Sleep(2000);
             return;
         }
         else
@@ -114,40 +111,34 @@ void serch(int* n)
     else
     {
         printf("Input is incorrect.");
-        Sleep(2000);
         serch(n);
     }
 }
 
 int main()
 {
-    int why;
+    int why = 1 ;
     mt.num=0;
-    thi:
-    printf("Choose a number:\n");
-    int* n = &mt.num;
-    printf("\n(1)Add new contact");
-    printf("\n(2)Search a contact \n");
-    scanf("%d",&why);
-    if(why==1)
-    {
-        add(n);
-        printf("your information get successful \n\n");
-        Sleep(2000);
-        goto thi;
-    }
-
-    else if(why==2)
-    {
-        system("cls");
-        serch(n);
-        printf("Search completed!!!!!!\n\n");
-        Sleep(2000);
-        system("cls");
-        goto thi;
-    }
-
-    else{}
-
+    // thi:
+    while(why == 1 || why == 2){
+      
+      printf("Choose a number:\n");
+      int* n = &mt.num;
+      printf("\n(1)Add new contact");
+      printf("\n(2)Search a contact \n");
+      scanf("%d",&why);
+      if(why==1)
+      {
+          add(n);
+          printf("your information get successful \n\n");
+          // goto thi;
+      }
+      else if(why==2)
+      {
+          serch(n);
+          printf("Search completed!!!!!!\n\n");
+          // goto thi;
+      }
+  }
     return 0;
 }

@@ -1,7 +1,46 @@
-exercise01$ g++ zehri.cpp 
-zehri.cpp: In function ‘int main()’:
-zehri.cpp:20:5: error: ‘menu’ was not declared in this scope; did you mean ‘manu’?
-   20 |     menu();
-      |     ^~~~
-      |     manu
+exercise01$ g++ shahpor.cpp 
+shahpor.cpp: In function ‘void add(int*)’:
+shahpor.cpp:34:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[30]’ [-Wformat=]
+   34 |     scanf("%s",&mt.array[*s].name);
+      |            ~^  ~~~~~~~~~~~~~~~~~~
+      |             |  |
+      |             |  char (*)[30]
+      |             char*
+shahpor.cpp:37:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[30]’ [-Wformat=]
+   37 |     scanf("%s",&mt.array[*s].last);
+      |            ~^  ~~~~~~~~~~~~~~~~~~
+      |             |  |
+      |             |  char (*)[30]
+      |             char*
+shahpor.cpp:40:13: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[20]’ [-Wformat=]
+   40 |     scanf("%s",&mt.array[*s].number);
+      |            ~^  ~~~~~~~~~~~~~~~~~~~~
+      |             |  |
+      |             |  char (*)[20]
+      |             char*
+shahpor.cpp: In function ‘void serch(int*)’:
+shahpor.cpp:57:9: error: ‘gets’ was not declared in this scope; did you mean ‘fgets’?
+   57 |         gets(d);
+      |         ^~~~
+      |         fgets
+shahpor.cpp:60:16: error: ‘strcmp’ was not declared in this scope
+   60 |             if(strcmp(d, mt.array[j].last)== 0)
+      |                ^~~~~~
+shahpor.cpp:3:1: note: ‘strcmp’ is defined in header ‘<cstring>’; did you forget to ‘#include <cstring>’?
+    2 | #include <cstdlib>
+  +++ |+#include <cstring>
+    3 | 
+shahpor.cpp:77:21: error: ‘getch’ was not declared in this scope; did you mean ‘getc’?
+   77 |             char d= getch();
+      |                     ^~~~~
+      |                     getc
+shahpor.cpp:86:9: error: ‘gets’ was not declared in this scope; did you mean ‘fgets’?
+   86 |         gets(f);
+      |         ^~~~
+      |         fgets
+shahpor.cpp:89:16: error: ‘strcmp’ was not declared in this scope
+   89 |             if(strcmp(f, mt.array[j].number)== 0)
+      |                ^~~~~~
+shahpor.cpp:89:16: note: ‘strcmp’ is defined in header ‘<cstring>’; did you forget to ‘#include <cstring>’?
 exercise01$ 
+

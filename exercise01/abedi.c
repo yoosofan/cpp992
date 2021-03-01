@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
 #include <string.h>
-#include <conio.h>
 
 typedef struct
 {
@@ -182,6 +180,7 @@ void menu(int* d)
     case '1':
         system("cls");
         enter(d);
+        break;
 
     case '2':
         system("cls");

@@ -1,8 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
 
-void Search();
-void add();
+void Search(void);
+void add(void);
 
 const int NUMBER_OF_CHAR_IN_NAMES = 20;
 const int NUMBER_OF_STUDENTS_IN_CLASS = 100;
@@ -35,7 +36,7 @@ int main()
     return 0;
 }
 
-void add()
+void add(void)
 {
     int a;
     int b;
@@ -54,7 +55,7 @@ void add()
 }
 
 
-void Search()
+void Search(void)
 {
     char lname[NUMBER_OF_CHAR_IN_NAMES];
     int i;

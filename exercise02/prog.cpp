@@ -112,16 +112,12 @@ mosalas addm(void)
     A=Dbetween(m1.c, m1.b);
     B=Dbetween(m1.c, m1.a);
     C=Dbetween(m1.a, m1.b);
-    if(A+B>C && A+C>B && B+C>A)
-    {
-
-        return m1;
-    }
-    else
+    if( !(A+B>C && A+C>B && B+C>A))
     {
         cout<< "These points aren't creat a triangle\n";
-        addm();
+        return addm();
     }
+    return m1;
 }
 
 void seem(mosalas t1)
@@ -191,14 +187,3 @@ mosalas movem(mosalas t1, int dx, int dy)
     seem(t1);
     return t1;
 }
-
-/*
-exercise02$ g++ prog.cpp 
-prog.cpp: In function ‘mosalas addm()’:
-prog.cpp:125:1: warning: control reaches end of non-void function [-Wreturn-type]
-  125 | }
-      | ^
-exercise02$ 
-
-
- */

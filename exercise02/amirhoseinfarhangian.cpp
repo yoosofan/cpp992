@@ -24,11 +24,11 @@ struct side
     float c;
 };
 struct coordinate getcordnt(void);
-void distcenter(struct coordinate newcor);
-void dist_two_cor(struct coordinate newcor,struct coordinate newcor2);
-void degcor(struct coordinate newcor);
-void showcor(struct coordinate newcor);
-void chngcor(struct coordinate *ptrcor);
+void distcenter(coordinate newcor);
+void dist_two_cor(coordinate newcor,struct coordinate newcor2);
+void degcor(coordinate newcor);
+void showcor(coordinate newcor);
+void chngcor(coordinate *ptrcor);
 //------------------Triangle functions---------------------------------
 struct triangle gettri(void);
 void showtri(struct triangle tri);
@@ -80,7 +80,7 @@ struct coordinate getcordnt(void)
     return newcor;
 
 }
-void distcenter(struct coordinate newcor)
+void distcenter(coordinate newcor)
 {
   float sum;
   float res;
@@ -90,7 +90,7 @@ void distcenter(struct coordinate newcor)
   res=sqrt(sum);
   cout<<"#The distance between this coordinate and the center="<<res<<"\n";
 }
-void dist_two_cor(struct coordinate newcor,struct coordinate newcor2)
+void dist_two_cor(coordinate newcor, coordinate newcor2)
 {
    float sum;
    float res;

@@ -24,11 +24,11 @@ struct side
     float c;
 };
 struct coordinate getcordnt(void);
-void distcenter(coordinate newcor);
-void dist_two_cor(coordinate newcor,struct coordinate newcor2);
-void degcor(coordinate newcor);
-void showcor(coordinate newcor);
-void chngcor(coordinate *ptrcor);
+void distcenter(struct coordinate newcor);
+void dist_two_cor(struct coordinate newcor,struct coordinate newcor2);
+void degcor(struct coordinate newcor);
+void showcor(struct coordinate newcor);
+void chngcor(struct coordinate *ptrcor);
 //------------------Triangle functions---------------------------------
 struct triangle gettri(void);
 void showtri(struct triangle tri);
@@ -80,7 +80,7 @@ struct coordinate getcordnt(void)
     return newcor;
 
 }
-void distcenter(coordinate newcor)
+void distcenter(struct coordinate newcor)
 {
   float sum;
   float res;
@@ -90,7 +90,7 @@ void distcenter(coordinate newcor)
   res=sqrt(sum);
   cout<<"#The distance between this coordinate and the center="<<res<<"\n";
 }
-void dist_two_cor(coordinate newcor, coordinate newcor2)
+void dist_two_cor(struct coordinate newcor,struct coordinate newcor2)
 {
    float sum;
    float res;
@@ -134,7 +134,7 @@ void chngcor(struct coordinate *ptrcor)
 struct triangle gettri(void)
 {
      struct triangle tri;
-     struct side sd;
+     float shib;
      cout<<"Enter x1\n";
      cin>>tri.x1;
      cout<<"Enter y1\n";
@@ -147,8 +147,9 @@ struct triangle gettri(void)
      cin>>tri.x3;
      cout<<"Enter y3\n";
      cin>>tri.y3;
-     sd=sidetri(tri);
-     while(((sd.a+sd.b)<sd.c)&&((sd.a+sd.c)<sd.b)&&((sd.b+sd.c)<sd.a))
+     shib=(tri.y2-tri.y1)/(tri.x2-tri.x1);
+
+     while((tri.y3-tri.y1)==shib(tri.x3-tri.x1))
      {
      cout<<"This is not a triangle.\n";
      cout<<"Enter x1\n";
@@ -164,7 +165,6 @@ struct triangle gettri(void)
      cout<<"Enter y3\n";
      cin>>tri.y3;
      sd=sidetri(tri);
-
      }
 
 

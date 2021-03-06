@@ -52,6 +52,7 @@ void menu(void)
         cout<<"(5)move the triangle"<<endl;
 
         int num;
+        cout << "Enter num" << endl;
         cin>> num;
         if(num==1)
         {
@@ -111,7 +112,7 @@ mosalas addm(void)
     A=Dbetween(m1.c, m1.b);
     B=Dbetween(m1.c, m1.a);
     C=Dbetween(m1.a, m1.b);
-    if(A+B>C&&A+C>B&&B+C>A)
+    if(A+B>C && A+C>B && B+C>A)
     {
 
         return m1;
@@ -129,7 +130,7 @@ void seem(mosalas t1)
     see(t1.a);
     cout<<"\n\nPoint b:\n";
     see(t1.b);
-    cout<<"\n\nPoint c:\n";
+    cout << endl << endl <<"Point c:" << endl;;
     see(t1.c);
     cout<< endl;
     return;
@@ -138,7 +139,7 @@ void seem(mosalas t1)
 void  see(pointt m1)
 {
     cout<<"\n x of point : "<< m1.x;
-    cout<<"\n y of point : "<< m1.y;
+    cout<<"\n y of point : "<< m1.y << endl;
     return;
 }
 
@@ -190,3 +191,14 @@ mosalas movem(mosalas t1, int dx, int dy)
     seem(t1);
     return t1;
 }
+
+/*
+exercise02$ g++ prog.cpp 
+prog.cpp: In function ‘mosalas addm()’:
+prog.cpp:125:1: warning: control reaches end of non-void function [-Wreturn-type]
+  125 | }
+      | ^
+exercise02$ 
+
+
+ */

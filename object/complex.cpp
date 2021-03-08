@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-using namespace std;
+// using namespace std;
 
 struct complexCls{
   double re, img;
@@ -21,21 +21,21 @@ int main(){
 void test(void){
   complexCls b;
   b = input();
-  cout << magnitude(b) << endl;
+  std::cout << magnitude(b) << std::endl;
   print(b);
   print(negate(b));
 }
 complexCls input(void){
   complexCls a;
-  cout << "Enter real part: ";
-  cin >> a.re;
-  cout << "Enter imaginary part: ";
-  cin >> a.img;
+  std::cout << "Enter real part: ";
+  std::cin >> a.re;
+  std::cout << "Enter imaginary part: ";
+  std::cin >> a.img;
   return a;
 }
 
 void print(complexCls a){
-  cout << '(' << a.re << ", " << a.img << ')' << endl;
+  std::cout << '(' << a.re << ", " << a.img << ')' << std::endl;
 }
 
 complexCls negate(complexCls a){

@@ -37,6 +37,6 @@ void test(void){
   b.input();
   std::cout << b.magnitude() << std::endl;
   b.print();
-  b.negate()
+  b.negate();
   b.print();
 }

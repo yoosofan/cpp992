@@ -1,8 +1,8 @@
-object$ g++ complex.cpp 
 object$ ./a.out
 Enter real part: 2
-Enter imaginary part: 5
-5.38516
-(2, 5)
-(-2, -5)
+Enter imaginary part: 6
+6.32456
+(2, 6)
+(-2, -6)
 object$ 
+

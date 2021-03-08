@@ -20,15 +20,15 @@ struct Array{
 
   void print(void){
     std::cout << "n: " << n << std:: endl;
+    for(int i=0; i < n; i++)
+      std::cout << "a[" << i << "]:" << a[i] << std::endl;
   }
-
-  void negate(void){
-    re = - re;
-    img = - img;
-  }
-
-  double magnitude(void){
-    return std::sqrt(re * re + img * img);
+  
+  int sum(void){
+    int d = 0;
+    for(int i=0; i < n ; i++ ) 
+      d += a[i];
+    return d;
   }
 };
 

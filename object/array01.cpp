@@ -3,14 +3,14 @@
 
 struct myArray{
   static const int MAX = 100;
-  int a[MAX]
+  int a[MAX];
   int n;
   
   void input(void){
     do{
       std::cout << "Enter n > 0; ";
       std::cin >> n;
-    } while(n <= 0)
+    } while(n <= 0 || n >= MAX)
     for( int i=0; i < n; i++){
       std::cout << "Enter a[" << i << "]: ";
       std::cin >> a[i];

@@ -12,7 +12,7 @@ struct complexCls{
   }
 
   void print(void){
-    std::cout << '(' << re << ", " << img << ')' << std::endl;
+    std::cout << '(' << re << ", " << img << ')' ;
   }
 
   void negate(void){
@@ -37,20 +37,22 @@ struct myArray{
     } while(n <= 0 || n >= MAX);
     for( int i=0; i < n; i++){
       std::cout << "Enter a[" << i << "]: ";
-      std::cin >> a[i];
+      a[i].input();
     }
   }
 
   void print(void){
     std::cout << "n: " << n << std:: endl;
     for(int i=0; i < n; i++)
-      std::cout << "a[" << i << "]:" << a[i] << std::endl;
+      std::cout << "a[" << i << "]:" << a[i].print() << std::endl;
   }
   
-  int sum(void){
-    int d = 0;
-    for(int i=0; i < n ; i++ ) 
-      d += a[i];
+  complexCls sum(void){
+    complexCls d = 0;
+    for(int i=0; i < n ; i++ ){
+      d.re += a[i].re;
+      d.img += a[i].img;
+    }
     return d;
   }
 };
@@ -66,5 +68,6 @@ void test(void){
   myArray a;
   a.input();
   a.print();
-  std::cout << a.sum() << std::endl;
+  complexCls d = a.sum();
+  d.print();
 }

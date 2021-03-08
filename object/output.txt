@@ -1,0 +1,6 @@
+object$ g++ complex.cpp 
+/usr/bin/ld: /tmp/ccXhxWhe.o: in function `main':
+complex.cpp:(.text+0x9): undefined reference to `test()'
+collect2: error: ld returned 1 exit status
+object$ 
+

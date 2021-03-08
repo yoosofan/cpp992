@@ -34,7 +34,8 @@ int main(){
 }
 
 void test(void){
-  complexCls b;
+  complexCls b = {1, 4};
+  b.print();
   b.input();
   std::cout << b.magnitude() << std::endl;
   b.print();

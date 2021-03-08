@@ -42,16 +42,16 @@ struct myArray{
   }
 
   void print(void){
-    std::cout << "n: " << n << std:: endl;
-    for(int i=0; i < n; i++){
+    std::cout << "n: " << n << std::endl;
+    for(int i = 0; i < n; i++){
       std::cout << "a[" << i << "]:";
       a[i].print();
     }
   }
   
   complexCls sum(void){
-    complexCls d = {0,0};
-    for(int i=0; i < n ; i++ ){
+    complexCls d = {0, 0};
+    for(int i = 0; i < n ; i++ ){
       d.re += a[i].re;
       d.img += a[i].img;
     }

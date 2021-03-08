@@ -1,13 +1,14 @@
-12
-object$ g++ array01_complexcls02.cpp 
+object$ g++ complex02.cpp 
 object$ ./a.out
-Enter n > 0; 2
-Enter a[0]: Enter real part: 5
-Enter imaginary part: 8
-Enter a[1]: Enter real part: 2
-Enter imaginary part: 5
-n: 2
-a[0]:(5, 8)
-a[1]:(2, 5)
-(7, 13)
+(1, 4)
+Enter real part: 3
+Enter imaginary part: 7
+7.61577
+(3, 7)
+(-3, -7)
+(0, 0)
+Enter real part: 9
+Enter imaginary part: 0      
+(9, 0)
+9
 object$ 

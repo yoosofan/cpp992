@@ -10,7 +10,7 @@ struct myArray{
     do{
       std::cout << "Enter n > 0; ";
       std::cin >> n;
-    } while(n <= 0 || n >= MAX)
+    } while(n <= 0 || n >= MAX);
     for( int i=0; i < n; i++){
       std::cout << "Enter a[" << i << "]: ";
       std::cin >> a[i];
@@ -42,5 +42,5 @@ void test(void){
   myArray a;
   a.input();
   a.print();
-  std::cout << a.sum() << endl;
+  std::cout << a.sum() << std::endl;
 }

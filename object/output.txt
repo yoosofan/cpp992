@@ -1,20 +1,9 @@
-object$ 
-object$ g++ array01.cpp 
-array01.cpp: In member function ‘void myArray::input()’:
-array01.cpp:13:32: error: expected ‘;’ before ‘for’
-   13 |     } while(n <= 0 || n >= MAX)
-      |                                ^
-      |                                ;
-   14 |     for( int i=0; i < n; i++){
-      |     ~~~                         
-array01.cpp: In function ‘void test()’:
-array01.cpp:45:27: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
-   45 |   std::cout << a.sum() << endl;
-      |                           ^~~~
-      |                           std::endl
-In file included from /usr/include/c++/9/iostream:39,
-                 from array01.cpp:1:
-/usr/include/c++/9/ostream:599:5: note: ‘std::endl’ declared here
-  599 |     endl(basic_ostream<_CharT, _Traits>& __os)
-      |     ^~~~
+object$ ./a.out
+Enter n > 0; 2
+Enter a[0]: 5
+Enter a[1]: 9
+n: 2
+a[0]:5
+a[1]:9
+14
 object$ 

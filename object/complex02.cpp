@@ -4,6 +4,7 @@
 
 struct complexCls{
   double re, img;
+
   void input(void){
     std::cout << "Enter real part: ";
     std::cin >> re;
@@ -39,4 +40,10 @@ void test(void){
   b.print();
   b.negate();
   b.print();
+  
+  complexCls a;
+  a.input();
+  a.print();
+  double d = a.magnitude();
+  std::cout << d << endl;
 }

@@ -1,8 +1,12 @@
-object$ ./a.out
-Enter real part: 2
-Enter imaginary part: 6
-6.32456
-(2, 6)
-(-2, -6)
+object$ g++ complex02.cpp 
+complex02.cpp: In function ‘void test()’:
+complex02.cpp:48:21: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
+   48 |   std::cout << d << endl;
+      |                     ^~~~
+      |                     std::endl
+In file included from /usr/include/c++/9/iostream:39,
+                 from complex02.cpp:1:
+/usr/include/c++/9/ostream:599:5: note: ‘std::endl’ declared here
+  599 |     endl(basic_ostream<_CharT, _Traits>& __os)
+      |     ^~~~
 object$ 
-

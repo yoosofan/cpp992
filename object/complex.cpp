@@ -4,7 +4,7 @@ using namespace std;
 
 struct complexCls{
   double re, img;
-}
+};
 
 complexCls input(void);
 void print(complexCls);

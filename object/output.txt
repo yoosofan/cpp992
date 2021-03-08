@@ -1,12 +1,24 @@
-object$ ./a.out
-Enter real part: 5
-Enter imaginary part: 1
-5.09902
-(5, 1)
-(-5, -1)
-(0, 0)
-Enter real part: 0
-Enter imaginary part: 3
-(0, 3)
-3
+   4083770..5127ddd  main -> main
+object$ g++ array01.cpp 
+array01.cpp:6:12: error: expected ‘;’ at end of member declaration
+    6 |   int a[MAX]
+      |            ^
+      |             ;
+array01.cpp: In member function ‘void myArray::input()’:
+array01.cpp:13:20: error: expected ‘;’ before ‘for’
+   13 |     } while(n <= 0)
+      |                    ^
+      |                    ;
+   14 |     for( int i=0; i < n; i++){
+      |     ~~~             
+array01.cpp: In function ‘void test()’:
+array01.cpp:45:27: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
+   45 |   std::cout << a.sum() << endl;
+      |                           ^~~~
+      |                           std::endl
+In file included from /usr/include/c++/9/iostream:39,
+                 from array01.cpp:1:
+/usr/include/c++/9/ostream:599:5: note: ‘std::endl’ declared here
+  599 |     endl(basic_ostream<_CharT, _Traits>& __os)
+      |     ^~~~
 object$ 

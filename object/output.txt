@@ -1,12 +1,12 @@
-object$ g++ complex02.cpp 
 object$ ./a.out
 Enter real part: 5
-Enter imaginary part: 8
-9.43398
-(5, 8)
-(-5, -8)
-Enter real part: 9
 Enter imaginary part: 1
-(9, 1)
-9.05539
+5.09902
+(5, 1)
+(-5, -1)
+(0, 0)
+Enter real part: 0
+Enter imaginary part: 3
+(0, 3)
+3
 object$ 

@@ -18,6 +18,13 @@ int main(){
   return 0;
 }
 
+void test(void){
+  complexCls b;
+  b = input();
+  cout << magnitude(b) << endl;
+  print(b);
+  print(negate(b));
+}
 complexCls input(void){
   complexCls a;
   cout << "Enter real part: ";

@@ -4,12 +4,26 @@
 
 struct complexCls{
   double re, img;
-};
+  void input(void){
+    std::cout << "Enter real part: ";
+    std::cin >> re;
+    std::cout << "Enter imaginary part: ";
+    std::cin >> img;
+  }
 
-complexCls input(void);
-void print(complexCls);
-complexCls negate(complexCls);
-double magnitude(complexCls);
+  void print(void){
+    std::cout << '(' << re << ", " << img << ')' << std::endl;
+  }
+
+  void negate(void){
+    re = - re;
+    img = - img;
+  }
+
+  double magnitude(void){
+    return std::sqrt(re * re + img * img);
+  }
+};
 
 void test(void);
 
@@ -20,30 +34,9 @@ int main(){
 
 void test(void){
   complexCls b;
-  b = input();
-  std::cout << magnitude(b) << std::endl;
-  print(b);
-  print(negate(b));
-}
-complexCls input(void){
-  complexCls a;
-  std::cout << "Enter real part: ";
-  std::cin >> a.re;
-  std::cout << "Enter imaginary part: ";
-  std::cin >> a.img;
-  return a;
-}
-
-void print(complexCls a){
-  std::cout << '(' << a.re << ", " << a.img << ')' << std::endl;
-}
-
-complexCls negate(complexCls a){
-  a.re = - a.re;
-  a.img = - a.img;
-  return a;
-}
-
-double magnitude(complexCls a){
-  return std::sqrt(a.re * a.re + a.img * a.img);
+  b.input();
+  std::cout << b.magnitude() << std::endl;
+  b.print();
+  b.negate()
+  b.print();
 }

@@ -45,5 +45,5 @@ void test(void){
   a.input();
   a.print();
   double d = a.magnitude();
-  std::cout << d << endl;
+  std::cout << d << std::endl;
 }

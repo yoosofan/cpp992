@@ -45,5 +45,5 @@ complexCls negate(complexCls a){
 }
 
 double magnitude(complexCls a){
-  return sqrt(a.re * a.re + a.img * a.img);
+  return std::sqrt(a.re * a.re + a.img * a.img);
 }

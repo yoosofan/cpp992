@@ -1,8 +1,7 @@
 #include <iostream>
 #include <cmath>
-// using namespace std;
 
-struct Array{
+struct myArray{
   static const int MAX = 100;
   int a[MAX]
   int n;
@@ -40,17 +39,8 @@ int main(){
 }
 
 void test(void){
-  complexCls b;
-  b.input();
-  std::cout << b.magnitude() << std::endl;
-  b.print();
-  b.negate();
-  b.print();
-  
-  complexCls a;
-  a.print();
+  myArray a;
   a.input();
   a.print();
-  double d = a.magnitude();
-  std::cout << d << std::endl;
+  std::cout << a.sum() << endl;
 }

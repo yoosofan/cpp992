@@ -59,14 +59,19 @@ void test(void){
   b.negate();
   b.print();
   
-  complexCls a;
-  a.print();
-  a.input();
-  a.print();
-  double d = a.magnitude();
-  std::cout << d << std::endl;
-  
-  complexCls c(2);
-  c.input();
-  c.print();
+  bool b1 = true;
+  if(b1 == true){  // if(b1)
+    complexCls a;
+    a.print();
+    a.input();
+    a.print();
+    double d = a.magnitude();
+    std::cout << d << std::endl;
+  }
+  else{
+    complexCls c(2);
+    c.input();
+    c.print();
+  }
+  std::cout << "Before end of test function" << std::endl;
 }

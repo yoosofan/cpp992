@@ -5,6 +5,12 @@
 struct complexCls{
   double re = 0, img = 0;
 
+  complexCls(){
+    re = 0;
+    img = 0;
+  }
+  complexCls(double r){
+    
   void input(void){
     std::cout << "Enter real part: ";
     std::cin >> re;

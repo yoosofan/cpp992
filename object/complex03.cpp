@@ -43,7 +43,8 @@ void test(void){
   static int myStaticCheckVar = 0;
   myStaticCheckVar++;
   std::cout << "myStaticCheckVar: " << myStaticCheckVar << std::endl;
- 
+  myStaticCheckVar = 0 ; // Assignment
+  
   complexCls b(1, 4);
   b.print();
   b.input();

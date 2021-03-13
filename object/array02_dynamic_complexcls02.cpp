@@ -42,7 +42,6 @@ struct myArray{
   ~myArray(){
     if(n > 0 )
       delete[] a;
-    }
     n = 0;
     a = nullptr;
   }

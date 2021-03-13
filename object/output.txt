@@ -1,20 +1,8 @@
 object$ g++ complex03.cpp 
 object$ ./a.out
 (1, 4)
-Enter real part: 3
-Enter imaginary part: 5
-5.83095
-(3, 5)
-(-3, -5)
 (0, 0)
-Enter real part: 6
-Enter imaginary part: 7
-(6, 7)
-9.21954
-Enter real part: 8
-Enter imaginary part: 9
-(8, 9)
-destructor complexCls (8, 9)
-destructor complexCls (6, 7)
-destructor complexCls (-3, -5)
+destructor complexCls (0, 0)
+Before end of test function
+destructor complexCls (1, 4)
 object$ 

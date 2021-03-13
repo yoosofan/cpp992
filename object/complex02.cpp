@@ -3,14 +3,20 @@
 // using namespace std;
 
 struct complexCls{
-  double re = 0, img = 0;
+  double re, img;
 
   complexCls(){
     re = 0;
     img = 0;
   }
   complexCls(double r){
-    
+    re = r;
+    img = 0;
+  }
+  complexCls(double r, double i){
+    re = r;
+    img = i;
+  }
   void input(void){
     std::cout << "Enter real part: ";
     std::cin >> re;

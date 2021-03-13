@@ -10,6 +10,10 @@ struct complexCls{
     img = i;
   }
 
+  ~complexCls(){
+    std::cout << "destructor complexCls (" << re << ", " << img << ")" << std::endl;
+  }
+
   void input(void){
     std::cout << "Enter real part: ";
     std::cin >> re;
@@ -29,6 +33,7 @@ struct complexCls{
   double magnitude(void){
     return std::sqrt(re * re + img * img);
   }
+  
 };
 
 void test(void);

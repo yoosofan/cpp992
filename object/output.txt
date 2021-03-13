@@ -1,16 +1,12 @@
 object$ g++ array02_dynamic_complexcls02.cpp 
-array02_dynamic_complexcls02.cpp: In member function ‘void myArray::input()’:
-array02_dynamic_complexcls02.cpp:41:28: error: ‘MAX’ was not declared in this scope
-   41 |     } while(n <= 0 || n >= MAX);
-      |                            ^~~
-array02_dynamic_complexcls02.cpp:43:26: error: expected ‘;’ before ‘for’
-   43 |     a = new complexCls[n]
-      |                          ^
-      |                          ;
-   44 | 
-   45 |     for( int i=0; i < n; i++){
-      |     ~~~                   
-array02_dynamic_complexcls02.cpp:45:19: error: ‘i’ was not declared in this scope
-   45 |     for( int i=0; i < n; i++){
-      |                   ^
+object$ ./a.out
+Enter n > 0; 2
+Enter a[0]: Enter real part: 3
+Enter imaginary part: 4
+Enter a[1]: Enter real part: 6
+Enter imaginary part: 8
+n: 2
+a[0]:(3, 4)
+a[1]:(6, 8)
+(9, 12)
 object$ 

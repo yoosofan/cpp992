@@ -34,17 +34,18 @@ struct complexCls{
 void test(void);
 
 int main(){
-  for(int i = 0; i < 2; i++)
-    test();
+  //for(int i = 0; i < 2; i++)
+  test();
   return 0;
 }
 
 void test(void){  
+  /*
   static int myStaticCheckVar = 0;
   myStaticCheckVar++;
   std::cout << "myStaticCheckVar: " << myStaticCheckVar << std::endl;
   myStaticCheckVar = 0 ; // Assignment
-  
+  */
   complexCls b(1, 4);
   b.print();
   b.input();

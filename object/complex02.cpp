@@ -46,7 +46,7 @@ int main(){
 }
 
 void test(void){
-  complexCls b = {1, 4};
+  complexCls b(1, 4);
   b.print();
   b.input();
   std::cout << b.magnitude() << std::endl;
@@ -60,4 +60,8 @@ void test(void){
   a.print();
   double d = a.magnitude();
   std::cout << d << std::endl;
+  
+  complexCls c(2);
+  c.input();
+  c.print();
 }

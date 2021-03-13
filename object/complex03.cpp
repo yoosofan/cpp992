@@ -39,9 +39,10 @@ int main(){
   return 0;
 }
 
-void test(void){  static int myStaticCheckVar = 0;
+void test(void){  
+  static int myStaticCheckVar = 0;
   myStaticCheckVar++;
-  std::cout << myStaticCheckVar << std::endl;
+  std::cout << "myStaticCheckVar: " << myStaticCheckVar << std::endl;
  
   complexCls b(1, 4);
   b.print();

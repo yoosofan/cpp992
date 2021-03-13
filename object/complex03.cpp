@@ -9,6 +9,7 @@ struct complexCls{
     re = r;
     img = i;
   }
+
   void input(void){
     std::cout << "Enter real part: ";
     std::cin >> re;
@@ -33,11 +34,15 @@ struct complexCls{
 void test(void);
 
 int main(){
-  test();
+  for(int i = 0; i < 2; i++)
+    test();
   return 0;
 }
 
-void test(void){
+void test(void){  static int myStaticCheckVar = 0;
+  myStaticCheckVar++
+  std::cout << myStaticCheckVar << std::endl;
+ 
   complexCls b(1, 4);
   b.print();
   b.input();

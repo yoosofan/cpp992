@@ -2,7 +2,12 @@
 #include <cmath>
 
 struct complexCls{
-  double re = 0, img = 0;
+  double re, img;
+
+  complexCls(double r = 0, double i = 0){
+    re = r;
+    img = i;
+  }
 
   void input(void){
     std::cout << "Enter real part: ";
@@ -26,8 +31,7 @@ struct complexCls{
 };
 
 struct myArray{
-  static const int MAX = 100;
-  complexCls a[MAX];
+  complexCls *a;
   int n;
   
   void input(void){
@@ -35,6 +39,9 @@ struct myArray{
       std::cout << "Enter n > 0; ";
       std::cin >> n;
     } while(n <= 0 || n >= MAX);
+    
+    a = new complexCls[n]
+    
     for( int i=0; i < n; i++){
       std::cout << "Enter a[" << i << "]: ";
       a[i].input();
@@ -50,7 +57,7 @@ struct myArray{
   }
   
   complexCls sum(void){
-    complexCls d = {0, 0};
+    complexCls d;
     for(int i = 0; i < n ; i++ ){
       d.re += a[i].re;
       d.img += a[i].img;

@@ -5,7 +5,7 @@
 struct complexCls{
   double re, img;
 
-  complexCls(double r = 0, double i){
+  complexCls(double r = 0, double i = 0){
     re = r;
     img = i;
   }

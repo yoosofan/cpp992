@@ -1,7 +1,17 @@
 object$ g++ complex03.cpp 
-complex03.cpp:8:35: error: default argument missing for parameter 2 of ‘complexCls::complexCls(double, double)’
-    8 |   complexCls(double r = 0, double i){
-      |                            ~~~~~~~^
-complex03.cpp:8:21: note: ...following parameter 1 which has a default argument
-    8 |   complexCls(double r = 0, double i){
-      |         
+object$ ./a.out
+(1, 4)
+Enter real part: 1
+Enter imaginary part: 5
+5.09902
+(1, 5)
+(-1, -5)
+(0, 0)
+Enter real part: 8
+Enter imaginary part: 2
+(8, 2)
+8.24621
+Enter real part: 5
+Enter imaginary part: 3
+(5, 3)
+object$ 

@@ -1,12 +1,55 @@
 object$ g++ array02_dynamic_complexcls02.cpp 
-object$ ./a.out
-Enter n > 0; 2
-Enter a[0]: Enter real part: 3
-Enter imaginary part: 4
-Enter a[1]: Enter real part: 6
-Enter imaginary part: 8
-n: 2
-a[0]:(3, 4)
-a[1]:(6, 8)
-(9, 12)
+array02_dynamic_complexcls02.cpp:46:5: error: ‘n’ does not name a type; did you mean ‘yn’?
+   46 |     n = 0;
+      |     ^
+      |     yn
+array02_dynamic_complexcls02.cpp:47:5: error: ‘a’ does not name a type
+   47 |     a = nullptr;
+      |     ^
+array02_dynamic_complexcls02.cpp:48:4: error: expected ‘;’ after struct definition
+   48 |   }
+      |    ^
+      |    ;
+array02_dynamic_complexcls02.cpp: In function ‘void input()’:
+array02_dynamic_complexcls02.cpp:53:19: error: ‘n’ was not declared in this scope; did you mean ‘yn’?
+   53 |       std::cin >> n;
+      |                   ^
+      |                   yn
+array02_dynamic_complexcls02.cpp:54:13: error: ‘n’ was not declared in this scope; did you mean ‘yn’?
+   54 |     } while(n <= 0);
+      |             ^
+      |             yn
+array02_dynamic_complexcls02.cpp:55:5: error: ‘a’ was not declared in this scope
+   55 |     a = new complexCls[n];
+      |     ^
+array02_dynamic_complexcls02.cpp: In function ‘void print()’:
+array02_dynamic_complexcls02.cpp:63:27: error: ‘n’ was not declared in this scope; did you mean ‘yn’?
+   63 |     std::cout << "n: " << n << std::endl;
+      |                           ^
+      |                           yn
+array02_dynamic_complexcls02.cpp:66:7: error: ‘a’ was not declared in this scope
+   66 |       a[i].print();
+      |       ^
+array02_dynamic_complexcls02.cpp: In function ‘complexCls sum()’:
+array02_dynamic_complexcls02.cpp:72:24: error: ‘n’ was not declared in this scope
+   72 |     for(int i = 0; i < n ; i++ ){
+      |                        ^
+array02_dynamic_complexcls02.cpp:73:15: error: ‘a’ was not declared in this scope
+   73 |       d.re += a[i].re;
+      |               ^
+array02_dynamic_complexcls02.cpp: At global scope:
+array02_dynamic_complexcls02.cpp:78:1: error: expected declaration before ‘}’ token
+   78 | };
+      | ^
+array02_dynamic_complexcls02.cpp: In function ‘void test()’:
+array02_dynamic_complexcls02.cpp:90:5: error: ‘struct myArray’ has no member named ‘input’
+   90 |   a.input();
+      |     ^~~~~
+array02_dynamic_complexcls02.cpp:91:5: error: ‘struct myArray’ has no member named ‘print’
+   91 |   a.print();
+      |     ^~~~~
+array02_dynamic_complexcls02.cpp:92:20: error: ‘struct myArray’ has no member named ‘sum’
+   92 |   complexCls d = a.sum();
+      |                    ^~~
 object$ 
+

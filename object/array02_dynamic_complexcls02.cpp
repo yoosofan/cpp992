@@ -34,14 +34,25 @@ struct myArray{
   complexCls *a;
   int n;
   
+  myArray(){
+    n = 0;
+    a = nullptr;
+  }
+  
+  ~myArray(){
+    if(n > 0 )
+      delete[] a;
+    }
+    n = 0;
+    a = nullptr;
+  }
+      
   void input(void){
     do{
       std::cout << "Enter n > 0; ";
       std::cin >> n;
     } while(n <= 0);
-    
-    a = new complexCls[n];
-    
+    a = new complexCls[n];   
     for( int i=0; i < n; i++){
       std::cout << "Enter a[" << i << "]: ";
       a[i].input();
@@ -69,7 +80,8 @@ struct myArray{
 void test(void);
 
 int main(){
-  test();
+  for(int i = 0 ; i < 10 ; i++)
+    test();
   return 0;
 }
 

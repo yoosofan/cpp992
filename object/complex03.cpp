@@ -53,24 +53,24 @@ void test(void){
   */
   complexCls b(1, 4);
   b.print();
-  b.input();
-  std::cout << b.magnitude() << std::endl;
-  b.print();
-  b.negate();
-  b.print();
+  //b.input();
+  //std::cout << b.magnitude() << std::endl;
+  //b.print();
+  //b.negate();
+  //b.print();
   
   bool b1 = true;
   if(b1 == true){  // if(b1)
     complexCls a;
     a.print();
-    a.input();
-    a.print();
-    double d = a.magnitude();
-    std::cout << d << std::endl;
+    // a.input();
+    //a.print();
+    //double d = a.magnitude();
+    //std::cout << d << std::endl;
   }
   else{
     complexCls c(2);
-    c.input();
+    //c.input();
     c.print();
   }
   std::cout << "Before end of test function" << std::endl;

@@ -40,6 +40,8 @@ struct myArray{
   }
   
   ~myArray(){
+    std::cout << "myArray Destructor" << std::endl;
+    std::cout << "n: " << n << std::endl;
     if(n > 0 )
       delete[] a;
     n = 0;
@@ -55,6 +57,16 @@ struct myArray{
     for( int i=0; i < n; i++){
       std::cout << "Enter a[" << i << "]: ";
       a[i].input();
+    }
+  }
+  
+  void testInput(void){
+    static int m = 100;
+    m++;
+    a = new complexCls[n = m];
+    for(int i=0; i < n; i++){
+      a[i].re = m+1;
+      a[i].img = m+1;
     }
   }
 
@@ -86,7 +98,7 @@ int main(){
 
 void test(void){
   myArray a;
-  a.input();
+  a.testInput();
   a.print();
   complexCls d = a.sum();
   d.print();

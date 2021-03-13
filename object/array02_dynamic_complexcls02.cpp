@@ -38,9 +38,9 @@ struct myArray{
     do{
       std::cout << "Enter n > 0; ";
       std::cin >> n;
-    } while(n <= 0 || n >= MAX);
+    } while(n <= 0);
     
-    a = new complexCls[n]
+    a = new complexCls[n];
     
     for( int i=0; i < n; i++){
       std::cout << "Enter a[" << i << "]: ";

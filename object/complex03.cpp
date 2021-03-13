@@ -34,43 +34,38 @@ struct complexCls{
     return std::sqrt(re * re + img * img);
   }
   
+  void increment(void){
+    re++;
+    img++;
+  }
+  
 };
 
 void test(void);
 
 int main(){
-  //for(int i = 0; i < 2; i++)
-  test();
+  for(int i = 0; i < 3; i++)
+    test();
   return 0;
 }
 
 void test(void){  
-  /*
-  static int myStaticCheckVar = 0;
-  myStaticCheckVar++;
-  std::cout << "myStaticCheckVar: " << myStaticCheckVar << std::endl;
-  myStaticCheckVar = 0 ; // Assignment
-  */
+  /*  static int myStaticCheckVar = 0;  myStaticCheckVar++;  std::cout << "myStaticCheckVar: " << myStaticCheckVar << std::endl;  myStaticCheckVar = 0 ; // Assignment  */
   complexCls b(1, 4);
   b.print();
-  //b.input();
-  //std::cout << b.magnitude() << std::endl;
-  //b.print();
-  //b.negate();
-  //b.print();
+  static complexCls stmn(7,9);
+  std::cout << "stmn: " << std::endl;
+  stmn.print();
+  stmn.increment();
+  //b.input();  //std::cout << b.magnitude() << std::endl;  //b.print();  //b.negate();  //b.print();
   
   bool b1 = true;
   if(b1 == true){  // if(b1)
     complexCls a;
-    a.print();
-    // a.input();
-    //a.print();
-    //double d = a.magnitude();
-    //std::cout << d << std::endl;
+    a.print();    // a.input();    //a.print();    //double d = a.magnitude();    //std::cout << d << std::endl;
   }
   else{
-    complexCls c(2);
-    //c.input();
+    complexCls c(2);    //c.input();
     c.print();
   }
   std::cout << "Before end of test function" << std::endl;

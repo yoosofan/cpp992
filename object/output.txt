@@ -1,8 +1,24 @@
-object$ g++ complex03.cpp 
 object$ ./a.out
 (1, 4)
+stmn: 
+(7, 9)
 (0, 0)
 destructor complexCls (0, 0)
 Before end of test function
 destructor complexCls (1, 4)
+(1, 4)
+stmn: 
+(8, 10)
+(0, 0)
+destructor complexCls (0, 0)
+Before end of test function
+destructor complexCls (1, 4)
+(1, 4)
+stmn: 
+(9, 11)
+(0, 0)
+destructor complexCls (0, 0)
+Before end of test function
+destructor complexCls (1, 4)
+destructor complexCls (10, 12)
 object$ 

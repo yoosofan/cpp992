@@ -40,7 +40,7 @@ int main(){
 }
 
 void test(void){  static int myStaticCheckVar = 0;
-  myStaticCheckVar++
+  myStaticCheckVar++;
   std::cout << myStaticCheckVar << std::endl;
  
   complexCls b(1, 4);

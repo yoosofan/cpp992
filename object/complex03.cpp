@@ -34,7 +34,7 @@ struct complexCls{
     return std::sqrt(re * re + img * img);
   }
   
-  void increment(void){
+  void increment(void){ // ++
     re++;
     img++;
   }
@@ -57,7 +57,7 @@ void test(void){
   static complexCls stmn(7,9);
   std::cout << "stmn: " << std::endl;
   stmn.print();
-  stmn.increment();
+  stmn.increment();  // stmn++;
   //b.input();  //std::cout << b.magnitude() << std::endl;  //b.print();  //b.negate();  //b.print();
   
   bool b1 = true;

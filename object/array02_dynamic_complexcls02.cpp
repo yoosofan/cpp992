@@ -108,7 +108,7 @@ int main(){
 void test(void){
   myArray a;
   a.testInput();
-  a.n = 2;
+  // a.n = 2;
   a.print();
   complexCls d = a.sum();
   d.print();

@@ -39,7 +39,7 @@ struct myArray{
     a = nullptr;
   }
   
-  ~myArray(){
+  ~myArray(){ //destructor
     std::cout << "myArray Destructor" << std::endl;
     std::cout << "n: " << n << std::endl;
     if(n > 0 )

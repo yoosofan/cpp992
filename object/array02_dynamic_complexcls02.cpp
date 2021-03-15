@@ -69,6 +69,13 @@ struct myArray{
       a[i].img = m+1;
     }
   }
+  
+  void remove(void){
+    if( n > 0)
+      delete[] a;
+    n = 0;
+    a = nullptr;
+  }
 
   void print(void){
     std::cout << "n: " << n << std::endl;
@@ -102,4 +109,5 @@ void test(void){
   a.print();
   complexCls d = a.sum();
   d.print();
+  //a.remove();
 }

@@ -71,10 +71,8 @@ class myArray{
     static int m = 6;
     m++;
     a = new complexCls[n = m];
-    for(int i=0; i < n; i++){
-      a[i].re = m+1;
-      a[i].img = m+1;
-    }
+    for(int i=0; i < n; i++)
+      a[i] = complexCls(m+1, m+1);
   }
   
   void remove(void){

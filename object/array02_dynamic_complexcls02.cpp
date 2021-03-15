@@ -10,6 +10,11 @@ class complexCls{
     img = i;
   }
 
+  void addMe(complexCls a){
+    re += a.re;
+    img += a.img;
+  }
+
   void input(void){
     std::cout << "Enter real part: ";
     std::cin >> re;
@@ -106,10 +111,8 @@ class myArray{
   
   complexCls sum(void){
     complexCls d;
-    for(int i = 0; i < n ; i++ ){
-      d.re += a[i].re;
-      d.img += a[i].img;
-    }
+    for(int i = 0; i < n ; i++ )
+      d.addMe(a[i]);
     return d;
   }
 };

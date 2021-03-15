@@ -1,41 +1,15 @@
-bject$ g++ array02_dynamic_complexcls02.cpp 
+object$ g++ array02_dynamic_complexcls02.cpp 
 array02_dynamic_complexcls02.cpp: In member function ‘void myArray::testInput()’:
-array02_dynamic_complexcls02.cpp:70:12: error: ‘double complexCls::re’ is private within this context
-   70 |       a[i].re = m+1;
+array02_dynamic_complexcls02.cpp:75:12: error: ‘double complexCls::re’ is private within this context
+   75 |       a[i].re = m+1;
       |            ^~
 array02_dynamic_complexcls02.cpp:5:10: note: declared private here
     5 |   double re, img;
       |          ^~
-array02_dynamic_complexcls02.cpp:71:12: error: ‘double complexCls::img’ is private within this context
-   71 |       a[i].img = m+1;
+array02_dynamic_complexcls02.cpp:76:12: error: ‘double complexCls::img’ is private within this context
+   76 |       a[i].img = m+1;
       |            ^~~
 array02_dynamic_complexcls02.cpp:5:14: note: declared private here
     5 |   double re, img;
       |              ^~~
-array02_dynamic_complexcls02.cpp: In member function ‘complexCls myArray::sum()’:
-array02_dynamic_complexcls02.cpp:110:9: error: ‘double complexCls::re’ is private within this context
-  110 |       d.re += a[i].re;
-      |         ^~
-array02_dynamic_complexcls02.cpp:5:10: note: declared private here
-    5 |   double re, img;
-      |          ^~
-array02_dynamic_complexcls02.cpp:110:20: error: ‘double complexCls::re’ is private within this context
-  110 |       d.re += a[i].re;
-      |                    ^~
-array02_dynamic_complexcls02.cpp:5:10: note: declared private here
-    5 |   double re, img;
-      |          ^~
-array02_dynamic_complexcls02.cpp:111:9: error: ‘double complexCls::img’ is private within this context
-  111 |       d.img += a[i].img;
-      |         ^~~
-array02_dynamic_complexcls02.cpp:5:14: note: declared private here
-    5 |   double re, img;
-      |              ^~~
-array02_dynamic_complexcls02.cpp:111:21: error: ‘double complexCls::img’ is private within this context
-  111 |       d.img += a[i].img;
-      |                     ^~~
-array02_dynamic_complexcls02.cpp:5:14: note: declared private here
-    5 |   double re, img;
-      |              ^~~
 object$ 
-

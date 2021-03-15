@@ -1,15 +1,20 @@
-object$ g++ array02_dynamic_complexcls02.cpp 
-array02_dynamic_complexcls02.cpp: In member function ‘void myArray::testInput()’:
-array02_dynamic_complexcls02.cpp:75:12: error: ‘double complexCls::re’ is private within this context
-   75 |       a[i].re = m+1;
-      |            ^~
-array02_dynamic_complexcls02.cpp:5:10: note: declared private here
-    5 |   double re, img;
-      |          ^~
-array02_dynamic_complexcls02.cpp:76:12: error: ‘double complexCls::img’ is private within this context
-   76 |       a[i].img = m+1;
-      |            ^~~
-array02_dynamic_complexcls02.cpp:5:14: note: declared private here
-    5 |   double re, img;
-      |              ^~~
-object$ 
+n: 7
+a[0]:(8, 8)
+a[1]:(8, 8)
+a[2]:(8, 8)
+a[3]:(8, 8)
+a[4]:(8, 8)
+a[5]:(8, 8)
+a[6]:(8, 8)
+(8, 8)
+n: 7
+a[0]:(8, 8)
+a[1]:(8, 8)
+a[2]:(8, 8)
+a[3]:(8, 8)
+a[4]:(56, 56)
+a[5]:(8, 8)
+a[6]:(8, 8)
+(56, 56)
+myArray Destructor
+n: 7

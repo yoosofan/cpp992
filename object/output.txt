@@ -1,20 +1,41 @@
-n: 7
-a[0]:(8, 8)
-a[1]:(8, 8)
-a[2]:(8, 8)
-a[3]:(8, 8)
-a[4]:(8, 8)
-a[5]:(8, 8)
-a[6]:(8, 8)
-(8, 8)
-n: 7
-a[0]:(8, 8)
-a[1]:(8, 8)
-a[2]:(8, 8)
-a[3]:(8, 8)
-a[4]:(56, 56)
-a[5]:(8, 8)
-a[6]:(8, 8)
-(56, 56)
-myArray Destructor
-n: 7
+bject$ g++ array02_dynamic_complexcls02.cpp 
+array02_dynamic_complexcls02.cpp: In member function ‘void myArray::testInput()’:
+array02_dynamic_complexcls02.cpp:70:12: error: ‘double complexCls::re’ is private within this context
+   70 |       a[i].re = m+1;
+      |            ^~
+array02_dynamic_complexcls02.cpp:5:10: note: declared private here
+    5 |   double re, img;
+      |          ^~
+array02_dynamic_complexcls02.cpp:71:12: error: ‘double complexCls::img’ is private within this context
+   71 |       a[i].img = m+1;
+      |            ^~~
+array02_dynamic_complexcls02.cpp:5:14: note: declared private here
+    5 |   double re, img;
+      |              ^~~
+array02_dynamic_complexcls02.cpp: In member function ‘complexCls myArray::sum()’:
+array02_dynamic_complexcls02.cpp:110:9: error: ‘double complexCls::re’ is private within this context
+  110 |       d.re += a[i].re;
+      |         ^~
+array02_dynamic_complexcls02.cpp:5:10: note: declared private here
+    5 |   double re, img;
+      |          ^~
+array02_dynamic_complexcls02.cpp:110:20: error: ‘double complexCls::re’ is private within this context
+  110 |       d.re += a[i].re;
+      |                    ^~
+array02_dynamic_complexcls02.cpp:5:10: note: declared private here
+    5 |   double re, img;
+      |          ^~
+array02_dynamic_complexcls02.cpp:111:9: error: ‘double complexCls::img’ is private within this context
+  111 |       d.img += a[i].img;
+      |         ^~~
+array02_dynamic_complexcls02.cpp:5:14: note: declared private here
+    5 |   double re, img;
+      |              ^~~
+array02_dynamic_complexcls02.cpp:111:21: error: ‘double complexCls::img’ is private within this context
+  111 |       d.img += a[i].img;
+      |                     ^~~
+array02_dynamic_complexcls02.cpp:5:14: note: declared private here
+    5 |   double re, img;
+      |              ^~~
+object$ 
+

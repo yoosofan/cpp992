@@ -1,9 +1,10 @@
 #include <iostream>
 #include <cmath>
 
-struct complexCls{
+class complexCls{
   double re, img;
 
+  public:
   complexCls(double r = 0, double i = 0){
     re = r;
     img = i;

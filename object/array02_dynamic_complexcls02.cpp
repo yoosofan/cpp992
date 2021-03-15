@@ -31,9 +31,11 @@ struct complexCls{
 };
 
 struct myArray{
+  private:
   complexCls *a;
   int n;
   
+  public:
   myArray(){
     n = 0;
     a = nullptr;

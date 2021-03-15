@@ -30,8 +30,7 @@ struct complexCls{
   }
 };
 
-struct myArray{
-  private:
+class myArray{
   complexCls *a;
   int n;
   

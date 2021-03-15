@@ -1,7 +1,20 @@
-object$ ./a.out >output.txt 
-object$ g++ array02_dynamic_complexcls02.cpp 
-array02_dynamic_complexcls02.cpp: In member function ‘void myArray::testInput()’:
-array02_dynamic_complexcls02.cpp:67:5: error: increment of read-only variable ‘m’
-   67 |     m++;
-      |     ^
-object$ 
+n: 7
+a[0]:(8, 8)
+a[1]:(8, 8)
+a[2]:(8, 8)
+a[3]:(8, 8)
+a[4]:(8, 8)
+a[5]:(8, 8)
+a[6]:(8, 8)
+(8, 8)
+n: 7
+a[0]:(8, 8)
+a[1]:(8, 8)
+a[2]:(8, 8)
+a[3]:(8, 8)
+a[4]:(56, 56)
+a[5]:(8, 8)
+a[6]:(8, 8)
+(56, 56)
+myArray Destructor
+n: 7

@@ -63,7 +63,7 @@ struct myArray{
   }
   
   void testInput(void){
-    static const int m = 6;
+    static int m = 6;
     m++;
     a = new complexCls[n = m];
     for(int i=0; i < n; i++){
@@ -130,6 +130,7 @@ void test(void){
   a.getIndex(5).print();
   complexCls d = a.sum();
   a.setIndex(4, d);
+  a.print();
   d.print();
   //a.remove();
 }

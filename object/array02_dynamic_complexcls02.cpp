@@ -63,7 +63,7 @@ struct myArray{
   }
   
   void testInput(void){
-    static int m = 100;
+    static const int m = 6;
     m++;
     a = new complexCls[n = m];
     for(int i=0; i < n; i++){
@@ -86,12 +86,24 @@ struct myArray{
       a[i].print();
     }
   }
-  complexCls retIndex(int index){
+
+  complexCls getIndex(int index){
     if(index < n) return a[index];
     std::cout << "Error out of array" << std::endl;
     return complexCls(-1,-1);
   }
 
+  bool setIndex(int index, complexCls b){
+    bool result = false;
+    if(index < n){
+      a[index] = b;
+      result = true;
+    }
+    else
+      std::cout << "out of array" << std::endl;
+    return result;
+  }
+  
   complexCls sum(void){
     complexCls d;
     for(int i = 0; i < n ; i++ ){
@@ -114,9 +126,10 @@ void test(void){
   myArray a;
   a.testInput();
   // a.n = 2;
-  //a.print();
-  a.retIndex(5).print();
+  a.print();
+  a.getIndex(5).print();
   complexCls d = a.sum();
+  a.setIndex(4, d);
   d.print();
   //a.remove();
 }

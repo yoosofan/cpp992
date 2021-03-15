@@ -1,4 +1,7 @@
-(102, 102)
-(10302, 10302)
-myArray Destructor
-n: 101
+object$ ./a.out >output.txt 
+object$ g++ array02_dynamic_complexcls02.cpp 
+array02_dynamic_complexcls02.cpp: In member function ‘void myArray::testInput()’:
+array02_dynamic_complexcls02.cpp:67:5: error: increment of read-only variable ‘m’
+   67 |     m++;
+      |     ^
+object$ 

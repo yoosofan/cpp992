@@ -119,9 +119,8 @@ void test(void);
 void testPointer(void);
 
 int main(){
-  //for(int i = 0 ; i < 100 ; i++)
-  testPointer();
-  //test();
+  //for(int i = 0 ; i < 100 ; i++) testPointer();
+  test();
   return 0;
 }
 

@@ -132,7 +132,7 @@ void testPointer(void){
     m1[i]=i*i;
   double* m2 = m1;
   for(i = 0;  i < 10; i++)
-    std::cout << m2[i] << endl;
+    std::cout << m2[i] << std::endl;
 }
 void test(void){
   myArray a;

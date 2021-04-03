@@ -37,7 +37,7 @@ class complexCls{
 };
 
 class myArray{
-  complexCls *a;
+  complexCls *a; // double* a;
   int n;
   
   public:

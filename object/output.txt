@@ -1,27 +1,16 @@
 object$ g++ array03_dynamic_complexcls02.cpp 
-object$ ./a.out
-n: 7
-a[0]:(8, 8)
-a[1]:(8, 8)
-a[2]:(8, 8)
-a[3]:(8, 8)
-a[4]:(8, 8)
-a[5]:(8, 8)
-a[6]:(8, 8)
-(8, 8)
-n: 7
-a[0]:(8, 8)
-a[1]:(8, 8)
-a[2]:(8, 8)
-a[3]:(8, 8)
-a[4]:(56, 56)
-a[5]:(8, 8)
-a[6]:(8, 8)
-(56, 56)
-myArray Destructor
-n: 7
-myArray Destructor
-n: 7
-free(): double free detected in tcache 2
-Aborted (core dumped)
+array03_dynamic_complexcls02.cpp: In function ‘int main()’:
+array03_dynamic_complexcls02.cpp:122:3: error: ‘testPointer’ was not declared in this scope
+  122 |   testPointer();
+      |   ^~~~~~~~~~~
+array03_dynamic_complexcls02.cpp: In function ‘void testPointer()’:
+array03_dynamic_complexcls02.cpp:135:27: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
+  135 |     std::cout << m2[i] << endl;
+      |                           ^~~~
+      |                           std::endl
+In file included from /usr/include/c++/9/iostream:39,
+                 from array03_dynamic_complexcls02.cpp:1:
+/usr/include/c++/9/ostream:599:5: note: ‘std::endl’ declared here
+  599 |     endl(basic_ostream<_CharT, _Traits>& __os)
+      |     ^~~~
 object$ 

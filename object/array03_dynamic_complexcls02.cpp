@@ -119,10 +119,21 @@ void test(void);
 
 int main(){
   //for(int i = 0 ; i < 100 ; i++)
+  testPointer();
   test();
   return 0;
 }
 
+void testPointer(void){
+  int i = 0;
+  double* m1;
+  m1 = new double[10];
+  for(i = 0 ; i < 10 ; i++) 
+    m1[i]=i*i;
+  double* m2 = m1;
+  for(i = 0;  i < 10; i++)
+    std::cout << m2[i] << endl;
+}
 void test(void){
   myArray a;
   a.testInput();
@@ -135,6 +146,6 @@ void test(void){
   d.print();
   //a.remove();
   myArray b;
-  //b = a;
+  b = a;
   b.print();
 }

@@ -146,6 +146,7 @@ void testPointer(void){
     std::cout << m2[i] << std::endl;
   // delete[] m1;
   delete[] m2;
+  m2 = nullptr;
 }
 void test(void){
   myArray a;

@@ -134,4 +134,6 @@ void test(void){
   a.print();
   d.print();
   //a.remove();
+  myArray b;
+  b = a;
 }

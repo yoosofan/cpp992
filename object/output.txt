@@ -1,35 +1,25 @@
 object$ g++ array03_dynamic_complexcls02.cpp 
 object$ ./a.out 
-0
-1
-4
-9
-16
-25
-36
-49
-64
-81
-m1 
-1
-2
-3
-0
-0
-0
-0
-0
-0
-0
-m2 
-0
-1
-4
-9
-16
-25
-36
-49
-64
-81
+n: 7
+a[0]:(8, 8)
+a[1]:(8, 8)
+a[2]:(8, 8)
+a[3]:(8, 8)
+a[4]:(8, 8)
+a[5]:(8, 8)
+a[6]:(8, 8)
+n: 7
+a[0]:(8, 8)
+a[1]:(8, 8)
+a[2]:(8, 8)
+a[3]:(8, 8)
+a[4]:(8, 8)
+a[5]:(8, 8)
+a[6]:(8, 8)
+myArray Destructor
+n: 7
+myArray Destructor
+n: 7
+free(): double free detected in tcache 2
+Aborted (core dumped)
 object$ 

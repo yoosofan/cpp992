@@ -116,6 +116,7 @@ class myArray{
 };
 
 void test(void);
+void testPointer(void);
 
 int main(){
   //for(int i = 0 ; i < 100 ; i++)

@@ -1,16 +1,15 @@
+1 file changed, 1 insertion(+), 1 deletion(-)
 object$ g++ array03_dynamic_complexcls02.cpp 
-array03_dynamic_complexcls02.cpp: In function ‘int main()’:
-array03_dynamic_complexcls02.cpp:122:3: error: ‘testPointer’ was not declared in this scope
-  122 |   testPointer();
-      |   ^~~~~~~~~~~
-array03_dynamic_complexcls02.cpp: In function ‘void testPointer()’:
-array03_dynamic_complexcls02.cpp:135:27: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
-  135 |     std::cout << m2[i] << endl;
-      |                           ^~~~
-      |                           std::endl
-In file included from /usr/include/c++/9/iostream:39,
-                 from array03_dynamic_complexcls02.cpp:1:
-/usr/include/c++/9/ostream:599:5: note: ‘std::endl’ declared here
-  599 |     endl(basic_ostream<_CharT, _Traits>& __os)
-      |     ^~~~
+object$ ./a.out 
+0
+1
+4
+9
+16
+25
+36
+49
+64
+81
 object$ 
+

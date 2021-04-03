@@ -134,9 +134,17 @@ void testPointer(void){
   double* m2 = m1;
   for(i = 0;  i < 10; i++)
     std::cout << m2[i] << std::endl;
-  double k1[10], k2[10];
+  double k1[10] = {1, 2, 3}, k2[10] = {1, 3, 3};
   //k1 = k2;
   m1 = k1;
+  std:: cout << "m1 " << std::endl;
+  for(i = 0;  i < 10; i++)
+    std::cout << m1[i] << std::endl;
+
+  std:: cout << "m2 " << std::endl;
+  for(i = 0;  i < 10; i++)
+    std::cout << m2[i] << std::endl;
+  
 }
 void test(void){
   myArray a;

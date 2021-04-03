@@ -127,7 +127,7 @@ int main(){
 
 void testPointer(void){
   int i = 0;
-  double* m1;
+  double* m1 = nullptr;
   m1 = new double[10];
   for(i = 0 ; i < 10 ; i++) 
     m1[i]=i*i;

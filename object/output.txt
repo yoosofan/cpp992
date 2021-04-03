@@ -1,5 +1,13 @@
-array03_dynamic_complexcls02.cpp: In function ‘void testPointer()’:
-array03_dynamic_complexcls02.cpp:138:8: error: invalid array assignment
-  138 |   k1 = k2;
-      |        ^~
+object$ g++ array03_dynamic_complexcls02.cpp 
+object$ ./a.out 
+0
+1
+4
+9
+16
+25
+36
+49
+64
+81
 object$ 

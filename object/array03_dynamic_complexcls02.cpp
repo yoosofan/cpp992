@@ -135,7 +135,7 @@ void testPointer(void){
   for(i = 0;  i < 10; i++)
     std::cout << m2[i] << std::endl;
   double k1[10] = {1, 2, 3}, k2[10] = {1, 3, 3};
-  //k1 = k2;
+  // k1 = k2;
   m1 = k1;
   std:: cout << "m1 " << std::endl;
   for(i = 0;  i < 10; i++)
@@ -144,7 +144,8 @@ void testPointer(void){
   std:: cout << "m2 " << std::endl;
   for(i = 0;  i < 10; i++)
     std::cout << m2[i] << std::endl;
-  
+  // delete[] m1;
+  delete[] m2;
 }
 void test(void){
   myArray a;

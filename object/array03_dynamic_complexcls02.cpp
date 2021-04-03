@@ -134,6 +134,8 @@ void testPointer(void){
   double* m2 = m1;
   for(i = 0;  i < 10; i++)
     std::cout << m2[i] << std::endl;
+  double k1[10], k2[10];
+  k1 = k2;
 }
 void test(void){
   myArray a;

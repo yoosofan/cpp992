@@ -38,6 +38,21 @@ in compleCls constructorre= 0	 img= 0
 in compleCls constructorre= 0	 img= 0
 in compleCls constructorre= 0	 img= 0
 copy constructor
+complexCls destructor
+complexCls destructor
+complexCls destructor
+complexCls destructor
+complexCls destructor
+complexCls destructor
+complexCls destructor
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+operator=
 n: 7
 a[0]:(1, -1)
 a[1]:(2, 0)

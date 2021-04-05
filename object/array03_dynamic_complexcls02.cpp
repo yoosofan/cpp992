@@ -60,6 +60,14 @@ class myArray{
     std::cout << "copy constructor" << std::endl;
   }
 
+  void operator=(const myArray& k){
+    delete[] a;
+    a = new complexCls[n = k.n];
+    for(int i = 0; i < n; i++)
+      a[i] = k.a[i];
+    std::cout << "operator=" << std::endl;
+  }
+
   ~myArray(){ //destructor
     std::cout << "myArray Destructor" << std::endl;
     std::cout << "n: " << n << std::endl;
@@ -68,7 +76,7 @@ class myArray{
     n = 0;
     a = nullptr;
   }
-      
+
   void input(void){
     do{
       std::cout << "Enter n > 0; ";
@@ -166,6 +174,6 @@ void test(void){
   a.testInput();  // a.n = 2;
   a.print();  //a.getIndex(5).print();  complexCls d = a.sum();  a.setIndex(4, d);  a.print();  d.print();
   myArray b = a; // myArray b(a); initialization
-  //b = a;
+  b = a;
   b.print();
 }

@@ -68,7 +68,7 @@ class myArray{
     delete[] a;
     copy(k);
     std::cout << "operator=" << std::endl;
-    return k;// ?
+    return *this;// ?
   }
 
   ~myArray(){ //destructor

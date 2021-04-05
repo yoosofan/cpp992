@@ -8,31 +8,45 @@ in compleCls constructorre= 0	 img= 0
 in compleCls constructorre= 0	 img= 0
 in compleCls constructorre= 0	 img= 0
 in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 8	 img= 8
+in compleCls constructorre= 1	 img= -1
 complexCls destructor
-in compleCls constructorre= 8	 img= 8
+in compleCls constructorre= 2	 img= 0
 complexCls destructor
-in compleCls constructorre= 8	 img= 8
+in compleCls constructorre= 3	 img= 1
 complexCls destructor
-in compleCls constructorre= 8	 img= 8
+in compleCls constructorre= 4	 img= 2
 complexCls destructor
-in compleCls constructorre= 8	 img= 8
+in compleCls constructorre= 5	 img= 3
 complexCls destructor
-in compleCls constructorre= 8	 img= 8
+in compleCls constructorre= 6	 img= 4
 complexCls destructor
-in compleCls constructorre= 8	 img= 8
+in compleCls constructorre= 7	 img= 5
 complexCls destructor
 n: 7
-a[0]:(8, 8)
-a[1]:(8, 8)
-a[2]:(8, 8)
-a[3]:(8, 8)
-a[4]:(8, 8)
-a[5]:(8, 8)
-a[6]:(8, 8)
-myArray constructor
+a[0]:(1, -1)
+a[1]:(2, 0)
+a[2]:(3, 1)
+a[3]:(4, 2)
+a[4]:(5, 3)
+a[5]:(6, 4)
+a[6]:(7, 5)
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+copy constructor
 myArray Destructor
-n: 0
+n: 7
+complexCls destructor
+complexCls destructor
+complexCls destructor
+complexCls destructor
+complexCls destructor
+complexCls destructor
+complexCls destructor
 myArray Destructor
 n: 7
 complexCls destructor

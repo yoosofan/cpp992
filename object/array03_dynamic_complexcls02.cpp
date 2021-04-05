@@ -178,6 +178,6 @@ void test(void){
   myArray b = a; // myArray b(a); initialization
   b = a; // b.operator=(a)
   myArray c;
-  c = b = a;
+  c = b = a; // c.opertor=(b.operator=(a))
   b.print();
 }

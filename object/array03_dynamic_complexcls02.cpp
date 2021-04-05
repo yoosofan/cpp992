@@ -176,6 +176,6 @@ void test(void){
   a.testInput();  // a.n = 2;
   a.print();  //a.getIndex(5).print();  complexCls d = a.sum();  a.setIndex(4, d);  a.print();  d.print();
   myArray b = a; // myArray b(a); initialization
-  b = a;
+  b = a; // b.operator=(a)
   b.print();
 }

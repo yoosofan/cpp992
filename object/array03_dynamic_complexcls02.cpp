@@ -52,7 +52,14 @@ class myArray{
     a = nullptr;
     std::cout << "myArray constructor" << std::endl;
   }
-  
+
+  myArray(const myArray& k){
+    a = new complexCls[n = k.n];
+    for(int i = 0 ; i < n; i++)
+      a[i] = k.a[i];
+    std::cout << "copy constructor" << std::endl;
+  }
+
   ~myArray(){ //destructor
     std::cout << "myArray Destructor" << std::endl;
     std::cout << "n: " << n << std::endl;

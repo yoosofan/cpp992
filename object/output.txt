@@ -1,12 +1,40 @@
 object$ g++ array03_dynamic_complexcls02.cpp 
-array03_dynamic_complexcls02.cpp: In function ‘void test()’:
-array03_dynamic_complexcls02.cpp:181:11: error: no match for ‘operator=’ (operand types are ‘myArray’ and ‘void’)
-  181 |   c = b = a;
-      |           ^
-array03_dynamic_complexcls02.cpp:67:8: note: candidate: ‘void myArray::operator=(const myArray&)’
-   67 |   void operator=(const myArray& k){
-      |        ^~~~~~~~
-array03_dynamic_complexcls02.cpp:67:33: note:   no known conversion for argument 1 from ‘void’ to ‘const myArray&’
-   67 |   void operator=(const myArray& k){
-      |                  ~~~~~~~~~~~~~~~^
+object$ ./a.out
+myArray constructor
+n: 7
+a[0]:(1, -1)
+a[1]:(2, 0)
+a[2]:(3, 1)
+a[3]:(4, 2)
+a[4]:(5, 3)
+a[5]:(6, 4)
+a[6]:(7, 5)
+copy constructor
+operator=
+copy constructor
+myArray Destructor
+n: 7
+myArray constructor
+operator=
+copy constructor
+operator=
+copy constructor
+myArray Destructor
+n: 7
+myArray Destructor
+n: 7
+n: 7
+a[0]:(1, -1)
+a[1]:(2, 0)
+a[2]:(3, 1)
+a[3]:(4, 2)
+a[4]:(5, 3)
+a[5]:(6, 4)
+a[6]:(7, 5)
+myArray Destructor
+n: 7
+myArray Destructor
+n: 7
+myArray Destructor
+n: 7
 object$ 

@@ -79,7 +79,7 @@ class myArray{
     m++;
     a = new complexCls[n = m];
     for(int i=0; i < n; i++)
-      a[i] = complexCls(m+1, m+1);
+      a[i] = complexCls(i+1, i-1);
   }
   
   void remove(void){
@@ -156,11 +156,9 @@ void testPointer(void){
 }
 void test(void){
   myArray a;
-  a.testInput();
-  // a.n = 2;
-  a.print();
-  //a.getIndex(5).print();  complexCls d = a.sum();  a.setIndex(4, d);  a.print();  d.print();
-  myArray b;
+  a.testInput();  // a.n = 2;
+  a.print();  //a.getIndex(5).print();  complexCls d = a.sum();  a.setIndex(4, d);  a.print();  d.print();
+  myArray b = a; // initialization
   //b = a;
   //b.print();
 }

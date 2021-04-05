@@ -46,6 +46,12 @@ class myArray{
   complexCls *a; // double* a;
   int n;
   
+  void copy(const myArray& k){
+    a = new complexCls[n = k.n];
+    for(int i = 0 ; i < n; i++)
+      a[i] = k.a[i];
+  }
+
   public:
   myArray(){
     n = 0;
@@ -54,17 +60,13 @@ class myArray{
   }
 
   myArray(const myArray& k){
-    a = new complexCls[n = k.n];
-    for(int i = 0 ; i < n; i++)
-      a[i] = k.a[i];
+    copy(k);
     std::cout << "copy constructor" << std::endl;
   }
 
   void operator=(const myArray& k){
     delete[] a;
-    a = new complexCls[n = k.n];
-    for(int i = 0; i < n; i++)
-      a[i] = k.a[i];
+    copy(k);
     std::cout << "operator=" << std::endl;
   }
 

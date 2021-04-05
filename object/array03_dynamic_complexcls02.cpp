@@ -167,5 +167,5 @@ void test(void){
   a.print();  //a.getIndex(5).print();  complexCls d = a.sum();  a.setIndex(4, d);  a.print();  d.print();
   myArray b = a; // initialization
   //b = a;
-  //b.print();
+  b.print();
 }

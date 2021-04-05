@@ -8,12 +8,12 @@ class complexCls{
   complexCls(double r = 0, double i = 0){
     re = r;
     img = i;
-    std::cout << "in compleCls constructor";
-    std::cout << "re= " << re << "\t img= " << img << std::endl;
+    // std::cout << "in compleCls constructor";
+    // std::cout << "re= " << re << "\t img= " << img << std::endl;
   }
 
   ~complexCls(){
-    std::cout << "complexCls destructor" << std::endl;
+    // std::cout << "complexCls destructor" << std::endl;
   }
 
   void addMe(complexCls a){

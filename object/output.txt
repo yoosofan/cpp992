@@ -1,27 +1,6 @@
 object$ g++ array03_dynamic_complexcls02.cpp 
 object$ ./a.out
 myArray constructor
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 1	 img= -1
-complexCls destructor
-in compleCls constructorre= 2	 img= 0
-complexCls destructor
-in compleCls constructorre= 3	 img= 1
-complexCls destructor
-in compleCls constructorre= 4	 img= 2
-complexCls destructor
-in compleCls constructorre= 5	 img= 3
-complexCls destructor
-in compleCls constructorre= 6	 img= 4
-complexCls destructor
-in compleCls constructorre= 7	 img= 5
-complexCls destructor
 n: 7
 a[0]:(1, -1)
 a[1]:(2, 0)
@@ -30,28 +9,7 @@ a[3]:(4, 2)
 a[4]:(5, 3)
 a[5]:(6, 4)
 a[6]:(7, 5)
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
 copy constructor
-complexCls destructor
-complexCls destructor
-complexCls destructor
-complexCls destructor
-complexCls destructor
-complexCls destructor
-complexCls destructor
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
-in compleCls constructorre= 0	 img= 0
 operator=
 n: 7
 a[0]:(1, -1)
@@ -63,20 +21,6 @@ a[5]:(6, 4)
 a[6]:(7, 5)
 myArray Destructor
 n: 7
-complexCls destructor
-complexCls destructor
-complexCls destructor
-complexCls destructor
-complexCls destructor
-complexCls destructor
-complexCls destructor
 myArray Destructor
 n: 7
-complexCls destructor
-complexCls destructor
-complexCls destructor
-complexCls destructor
-complexCls destructor
-complexCls destructor
-complexCls destructor
 object$ 

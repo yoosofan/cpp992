@@ -1,5 +1,27 @@
 object$ g++ array03_dynamic_complexcls02.cpp 
-object$ ./a.out 
+object$ ./a.out
+myArray constructor
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 0	 img= 0
+in compleCls constructorre= 8	 img= 8
+complexCls destructor
+in compleCls constructorre= 8	 img= 8
+complexCls destructor
+in compleCls constructorre= 8	 img= 8
+complexCls destructor
+in compleCls constructorre= 8	 img= 8
+complexCls destructor
+in compleCls constructorre= 8	 img= 8
+complexCls destructor
+in compleCls constructorre= 8	 img= 8
+complexCls destructor
+in compleCls constructorre= 8	 img= 8
+complexCls destructor
 n: 7
 a[0]:(8, 8)
 a[1]:(8, 8)
@@ -8,18 +30,16 @@ a[3]:(8, 8)
 a[4]:(8, 8)
 a[5]:(8, 8)
 a[6]:(8, 8)
-n: 7
-a[0]:(8, 8)
-a[1]:(8, 8)
-a[2]:(8, 8)
-a[3]:(8, 8)
-a[4]:(8, 8)
-a[5]:(8, 8)
-a[6]:(8, 8)
+myArray constructor
+myArray Destructor
+n: 0
 myArray Destructor
 n: 7
-myArray Destructor
-n: 7
-free(): double free detected in tcache 2
-Aborted (core dumped)
+complexCls destructor
+complexCls destructor
+complexCls destructor
+complexCls destructor
+complexCls destructor
+complexCls destructor
+complexCls destructor
 object$ 

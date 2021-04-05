@@ -8,6 +8,12 @@ class complexCls{
   complexCls(double r = 0, double i = 0){
     re = r;
     img = i;
+    std::cout << "in compleCls constructor";
+    std::cout << "re= " << re << "\t img= " << img << std::endl;
+  }
+
+  ~complexCls(){
+    std::cout << "complexCls destructor" << std::endl;
   }
 
   void addMe(complexCls a){
@@ -44,6 +50,7 @@ class myArray{
   myArray(){
     n = 0;
     a = nullptr;
+    std::cout << "myArray constructor" << std::endl;
   }
   
   ~myArray(){ //destructor
@@ -154,6 +161,6 @@ void test(void){
   a.print();
   //a.getIndex(5).print();  complexCls d = a.sum();  a.setIndex(4, d);  a.print();  d.print();
   myArray b;
-  b = a;
-  b.print();
+  //b = a;
+  //b.print();
 }

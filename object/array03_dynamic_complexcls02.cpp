@@ -64,7 +64,7 @@ class myArray{
     std::cout << "copy constructor" << std::endl;
   }
 
-  myArray operator=(const myArray& k){
+  myArray& operator=(const myArray& k){
     delete[] a;
     copy(k);
     std::cout << "operator=" << std::endl;

@@ -5,7 +5,7 @@
 using namespace std;
 
 double& setValues( int i ) {
-  double vals[] = {10.1, 12.6, 33.1, 24.1, 50.0};
+  static double vals[] = {10.1, 12.6, 33.1, 24.1, 50.0};
   cout << "before change" << endl;
   for ( int i = 0; i < 5; i++ ) {
     cout << "vals[" << i << "] = ";

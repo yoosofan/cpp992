@@ -29,7 +29,7 @@ class complexCls{
 
   void input(void){
     cout << "Enter real:"; 
-    cin >> this->r; 
+    cin >> this->r; // (*this).r
     cout << "Enter imaginary:"; 
     cin >> i;
   }

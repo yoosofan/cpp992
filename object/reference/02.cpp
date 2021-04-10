@@ -7,7 +7,7 @@ int global_num=1;
 int& test();
 int main(){
     test() = 5;
-    cout << global_num<<endl;
+    cout << global_num << endl;
     return 0;
 }
 int& test(){

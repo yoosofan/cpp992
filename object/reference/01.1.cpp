@@ -1,5 +1,6 @@
 #include<iostream>
 void f1(int*);
+int * f2(void);
 int main(){
 	int a = 0;
 	int& b = a;
@@ -17,11 +18,18 @@ int main(){
 	std::cout << __LINE__ << ":\t" << a << "\t" << c << "\t" << std::endl;
   f1(pa);
   std::cout << __LINE__ << ":\t" << a << "\t" << c << "\t" << std::endl;
-	return 0;
+	pa = f2();
+  std:: cout << __LINE__ << ":\t" << *pa << std::endl;
+  return 0;
 }
 
 void f1(int* pk){
   std::cout << __LINE__ << "\t pk: " << *pk << std::endl;
   *pk = 7;
   std::cout << __LINE__ << "\t pk: " << *pk << std::endl;
+}
+
+int* f2(void){
+  int a = 5;
+  return &a;
 }

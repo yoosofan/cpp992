@@ -9,5 +9,5 @@ int main(){
 }
 int& test(){
 	static int num=0;
-    return num;
+  return num;
 }

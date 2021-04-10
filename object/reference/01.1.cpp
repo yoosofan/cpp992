@@ -21,7 +21,7 @@ int main(){
 }
 
 void f1(int* pk){
-  std::cout << __LINE__ << "pk: " << pk << std::endl;
+  std::cout << __LINE__ << "pk: " << *pk << std::endl;
   *pk = 7;
-  std::cout << __LINE__ << "pk: " << pk << std::endl;
+  std::cout << __LINE__ << "pk: " << *pk << std::endl;
 }

@@ -9,7 +9,7 @@ int main(){
   int *pa = nullptr;
   pa = & a;
   std:: cout << *pa << std::endl;
-  ps = & c;
+  pa = & c;
   c = 4;
   std:: cout << *pa << std::endl;
   b = c;

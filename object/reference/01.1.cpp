@@ -1,6 +1,6 @@
 #include<iostream>
 void f1(int*);
-void f1(int&);
+void f3(int&);
 int * f2(void);
 int main(){
 	int a = 0;

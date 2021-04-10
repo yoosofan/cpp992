@@ -6,5 +6,13 @@ int main(){
 	std::cout << a << "\t" << c << "\t" << std::endl;
 	b = 3;
 	std::cout << a << "\t" << b << c << "\t" << std::endl;
+  int *pa = nullptr;
+  pa = & a;
+  std:: cout << *pa << std::endl;
+  ps = & c;
+  c = 4;
+  std:: cout << *pa << std::endl;
+  b = c;
+	std::cout << a << "\t" << c << "\t" << std::endl;
 	return 0;
 }

@@ -13,12 +13,28 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-class complexCls{ public: double r,i;
-  complexCls(int m=0,int n=0){r=m;i=n;}
+
+class complexCls{ 
+  public: 
+  double r,i;
+  
+  complexCls(int m=0, int n=0)
+  {r=m;i=n;}
+  
   void Show(void){cout<<r<<"+ i "<<i<<endl;}
+  
   double Magnitud(void){return sqrt(r*r+i*i);}
-  void input(void){cout<<"Enter real:"; cin>>r; cout<<"Enter imaginary:"; cin>>i;}
-  complexCls add(complexCls b){complexCls c; c.r = r + b.r;  c.i = this->i + b.i; return c; }
+  void input(void){
+    cout<<"Enter real:"; 
+    cin>>r; 
+    cout<<"Enter imaginary:"; cin>>i;
+  }
+  complexCls add(complexCls b){
+    complexCls c; 
+    c.r = r + b.r;  
+    c.i = this->i + b.i; 
+    return c; 
+  }
 };
 complexCls add(complexCls a, complexCls b)
 {complexCls c=a; c.r += b.r; c.i += b.i; return c;}

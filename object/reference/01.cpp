@@ -5,7 +5,7 @@ int main(){
 	int c = a;
 	std::cout << a << "\t" << c << "\t" << std::endl;
 	b = 3;
-	std::cout << a << "\t" << b << c << "\t" << std::endl;
+	std::cout << a << "\t" << b << '\t' << c << "\t" << std::endl;
   int *pa = nullptr;
   pa = & a;
   std:: cout << *pa << std::endl;

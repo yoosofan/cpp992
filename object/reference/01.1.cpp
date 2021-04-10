@@ -27,7 +27,8 @@ int main(){
   f3(a);
   std::cout << __LINE__ << ":\t" << a << "\t" << c << "\t" << std::endl;
   std::cout << __LINE__ << ":\t" << f4() <<  std::endl;
-
+  f4() = 21;
+  std::cout << __LINE__ << ":\t" << f4() <<  std::endl;
   return 0;
 }
 

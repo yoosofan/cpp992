@@ -3,7 +3,7 @@
 void f1(int*);
 void f3(int&);
 int * f2(void);
-int& f2(void);
+int& f4(void);
 
 int main(){
 	int a = 0;

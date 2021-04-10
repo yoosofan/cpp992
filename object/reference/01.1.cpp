@@ -1,7 +1,10 @@
 #include<iostream>
+
 void f1(int*);
 void f3(int&);
 int * f2(void);
+int& f2(void);
+
 int main(){
 	int a = 0;
 	int& b = a;
@@ -23,6 +26,7 @@ int main(){
   std:: cout << __LINE__ << ":\t" << *pa << std::endl;
   f3(a);
   std::cout << __LINE__ << ":\t" << a << "\t" << c << "\t" << std::endl;
+  std::cout << __LINE__ << ":\t" << f4() <<  std::endl;
 
   return 0;
 }
@@ -40,4 +44,9 @@ int* f2(void){
 
 void f3(int& z){
   z = 9;
+}
+
+int& f4(void){
+  static int a = 17;
+  return a;
 }

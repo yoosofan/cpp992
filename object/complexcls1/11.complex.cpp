@@ -49,15 +49,17 @@ complexCls add(complexCls a, complexCls b){
   return c;
 }
 
+void f1(void);
+
+int main(){
+  f1(); 
+  return 0;
+}
+
 void f1(void){
   complexCls a(2,3), b(2,1), c; 
   c = a.add(b); 
   c.Show(); 
   c = add(a, b); 
   c.Show();
-}
-
-int main(){
-  f1(); 
-  return 0;
 }

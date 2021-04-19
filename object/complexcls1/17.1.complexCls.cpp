@@ -18,7 +18,7 @@ class complexCls{
 
   public:
 
-  explicit complexCls(double m = 0 , double n = 0){
+  complexCls(double m = 0 , double n = 0){
     r = m;
     i = n;
   }

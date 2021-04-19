@@ -14,7 +14,9 @@
 using namespace std;
 class complexCls{
   double r = 0, i = 0;
-   
+
+  public:
+
   explicit complexCls(double m = 0 , double n = 0){
     r = m;
     i = n;

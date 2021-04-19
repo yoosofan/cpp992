@@ -57,13 +57,14 @@ class complexCls{
 int f1(void){
   complexCls a(2, 3), b(2, 1), c(a);
   c = a + b;
+  b.Show();
   c.Show();
   c = add(a, b);
   c.Show();
   c = a + b + c; // c = a.operator+(b.operator+(c);
   c.Show();
-  
 }
+
 int main(){
   f1();
   return 0;

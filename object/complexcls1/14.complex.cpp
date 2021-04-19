@@ -24,7 +24,7 @@ class complexCls{
   }
 
   void Show(void){
-    cout << r << "+ i " << i << endl;
+    cout << this -> r << "+ i " << i << endl;
   }
 
   double Magnitude(void){

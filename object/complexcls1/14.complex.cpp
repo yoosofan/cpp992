@@ -46,6 +46,7 @@ class complexCls{
   }
 
   friend complexCls add(complexCls a, complexCls b);
+
 };
 
 complexCls add(complexCls a, complexCls b){

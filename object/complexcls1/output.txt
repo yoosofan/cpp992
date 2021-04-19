@@ -1,0 +1,12 @@
+complexcls1$ g++ 17.complexCls.cpp 
+17.complexCls.cpp: In function ‘int main()’:
+17.complexCls.cpp:50:22: error: conversion from ‘int’ to non-scalar type ‘complexCls’ requested
+   50 |       complexCls a = 2; // a(2);
+      |                      ^
+17.complexCls.cpp:51:18: error: redeclaration of ‘complexCls a’
+   51 |       complexCls a(2, 3);
+      |                  ^
+17.complexCls.cpp:50:18: note: ‘complexCls a’ previously declared here
+   50 |       complexCls a = 2; // a(2);
+      |                  ^
+complexcls1$ 

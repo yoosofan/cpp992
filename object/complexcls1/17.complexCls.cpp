@@ -47,7 +47,7 @@ class complexCls{
 }; 
 
 int main(){
-      //complexCls a=2;//(2,3);
+      complexCls a = 2; // a(2);
       complexCls a(2, 3);
       complexCls b(4, 5);
       complexCls c;

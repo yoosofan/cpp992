@@ -22,13 +22,6 @@ class complexCls{
     r = m;
     i = n;
   }
-   
-  /*complexCls(double m = 0 , double n = 0){
-    r = m;
-    i = n;
-  }*/
-   
-   //complexCls(int m=0 , int n=0) {r=m;i=n;}
 
   void Show(){
     cout << '(' << r << ',' << i << ')' << '\t' << endl;

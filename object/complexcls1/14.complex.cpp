@@ -45,16 +45,14 @@ class complexCls{
     return c;
   }
 
-  friend complexCls add(complexCls a, complexCls b);
+  friend complexCls add(complexCls a, complexCls b){
+    complexCls c = a;
+    c.r += b.r;
+    c.i += b.i;
+    return c;
+  }
 
 };
-
-complexCls add(complexCls a, complexCls b){
-  complexCls c = a;
-  c.r += b.r;
-  c.i += b.i;
-  return c;
-}
 
 void f1(void){
   complexCls a(2, 3), b(2, 1), c(a);

@@ -38,7 +38,7 @@ class complexCls{
     cin >> i;
   }
 
-  complexCls operator +(complexCls b){
+  complexCls operator +(complexCls b){ // operator overload
     complexCls c;
     c.r = r + b.r;
     c.i = this->i + b.i;

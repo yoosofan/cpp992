@@ -13,7 +13,7 @@
 #include <cmath>
 using namespace std;
 struct complexCls{
-  double re = 0, im = 0;
+  double r = 0, i = 0;
    
   explicit complexCls(double m = 0 , double n = 0){
     r = m;
@@ -53,5 +53,5 @@ int main(){
       c = a + b; 
       c.Show();
       //c = a+1;
-      c = a + 12;
+      // c = a + 12;
 }

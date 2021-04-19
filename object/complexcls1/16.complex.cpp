@@ -67,7 +67,7 @@ void f2(void){
   complexCls cp[] = { {2,3}, {4,6}, {7,8} };
   cp[0].Show();
   cp[0] = cp[1] + cp[2];
-  cp[0].show();
+  cp[0].Show();
 }
 
 int main(){

@@ -54,7 +54,7 @@ class complexCls{
 
 };
 
-int f1(void){
+void f1(void){
   complexCls a(2, 3), b(2, 1), c(a);
   c = a + b;
   b.Show();

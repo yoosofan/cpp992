@@ -1,7 +1,6 @@
 /* 
- * Copyright 2018 Ahmad Yoosofan <yoosofan@myfastmail.com>, 
+ * Copyright 2021 Ahmad Yoosofan <yoosofan@myfastmail.com>, 
  * http://yoosofan.github.io
- * http://yoosofan.kashanu.ac.ir
  * University of Kashan (http://kashanu.ac.ir)
  * 2014/05/03
  * This program is free software; you can redistribute it and/or modify
@@ -51,7 +50,7 @@ class complexCls{
 };
 
 void f1(void){
-  complexCls a(2, 3), b(2,1), c; 
+  complexCls a(2, 3), b(2, 1), c; 
   c = a.add(b); 
   c.Show(); 
   c = add(a, b); 

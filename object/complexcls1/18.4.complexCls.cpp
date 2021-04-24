@@ -45,6 +45,13 @@ class complexCls{
     return result;
   }
 
+  friend complexCls operator *(const complexCls& a, const complexCls& b){
+    complexCls result ;
+    result.r = a.r * b.r - a.i * b.i;
+    result.i = a.i * b.r + a.r * b.i;
+    return result;
+  }
+
 }; 
 
 int main(){

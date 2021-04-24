@@ -31,10 +31,10 @@ class complexCls{
     return sqrt(r*r + i*i);
   }
 
-  complexCls operator +(const complexCls& b){
-    complexCls result = *this ;
-    result.r +=  b.r;
-    result.i +=  b.i;
+  friend complexCls operator +(const complexCls& a, const complexCls& b){
+    complexCls result ;
+    result.r = a.r + b.r;
+    result.i = a.i + b.i;
     return result;
   }
 }; 

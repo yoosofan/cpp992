@@ -22,11 +22,11 @@ class complexCls{
     i = n;
   }
 
-  void Show(){
+  void Show() const {
     cout << '(' << r << ',' << i << ')' << '\t' << endl;
   }
 
-  double Magnitude(){
+  double Magnitude(void) const {
     return sqrt(r*r + i*i);
   }
 

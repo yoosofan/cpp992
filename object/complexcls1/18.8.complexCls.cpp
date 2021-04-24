@@ -31,23 +31,21 @@ class complexCls{
   }
 
   complexCls operator++(void){   // ++a
-   cout << "not int";
    i++;
    r++;
    return *this;
   }
 
   complexCls operator++(int dummy){ // a++
-   cout << "int";
    complexCls result = *this;
    r++;
    i++;
    return result;
   }
 
-  friend bool operator ==(const complexCls& a, const complexCls& b){
-    return a.r == b.r && a.i == b.i ;
-  }
+  //~ friend bool operator ==(const complexCls& a, const complexCls& b){
+    //~ return a.r == b.r && a.i == b.i ;
+  //~ }
 
   friend complexCls operator +(const complexCls& a, const complexCls& b){
     complexCls result ;
@@ -83,5 +81,9 @@ int main(){
       c = 17 * a; // c = operator +(complexCls(17), b)
       c = ++ b;
       c = a ++;
+      if ( c == a)
+        cout << "c == a" << endl;
+      else
+        cout << "c != a" << endl;
       c.Show();
 }

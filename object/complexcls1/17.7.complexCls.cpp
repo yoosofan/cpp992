@@ -46,7 +46,7 @@ int main(){
       complexCls b(4, 5);
       complexCls c;
       c.Show();
-      c = a + b; 
+      c = a + b; // c = a.operator +(b)
       c.Show();
-      c = 17 + a;
+      c = 17 + a; // c = 17.operator +(b)
 }

@@ -103,6 +103,13 @@ int main(){
         cout << "c != a" << endl;
       else
         cout << "c == a" << endl;
-
+      if(!c)
+        cout << "c is not zero" << endl;
       c.Show();
+      c = complexCls(0,0);
+      if(!c)
+        cout << "c is not zero" << endl;
+      else
+        cout << "c is zero" << endl;
+      
 }

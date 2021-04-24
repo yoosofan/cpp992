@@ -47,6 +47,10 @@ class complexCls{
     return a.r == b.r && a.i == b.i ;
   }
 
+  friend bool operator !=(const complexCls& a, const complexCls& b){
+    return a.r != b.r || a.i != b.i ;
+  }
+
   friend complexCls operator +(const complexCls& a, const complexCls& b){
     complexCls result ;
     result.r = a.r + b.r;
@@ -85,5 +89,10 @@ int main(){
         cout << "c == a" << endl;
       else
         cout << "c != a" << endl;
+      if ( c != a)
+        cout << "c != a" << endl;
+      else
+        cout << "c == a" << endl;
+
       c.Show();
 }

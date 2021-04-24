@@ -1,210 +1,202 @@
-complexcls1$ g++ 17.4.complexCls.cpp 
-17.4.complexCls.cpp: In function ‘int main()’:
-17.4.complexCls.cpp:51:13: error: no match for ‘operator+’ (operand types are ‘complexCls’ and ‘int’)
-   51 |       c = a + 17;
-      |           ~ ^ ~~
-      |           |   |
-      |           |   int
-      |           complexCls
+.7.complexCls.cpp: In function ‘int main()’:
+17.7.complexCls.cpp:51:14: error: no match for ‘operator+’ (operand types are ‘int’ and ‘complexCls’)
+   51 |       c = 17 + a;
+      |           ~~ ^ ~
+      |           |    |
+      |           int  complexCls
 In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
                  from /usr/include/c++/9/bits/char_traits.h:39,
                  from /usr/include/c++/9/ios:40,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/stl_iterator.h:423:5: note: candidate: ‘template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)’
   423 |     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
       |     ^~~~~~~~
 /usr/include/c++/9/bits/stl_iterator.h:423:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘int’
-   51 |       c = a + 17;
-      |               ^~
+17.7.complexCls.cpp:51:16: note:   ‘complexCls’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+   51 |       c = 17 + a;
+      |                ^
 In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
                  from /usr/include/c++/9/bits/char_traits.h:39,
                  from /usr/include/c++/9/ios:40,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/stl_iterator.h:1219:5: note: candidate: ‘template<class _Iterator> std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)’
  1219 |     operator+(typename move_iterator<_Iterator>::difference_type __n,
       |     ^~~~~~~~
 /usr/include/c++/9/bits/stl_iterator.h:1219:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘int’
-   51 |       c = a + 17;
-      |               ^~
+17.7.complexCls.cpp:51:16: note:   ‘complexCls’ is not derived from ‘const std::move_iterator<_IteratorL>’
+   51 |       c = 17 + a;
+      |                ^
 In file included from /usr/include/c++/9/string:55,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/basic_string.h:6020:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
  6020 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
       |     ^~~~~~~~
 /usr/include/c++/9/bits/basic_string.h:6020:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   ‘complexCls’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
-   51 |       c = a + 17;
-      |               ^~
+17.7.complexCls.cpp:51:16: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   51 |       c = 17 + a;
+      |                ^
 In file included from /usr/include/c++/9/string:56,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/basic_string.tcc:1158:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
  1158 |     operator+(const _CharT* __lhs,
       |     ^~~~~~~~
 /usr/include/c++/9/bits/basic_string.tcc:1158:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   mismatched types ‘const _CharT*’ and ‘complexCls’
-   51 |       c = a + 17;
-      |               ^~
+17.7.complexCls.cpp:51:16: note:   mismatched types ‘const _CharT*’ and ‘int’
+   51 |       c = 17 + a;
+      |                ^
 In file included from /usr/include/c++/9/string:56,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/basic_string.tcc:1174:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
  1174 |     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
       |     ^~~~~~~~
 /usr/include/c++/9/bits/basic_string.tcc:1174:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
-   51 |       c = a + 17;
-      |               ^~
+17.7.complexCls.cpp:51:16: note:   ‘complexCls’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   51 |       c = 17 + a;
+      |                ^
 In file included from /usr/include/c++/9/string:55,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/basic_string.h:6057:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)’
  6057 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
       |     ^~~~~~~~
 /usr/include/c++/9/bits/basic_string.h:6057:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   ‘complexCls’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
-   51 |       c = a + 17;
-      |               ^~
+17.7.complexCls.cpp:51:16: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   51 |       c = 17 + a;
+      |                ^
 In file included from /usr/include/c++/9/string:55,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/basic_string.h:6073:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)’
  6073 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
       |     ^~~~~~~~
 /usr/include/c++/9/bits/basic_string.h:6073:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   ‘complexCls’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
-   51 |       c = a + 17;
-      |               ^~
+17.7.complexCls.cpp:51:16: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   51 |       c = 17 + a;
+      |                ^
 In file included from /usr/include/c++/9/string:55,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/basic_string.h:6085:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
  6085 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
       |     ^~~~~~~~
 /usr/include/c++/9/bits/basic_string.h:6085:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   ‘complexCls’ is not derived from ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
-   51 |       c = a + 17;
-      |               ^~
+17.7.complexCls.cpp:51:16: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   51 |       c = 17 + a;
+      |                ^
 In file included from /usr/include/c++/9/string:55,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/basic_string.h:6091:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
  6091 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
       |     ^~~~~~~~
 /usr/include/c++/9/bits/basic_string.h:6091:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   ‘complexCls’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
-   51 |       c = a + 17;
-      |               ^~
+17.7.complexCls.cpp:51:16: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   51 |       c = 17 + a;
+      |                ^
 In file included from /usr/include/c++/9/string:55,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/basic_string.h:6097:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
  6097 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
       |     ^~~~~~~~
 /usr/include/c++/9/bits/basic_string.h:6097:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   ‘complexCls’ is not derived from ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
-   51 |       c = a + 17;
-      |               ^~
+17.7.complexCls.cpp:51:16: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   51 |       c = 17 + a;
+      |                ^
 In file included from /usr/include/c++/9/string:55,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/basic_string.h:6109:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
  6109 |     operator+(const _CharT* __lhs,
       |     ^~~~~~~~
 /usr/include/c++/9/bits/basic_string.h:6109:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   mismatched types ‘const _CharT*’ and ‘complexCls’
-   51 |       c = a + 17;
-      |               ^~
+17.7.complexCls.cpp:51:16: note:   mismatched types ‘const _CharT*’ and ‘int’
+   51 |       c = 17 + a;
+      |                ^
 In file included from /usr/include/c++/9/string:55,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/basic_string.h:6115:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
  6115 |     operator+(_CharT __lhs,
       |     ^~~~~~~~
 /usr/include/c++/9/bits/basic_string.h:6115:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
-   51 |       c = a + 17;
-      |               ^~
+17.7.complexCls.cpp:51:16: note:   ‘complexCls’ is not derived from ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   51 |       c = 17 + a;
+      |                ^
 In file included from /usr/include/c++/9/string:55,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/basic_string.h:6121:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)’
  6121 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
       |     ^~~~~~~~
 /usr/include/c++/9/bits/basic_string.h:6121:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   ‘complexCls’ is not derived from ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
-   51 |       c = a + 17;
-      |               ^~
+17.7.complexCls.cpp:51:16: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   51 |       c = 17 + a;
+      |                ^
 In file included from /usr/include/c++/9/string:55,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from 17.4.complexCls.cpp:13:
+                 from 17.7.complexCls.cpp:13:
 /usr/include/c++/9/bits/basic_string.h:6127:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)’
  6127 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
       |     ^~~~~~~~
 /usr/include/c++/9/bits/basic_string.h:6127:5: note:   template argument deduction/substitution failed:
-17.4.complexCls.cpp:51:15: note:   ‘complexCls’ is not derived from ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
-   51 |       c = a + 17;
-      |               ^~
-17.4.complexCls.cpp:34:21: note: candidate: ‘complexCls operator+(const complexCls&, const complexCls&)’
-   34 |   friend complexCls operator +(const complexCls& a, const complexCls& b){
-      |                     ^~~~~~~~
-17.4.complexCls.cpp:34:71: note:   no known conversion for argument 2 from ‘int’ to ‘const complexCls&’
-   34 |   friend complexCls operator +(const complexCls& a, const complexCls& b){
-      |                                                     ~~~~~~~~~~~~~~~~~~^
+17.7.complexCls.cpp:51:16: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   51 |       c = 17 + a;
+      |                ^
 complexcls1$ 
-complexcls1$ 
+

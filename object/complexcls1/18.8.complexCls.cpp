@@ -43,9 +43,9 @@ class complexCls{
    return result;
   }
 
-  //~ friend bool operator ==(const complexCls& a, const complexCls& b){
-    //~ return a.r == b.r && a.i == b.i ;
-  //~ }
+  friend bool operator ==(const complexCls& a, const complexCls& b){
+    return a.r == b.r && a.i == b.i ;
+  }
 
   friend complexCls operator +(const complexCls& a, const complexCls& b){
     complexCls result ;

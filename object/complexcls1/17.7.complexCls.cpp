@@ -1,4 +1,5 @@
 /* 
+ * Error
  * Copyright 2021 Ahmad Yoosofan <yoosofan@gmx.com>, 
  * http://yoosofan.github.io
  * University of Kashan (http://kashanu.ac.ir)
@@ -47,5 +48,5 @@ int main(){
       c.Show();
       c = a + b; 
       c.Show();
-      c = a + 17;
+      c = 17 + a;
 }

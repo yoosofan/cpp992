@@ -1,5 +1,4 @@
 /* 
- * Error
  * Copyright 2021 Ahmad Yoosofan <yoosofan@gmx.com>, 
  * http://yoosofan.github.io
  * University of Kashan (http://kashanu.ac.ir)

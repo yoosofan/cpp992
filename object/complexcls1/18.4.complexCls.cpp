@@ -1,5 +1,4 @@
 /* 
- * Error
  * Copyright 2021 Ahmad Yoosofan <yoosofan@gmx.com>, 
  * http://yoosofan.github.io
  * University of Kashan (http://kashanu.ac.ir)
@@ -62,6 +61,6 @@ int main(){
       c.Show();
       c = a + b; // c = operator +(a, b)
       c.Show();
-      c = 17 - a; // c = operator +(complexCls(17), b)
+      c = 17 * a; // c = operator +(complexCls(17), b)
       c.Show();
 }

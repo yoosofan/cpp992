@@ -30,6 +30,10 @@ class complexCls{
     return sqrt(r*r + i*i);
   }
 
+  bool operator !() const {
+    return !(r == 0 && i == 0 ? false : true);
+  }
+
   complexCls operator++(void){   // ++a
    i++;
    r++;

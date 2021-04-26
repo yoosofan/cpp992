@@ -53,7 +53,7 @@ class complexCls{
     return *this;
   }
 
-  double operator [](const int index){
+  double& operator [](const int index){
     if (index < 2 && index >= 0)
       return  index == 0 ? r : i ;
     cout << "Error: out of range " << endl;

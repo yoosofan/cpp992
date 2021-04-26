@@ -94,7 +94,7 @@ class complexCls{
     return o1;
   }
 
-  friend istream& operator >>(istream& in1, const complexCls& a){
+  friend istream& operator >>(istream& in1, complexCls& a){
     cout << "Enter real part: ";
     in1 >> a.r;
     cout << "Enter imaginary part: ";
@@ -135,5 +135,6 @@ int main(){
   cout << a << b << endl;
   cout << "Enter a " << endl;
   cin >> a;
+  cout << a << endl;
   return 0;
 }

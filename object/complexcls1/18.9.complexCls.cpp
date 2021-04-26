@@ -96,8 +96,7 @@ int main(){
       complexCls a(2, 3);
       complexCls b(4, 5);
       complexCls c;
-      cout << a[0] << endl;
-      cout << a[1] << endl;
+      cout << a[0] << ",  " << a[1] << endl;
       c.Show();
       c = a + b; // c = operator +(a, b)
       c.Show();

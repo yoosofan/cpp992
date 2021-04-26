@@ -1,7 +1,7 @@
 /* 
  * Copyright 2016 Ahmad Yoosofan <yoosofan@myfastmail.com>, 
  * http://yoosofan.github.io
- * University of Kashan (http://kashanu.ac.ir)
+ *
  * 2016/02/25
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -46,7 +46,7 @@ struct complexCls{
    return *this;  
   }
   
-  complexCls&& operator++(int dummy){ // a++
+  complexCls operator++(int dummy){ // a++
    cout << "int";    
    complexCls result = *this;    
    r++;    

@@ -1,8 +1,8 @@
 // Error
 /* 
  * Copyright 2016 Ahmad Yoosofan <yoosofan@myfastmail.com>, 
- * http://yoosofan.kashanu.ac.ir
- * University of Kashan (http://kashanu.ac.ir)
+ * http://yoosofan.github.io/
+ *
  * 2016/02/25
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

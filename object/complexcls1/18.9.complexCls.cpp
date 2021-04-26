@@ -1,7 +1,7 @@
 /*
  * Copyright 2021 Ahmad Yoosofan <yoosofan@gmx.com>,
  * http://yoosofan.github.io
- * University of Kashan (http://kashanu.ac.ir)
+ *
  * 2021/04/19 16:27:16
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

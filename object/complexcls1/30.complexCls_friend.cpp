@@ -56,17 +56,19 @@ class complexCls{
       return m;
    }
 
-   double& operator()(int index){
+   double& operator ()(int index){
+      double& m = r;
       switch(index){
          case 0:
-            return r;
-            break;
-         case 1:return i;break;
+         break;
+         case 1:
+           m = i;
+         break;
          default:
             cout<<"Error index "<< endl;
-            break;
+         break;
       }
-      return r;
+      return m;
    }
             
    friend complexCls operator +(const complexCls  a , const complexCls  b);

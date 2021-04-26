@@ -56,7 +56,11 @@ class complexCls{
       return m;
    }
 
-   double& operator ()(int index = 0){
+   double& operator ()(void){
+      return r;
+   }
+
+   double& operator ()(int index){
       double& m = r;
       switch(index){
          case 0:
@@ -70,7 +74,7 @@ class complexCls{
       }
       return m;
    }
-            
+
    friend complexCls operator +(const complexCls  a , const complexCls  b);
    friend complexCls operator -(const complexCls  a , const complexCls  b);
    friend complexCls operator *(const complexCls  a , const complexCls  b);

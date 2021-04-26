@@ -112,7 +112,7 @@ int main(){
       cout<<a[0]<<endl;
       a(0) = 8;
       cout << "a after a(0) = 8 " << endl;
-      a.Show()
+      a.Show();
       complexCls z[5];
       z[0][0]=4;
       z[0][1]=5;

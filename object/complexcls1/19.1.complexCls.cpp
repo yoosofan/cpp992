@@ -89,8 +89,9 @@ class complexCls{
     return result;
   }
   
-  friend void operator <<(ostream& o1, const complexCls& a){
+  friend ostream& operator <<(ostream& o1, const complexCls& a){
     o1 << '(' << a.r << ", " << a.i << ')';
+    return o1;
   }
 
 };
@@ -124,6 +125,5 @@ int main(){
     cout << "c is not zero" << endl;
   else
     cout << "c is zero" << endl;
-  cout << b ;
-  cout << endl;     
+  cout << b << endl;     
 }

@@ -96,35 +96,34 @@ class complexCls{
 };
 
 int main(){
-      complexCls d(2); // d = 2;
-      complexCls a(2, 3);
-      complexCls b(4, 5);
-      complexCls c;
-      a[0] = 8;
-      cout << a[0] << ",  " << a[1] << endl;
-      cout << c ;
-      cout << endl;
-      c.Show();
-      c = a + b; // c = operator +(a, b)
-      c.Show();
-      c = 17 * a; // c = operator +(complexCls(17), b)
-      c = ++ b;
-      c = a ++;
-      if ( c == a)
-        cout << "c == a" << endl;
-      else
-        cout << "c != a" << endl;
-      if ( c != a)
-        cout << "c != a" << endl;
-      else
-        cout << "c == a" << endl;
-      if(!c)
-        cout << "c is not zero" << endl;
-      c.Show();
-      c = complexCls(0,0);
-      if(!c)
-        cout << "c is not zero" << endl;
-      else
-        cout << "c is zero" << endl;
-      
+  complexCls d(2); // d = 2;
+  complexCls a(2, 3);
+  complexCls b(4, 5);
+  complexCls c;
+  a[0] = 8;
+  cout << a[0] << ",  " << a[1] << endl;
+  c.Show();
+  c = a + b; // c = operator +(a, b)
+  c.Show();
+  c = 17 * a; // c = operator +(complexCls(17), b)
+  c = ++ b;
+  c = a ++;
+  if ( c == a)
+    cout << "c == a" << endl;
+  else
+    cout << "c != a" << endl;
+  if ( c != a)
+    cout << "c != a" << endl;
+  else
+    cout << "c == a" << endl;
+  if(!c)
+    cout << "c is not zero" << endl;
+  c.Show();
+  c = complexCls(0,0);
+  if(!c)
+    cout << "c is not zero" << endl;
+  else
+    cout << "c is zero" << endl;
+  cout << c ;
+  cout << endl;     
 }

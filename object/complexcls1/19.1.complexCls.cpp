@@ -126,5 +126,7 @@ int main(){
   else
     cout << "c is zero" << endl;
   cout << a << b << endl;
+  cout << "Enter a " << endl;
+  cin >> a;
   return 0;
 }

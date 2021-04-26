@@ -112,7 +112,7 @@ int main(){
       complexCls z[5];
       z[0][0]=4;
       z[0][1]=5;
-      z[0].show();
+      z[0].Show();
       return 0;
 }
 

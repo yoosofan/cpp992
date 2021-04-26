@@ -124,6 +124,6 @@ int main(){
     cout << "c is not zero" << endl;
   else
     cout << "c is zero" << endl;
-  cout << c ;
+  cout << b ;
   cout << endl;     
 }

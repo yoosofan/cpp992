@@ -54,9 +54,9 @@ class complexCls{
       return m;
    }
 
-   friend complexCls operator +(const complexCls  a , const complexCls  b);
-   friend complexCls operator -(const complexCls  a , const complexCls  b);
-   friend complexCls operator *(const complexCls  a , const complexCls  b);
+   friend complexCls operator +(const complexCls  a, const complexCls  b);
+   friend complexCls operator -(const complexCls  a, const complexCls  b);
+   friend complexCls operator *(const complexCls  a, const complexCls  b);
 
 };
 complexCls operator +(const complexCls  a ,const  complexCls  b){
@@ -77,7 +77,6 @@ complexCls operator *(const complexCls  a , const complexCls  b){
    result.i = a.i * b.r + a.r * b.i;
    return result;
 }
-
 
 int main(){
       complexCls a(2,3);

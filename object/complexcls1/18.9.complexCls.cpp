@@ -53,6 +53,13 @@ class complexCls{
     return *this;
   }
 
+  double operator [](const int index){
+    if (index < 2 && index >= 0)
+      return  index == 0 ? r : i ;
+    cout << "Error: out of range " << endl;
+    return r;
+  }
+
   friend bool operator ==(const complexCls& a, const complexCls& b){
     return a.r == b.r && a.i == b.i ;
   }
@@ -89,6 +96,8 @@ int main(){
       complexCls a(2, 3);
       complexCls b(4, 5);
       complexCls c;
+      cout << a[0] << endl;
+      cout << a[1] << endl;
       c.Show();
       c = a + b; // c = operator +(a, b)
       c.Show();

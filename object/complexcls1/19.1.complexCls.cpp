@@ -88,6 +88,10 @@ class complexCls{
     result.i = a.i * b.r + a.r * b.i;
     return result;
   }
+  
+  friend void operator <<(ostream& o1, const complexCls& a){
+    o1 << '(' << a.r << ", " << a.i << ')';
+  }
 
 };
 
@@ -98,6 +102,8 @@ int main(){
       complexCls c;
       a[0] = 8;
       cout << a[0] << ",  " << a[1] << endl;
+      cout << c ;
+      cout << endl;
       c.Show();
       c = a + b; // c = operator +(a, b)
       c.Show();

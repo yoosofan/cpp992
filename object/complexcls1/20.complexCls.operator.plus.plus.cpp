@@ -13,10 +13,9 @@
 #include <cmath>
 using namespace std;
 class complexCls{
-  double re = 0, im = 0;
-   
+  double r = 0, i = 0;
+  public:
   //explicit complexCls(double m=0 , double n=0) {r=m;i=n;}
-   
   complexCls(double m = 0 , double n = 0){
     r = m;
     i = n;
@@ -53,6 +52,11 @@ class complexCls{
    i++;    
    return result;  
   }
+
+  friend complexCls operator +(const complexCls& a, const complexCls& b);
+  friend complexCls operator -(const complexCls& a, const complexCls& b);
+  friend complexCls operator *(const complexCls& a, const complexCls& b);
+  
 }; 
 
 complexCls operator +(const complexCls& a, const complexCls& b){

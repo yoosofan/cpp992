@@ -88,7 +88,7 @@ class complexCls{
     result.i = a.i * b.r + a.r * b.i;
     return result;
   }
-  
+
   friend ostream& operator <<(ostream& o1, const complexCls& a){
     o1 << '(' << a.r << ", " << a.i << ')';
     return o1;
@@ -125,5 +125,6 @@ int main(){
     cout << "c is not zero" << endl;
   else
     cout << "c is zero" << endl;
-  cout << b << endl;     
+  cout << b << endl;
+  return 0;
 }

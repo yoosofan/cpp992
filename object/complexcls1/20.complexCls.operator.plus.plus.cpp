@@ -12,7 +12,7 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-struct complexCls{
+class complexCls{
   double re = 0, im = 0;
    
   //explicit complexCls(double m=0 , double n=0) {r=m;i=n;}

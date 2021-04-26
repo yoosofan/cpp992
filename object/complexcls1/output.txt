@@ -1,5 +1,215 @@
-r/include/c++/9/istream:214:7: note:   conversion of argument 1 would be ill-formed:
-19.1.complexCls.cpp:99:14: error: cannot bind non-const lvalue reference of type ‘float&’ to an rvalue of type ‘float’
-   99 |     in1 >> a.r;
-      |            ~~^
-In file included from /usr/include/c++/9/iostream:40,
+20.complexCls.operator.plus.plus.cpp: In member function ‘complexCls complexCls::operator++()’:
+20.complexCls.operator.plus.plus.cpp:44:4: error: ‘i’ was not declared in this scope; did you mean ‘im’?
+   44 |    i++;
+      |    ^
+      |    im
+20.complexCls.operator.plus.plus.cpp:45:4: error: ‘r’ was not declared in this scope; did you mean ‘re’?
+   45 |    r++;
+      |    ^
+      |    re
+20.complexCls.operator.plus.plus.cpp: In member function ‘complexCls complexCls::operator++(int)’:
+20.complexCls.operator.plus.plus.cpp:52:4: error: ‘r’ was not declared in this scope; did you mean ‘re’?
+   52 |    r++;
+      |    ^
+      |    re
+20.complexCls.operator.plus.plus.cpp:53:4: error: ‘i’ was not declared in this scope; did you mean ‘im’?
+   53 |    i++;
+      |    ^
+      |    im
+20.complexCls.operator.plus.plus.cpp: In function ‘complexCls operator+(const complexCls&, const complexCls&)’:
+20.complexCls.operator.plus.plus.cpp:59:14: error: ‘complexCls::complexCls(double, double)’ is private within this context
+   59 |   complexCls result ;
+      |              ^~~~~~
+20.complexCls.operator.plus.plus.cpp:20:3: note: declared private here
+   20 |   complexCls(double m = 0 , double n = 0){
+      |   ^~~~~~~~~~
+20.complexCls.operator.plus.plus.cpp:60:10: error: ‘class complexCls’ has no member named ‘r’; did you mean ‘double complexCls::re’? (not accessible from this context)
+   60 |   result.r = a.r + b.r;
+      |          ^
+20.complexCls.operator.plus.plus.cpp:16:10: note: declared private here
+   16 |   double re = 0, im = 0;
+      |          ^~
+20.complexCls.operator.plus.plus.cpp:60:16: error: ‘const class complexCls’ has no member named ‘r’; did you mean ‘double complexCls::re’? (not accessible from this context)
+   60 |   result.r = a.r + b.r;
+      |                ^
+20.complexCls.operator.plus.plus.cpp:16:10: note: declared private here
+   16 |   double re = 0, im = 0;
+      |          ^~
+20.complexCls.operator.plus.plus.cpp:60:22: error: ‘const class complexCls’ has no member named ‘r’; did you mean ‘double complexCls::re’? (not accessible from this context)
+   60 |   result.r = a.r + b.r;
+      |                      ^
+20.complexCls.operator.plus.plus.cpp:16:10: note: declared private here
+   16 |   double re = 0, im = 0;
+      |          ^~
+20.complexCls.operator.plus.plus.cpp:61:10: error: ‘class complexCls’ has no member named ‘i’; did you mean ‘double complexCls::im’? (not accessible from this context)
+   61 |   result.i = a.i + b.i;
+      |          ^
+20.complexCls.operator.plus.plus.cpp:16:18: note: declared private here
+   16 |   double re = 0, im = 0;
+      |                  ^~
+20.complexCls.operator.plus.plus.cpp:61:16: error: ‘const class complexCls’ has no member named ‘i’; did you mean ‘double complexCls::im’? (not accessible from this context)
+   61 |   result.i = a.i + b.i;
+      |                ^
+20.complexCls.operator.plus.plus.cpp:16:18: note: declared private here
+   16 |   double re = 0, im = 0;
+      |                  ^~
+20.complexCls.operator.plus.plus.cpp:61:22: error: ‘const class complexCls’ has no member named ‘i’; did you mean ‘double complexCls::im’? (not accessible from this context)
+   61 |   result.i = a.i + b.i;
+      |                      ^
+20.complexCls.operator.plus.plus.cpp:16:18: note: declared private here
+   16 |   double re = 0, im = 0;
+      |                  ^~
+20.complexCls.operator.plus.plus.cpp: In function ‘complexCls operator-(const complexCls&, const complexCls&)’:
+20.complexCls.operator.plus.plus.cpp:66:14: error: ‘complexCls::complexCls(double, double)’ is private within this context
+   66 |   complexCls result ;
+      |              ^~~~~~
+20.complexCls.operator.plus.plus.cpp:20:3: note: declared private here
+   20 |   complexCls(double m = 0 , double n = 0){
+      |   ^~~~~~~~~~
+20.complexCls.operator.plus.plus.cpp:67:10: error: ‘class complexCls’ has no member named ‘r’; did you mean ‘double complexCls::re’? (not accessible from this context)
+   67 |   result.r = a.r - b.r;
+      |          ^
+20.complexCls.operator.plus.plus.cpp:16:10: note: declared private here
+   16 |   double re = 0, im = 0;
+      |          ^~
+20.complexCls.operator.plus.plus.cpp:67:16: error: ‘const class complexCls’ has no member named ‘r’; did you mean ‘double complexCls::re’? (not accessible from this context)
+   67 |   result.r = a.r - b.r;
+      |                ^
+20.complexCls.operator.plus.plus.cpp:16:10: note: declared private here
+   16 |   double re = 0, im = 0;
+      |          ^~
+20.complexCls.operator.plus.plus.cpp:67:22: error: ‘const class complexCls’ has no member named ‘r’; did you mean ‘double complexCls::re’? (not accessible from this context)
+   67 |   result.r = a.r - b.r;
+      |                      ^
+20.complexCls.operator.plus.plus.cpp:16:10: note: declared private here
+   16 |   double re = 0, im = 0;
+      |          ^~
+20.complexCls.operator.plus.plus.cpp:68:10: error: ‘class complexCls’ has no member named ‘i’; did you mean ‘double complexCls::im’? (not accessible from this context)
+   68 |   result.i = a.i - b.i;
+      |          ^
+20.complexCls.operator.plus.plus.cpp:16:18: note: declared private here
+   16 |   double re = 0, im = 0;
+      |                  ^~
+20.complexCls.operator.plus.plus.cpp:68:16: error: ‘const class complexCls’ has no member named ‘i’; did you mean ‘double complexCls::im’? (not accessible from this context)
+   68 |   result.i = a.i - b.i;
+      |                ^
+20.complexCls.operator.plus.plus.cpp:16:18: note: declared private here
+   16 |   double re = 0, im = 0;
+      |                  ^~
+20.complexCls.operator.plus.plus.cpp:68:22: error: ‘const class complexCls’ has no member named ‘i’; did you mean ‘double complexCls::im’? (not accessible from this context)
+   68 |   result.i = a.i - b.i;
+      |                      ^
+20.complexCls.operator.plus.plus.cpp:16:18: note: declared private here
+   16 |   double re = 0, im = 0;
+      |                  ^~
+20.complexCls.operator.plus.plus.cpp: In function ‘complexCls operator*(const complexCls&, const complexCls&)’:
+20.complexCls.operator.plus.plus.cpp:73:14: error: ‘complexCls::complexCls(double, double)’ is private within this context
+   73 |   complexCls result;
+      |              ^~~~~~
+20.complexCls.operator.plus.plus.cpp:20:3: note: declared private here
+   20 |   complexCls(double m = 0 , double n = 0){
+      |   ^~~~~~~~~~
+20.complexCls.operator.plus.plus.cpp:74:10: error: ‘class complexCls’ has no member named ‘r’; did you mean ‘double complexCls::re’? (not accessible from this context)
+   74 |   result.r = a.r * b.r;
+      |          ^
+20.complexCls.operator.plus.plus.cpp:16:10: note: declared private here
+   16 |   double re = 0, im = 0;
+      |          ^~
+20.complexCls.operator.plus.plus.cpp:74:16: error: ‘const class complexCls’ has no member named ‘r’; did you mean ‘double complexCls::re’? (not accessible from this context)
+   74 |   result.r = a.r * b.r;
+      |                ^
+20.complexCls.operator.plus.plus.cpp:16:10: note: declared private here
+   16 |   double re = 0, im = 0;
+      |          ^~
+20.complexCls.operator.plus.plus.cpp:74:22: error: ‘const class complexCls’ has no member named ‘r’; did you mean ‘double complexCls::re’? (not accessible from this context)
+   74 |   result.r = a.r * b.r;
+      |                      ^
+20.complexCls.operator.plus.plus.cpp:16:10: note: declared private here
+   16 |   double re = 0, im = 0;
+      |          ^~
+20.complexCls.operator.plus.plus.cpp:75:10: error: ‘class complexCls’ has no member named ‘i’; did you mean ‘double complexCls::im’? (not accessible from this context)
+   75 |   result.i = a.i * b.i;
+      |          ^
+20.complexCls.operator.plus.plus.cpp:16:18: note: declared private here
+   16 |   double re = 0, im = 0;
+      |                  ^~
+20.complexCls.operator.plus.plus.cpp:75:16: error: ‘const class complexCls’ has no member named ‘i’; did you mean ‘double complexCls::im’? (not accessible from this context)
+   75 |   result.i = a.i * b.i;
+      |                ^
+20.complexCls.operator.plus.plus.cpp:16:18: note: declared private here
+   16 |   double re = 0, im = 0;
+      |                  ^~
+20.complexCls.operator.plus.plus.cpp:75:22: error: ‘const class complexCls’ has no member named ‘i’; did you mean ‘double complexCls::im’? (not accessible from this context)
+   75 |   result.i = a.i * b.i;
+      |                      ^
+20.complexCls.operator.plus.plus.cpp:16:18: note: declared private here
+   16 |   double re = 0, im = 0;
+      |                  ^~
+20.complexCls.operator.plus.plus.cpp: In function ‘int main()’:
+20.complexCls.operator.plus.plus.cpp:81:24: error: ‘complexCls::complexCls(double, double)’ is private within this context
+   81 |       complexCls a(2, 3);
+      |                        ^
+20.complexCls.operator.plus.plus.cpp:20:3: note: declared private here
+   20 |   complexCls(double m = 0 , double n = 0){
+      |   ^~~~~~~~~~
+20.complexCls.operator.plus.plus.cpp:82:24: error: ‘complexCls::complexCls(double, double)’ is private within this context
+   82 |       complexCls b(4, 5);
+      |                        ^
+20.complexCls.operator.plus.plus.cpp:20:3: note: declared private here
+   20 |   complexCls(double m = 0 , double n = 0){
+      |   ^~~~~~~~~~
+20.complexCls.operator.plus.plus.cpp:83:18: error: ‘complexCls::complexCls(double, double)’ is private within this context
+   83 |       complexCls c;
+      |                  ^
+20.complexCls.operator.plus.plus.cpp:20:3: note: declared private here
+   20 |   complexCls(double m = 0 , double n = 0){
+      |   ^~~~~~~~~~
+20.complexCls.operator.plus.plus.cpp:84:11: error: ‘bool complexCls::operator!() const’ is private within this context
+   84 |       if(!c) cout<< " c is zero "<<endl;
+      |           ^
+20.complexCls.operator.plus.plus.cpp:37:8: note: declared private here
+   37 |   bool operator!() const {
+      |        ^~~~~~~~
+20.complexCls.operator.plus.plus.cpp:86:14: error: ‘void complexCls::Show()’ is private within this context
+   86 |       c.Show();
+      |              ^
+20.complexCls.operator.plus.plus.cpp:27:8: note: declared private here
+   27 |   void Show(){
+      |        ^~~~
+20.complexCls.operator.plus.plus.cpp:88:14: error: ‘void complexCls::Show()’ is private within this context
+   88 |       c.Show();
+      |              ^
+20.complexCls.operator.plus.plus.cpp:27:8: note: declared private here
+   27 |   void Show(){
+      |        ^~~~
+20.complexCls.operator.plus.plus.cpp:89:12: error: ‘complexCls complexCls::operator++(int)’ is private within this context
+   89 |       c = a++;
+      |            ^~
+20.complexCls.operator.plus.plus.cpp:49:14: note: declared private here
+   49 |   complexCls operator++(int dummy){ // a++
+      |              ^~~~~~~~
+20.complexCls.operator.plus.plus.cpp:90:14: error: ‘void complexCls::Show()’ is private within this context
+   90 |       c.Show();
+      |              ^
+20.complexCls.operator.plus.plus.cpp:27:8: note: declared private here
+   27 |   void Show(){
+      |        ^~~~
+20.complexCls.operator.plus.plus.cpp:91:13: error: ‘complexCls complexCls::operator++()’ is private within this context
+   91 |       c = ++a;
+      |             ^
+20.complexCls.operator.plus.plus.cpp:42:14: note: declared private here
+   42 |   complexCls operator++(void){   // ++a
+      |              ^~~~~~~~
+20.complexCls.operator.plus.plus.cpp:92:14: error: ‘void complexCls::Show()’ is private within this context
+   92 |       c.Show();
+      |              ^
+20.complexCls.operator.plus.plus.cpp:27:8: note: declared private here
+   27 |   void Show(){
+      |        ^~~~
+20.complexCls.operator.plus.plus.cpp:94:15: error: ‘complexCls::complexCls(double, double)’ is private within this context
+   94 |       c = a + 12;
+      |               ^~
+20.complexCls.operator.plus.plus.cpp:20:3: note: declared private here
+   20 |   complexCls(double m = 0 , double n = 0){
+      |   ^~~~~~~~~~
+complexcls1$ 

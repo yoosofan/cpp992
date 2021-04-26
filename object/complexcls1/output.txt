@@ -1,19 +1,5 @@
-complexcls1$ g++ 18.9.complexCls.cpp 
-18.9.complexCls.cpp:56:11: error: ‘double& complexCls::operator[](int)’ cannot have default arguments
-   56 |   double& operator [](const int index = 0){
-      |           ^~~~~~~~
-18.9.complexCls.cpp: In function ‘int main()’:
-18.9.complexCls.cpp:99:8: error: no match for ‘operator[]’ (operand types are ‘complexCls’ and ‘int’)
-   99 |       a[0] = 8;
-      |        ^
-18.9.complexCls.cpp:100:9: error: expected primary-expression before ‘]’ token
-  100 |       a[] = 8;
-      |         ^
-18.9.complexCls.cpp:101:16: error: no match for ‘operator[]’ (operand types are ‘complexCls’ and ‘int’)
-  101 |       cout << a[0] << ",  " << a[1] << endl;
-      |                ^
-18.9.complexCls.cpp:101:33: error: no match for ‘operator[]’ (operand types are ‘complexCls’ and ‘int’)
-  101 |       cout << a[0] << ",  " << a[1] << endl;
-      |                                 ^
-complexcls1$ 
-
+r/include/c++/9/istream:214:7: note:   conversion of argument 1 would be ill-formed:
+19.1.complexCls.cpp:99:14: error: cannot bind non-const lvalue reference of type ‘float&’ to an rvalue of type ‘float’
+   99 |     in1 >> a.r;
+      |            ~~^
+In file included from /usr/include/c++/9/iostream:40,

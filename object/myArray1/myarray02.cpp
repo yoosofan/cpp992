@@ -31,7 +31,7 @@ class myArray{
 };
 void f1(myArray b){ /// int f1 ... 
 	myArray c;
-	c=b;
+	c = b;
 }
 int main(){
 	//// double x= ...

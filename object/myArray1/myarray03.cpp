@@ -17,23 +17,29 @@ class myArray{
 	double *a;
 	int n;
 	public:
-	myArray(const double *ma=nullptr,int n=0){ /// myArray(const *ma, ...
-		if(n==0 || ma==nullptr){
-			n=0;
-			a=nullptr;
+	myArray(const double *ma = nullptr, int n = 0){ /// myArray(const *ma, ...
+		if(n == 0 || ma == nullptr){
+			n = 0;
+			a = nullptr;
 		}
 		else{
-			a=new double[this->n=n];
-			for(int i=0;i<n;i++)
+			a = new double[this->n=n];
+			for(int i=0; i < n; i++)
 				a[i]=ma[i];
 		}
 	}
-	~myArray(){delete[]a;a=nullptr;n=0;cout<<"in destructor"<<endl;}
-	double& operator[](int index){return a[index];}
+	~myArray(){
+    delete[] a;
+    a = nullptr;
+    n = 0;
+    cout << "in destructor" << endl;
+  }
+	double& operator[](int index)
+  {return a[index];}
 };
 void f1(myArray b){ /// int f1 ... 
 	myArray c;
-	c=b;
+	c = b;
 	c[1]=8;
 }
 int main(){
@@ -41,13 +47,12 @@ int main(){
 	double x[]={10,12,34,54};
 	////
 	myArray d(x,sizeof(x)/sizeof(double));
-	cout<<d[1]<<endl;
+	cout << d[1] << endl;
 	cout.flush();
 	f1(d);
-	cout<<d[3]<<endl;
-	cout<<d[1]<<endl;
-	d[3]=4;
-	cout<<d[3]<<endl;
-	
+	cout << d[3] << endl;
+	cout << d[1] << endl;
+	d[3] = 4;
+	cout << d[3] << endl;
 	return 0;
 }

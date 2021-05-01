@@ -13,10 +13,10 @@
 #include <iostream>
 using namespace std;
 template<typename T> class myArray{
-	T *a;
-	int n;
+	T *a = nullptr;
+	int n = 0;
 	public:
-	myArray(const T *ma=nullptr,int n=0){ /// myArray(const *ma, ...
+	myArray(const T *ma = nullptr, int n = 0){ /// myArray(const *ma, ...
 		if(n==0 || ma==nullptr){
 			n=0;
 			a=nullptr;
@@ -27,11 +27,31 @@ template<typename T> class myArray{
 				a[i]=ma[i];
 		}
 	}
-	~myArray(){delete[]a;a=nullptr;n=0;cout<<"in destructor"<<endl;}
-	T& operator[](int index){return a[index];}
+  
+  myArray(const myArray& b){
+    a = new T[n = b.n];
+    for(int i = 0; i < n; i++)
+      a[i] = b.a[i];
+  }
+
+	~myArray(){
+    delete[] a;
+    a = nullptr;
+    n = 0;
+    cout << "in destructor" << endl;
+  }
+  
+	T& operator[](int index){
+    if(index >= 0 && index < n)
+      return a[index];
+    cout << "error: out of range" << endl; 
+    return a[0]; // exit(0);
+  }
+
 	myArray& operator=(const myArray&b){
 		this->a = new T[this->n=b.n];
-		for(int i=0;i<n;i++)a[i]=b.a[i];
+		for(int i=0;i<n;i++)
+      a[i] = b.a[i];
 		return *this;
 	}
 };
@@ -39,7 +59,7 @@ int main(){
 	//// double x= ...
 	double x[100000]={10,12,34,54};
 	////
-	myArray<double> d(x,sizeof(x)/sizeof(double));
+	myArray<double> d(x, sizeof(x)/sizeof(double));
 	cout<<d[1]<<endl;
 	cout.flush();
 	myArray<double> g,h;

@@ -30,6 +30,7 @@ class myArray{
 	}
   
   myArray(const myArray& b){
+    cout << "copy constructor : " << b.n << endl;
     a = new double [n = b.n];
     for(int i = 0 ; i < n; i++)
       a[i] = b.a[i];

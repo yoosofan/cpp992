@@ -63,11 +63,11 @@ int main(){
 	cout<<d[1]<<endl;
 	cout.flush();
 	myArray<double> g,h;
-	h=g=d;
+	h = g = d;
 	g[1]=8;
 	cout<<d[3]<<endl;
 	cout<<d[1]<<endl;
 	cout<<d[1]<<endl;
-	
+	myArray<int> x,y;	
 	return 0;
 }

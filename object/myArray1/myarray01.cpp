@@ -17,7 +17,7 @@ class myArray{
 	int n;
 	public:
 	///
-	myArray() = default; // delete
+	myArray() = delete;
 	///
 	myArray(const double *ma, int n){ /// myArray(const *ma, ...
 		a = new double[this->n=n];

@@ -1,9 +1,9 @@
-myArray1$ g++ myarray07.cpp 
+myArray1$ g++ myarray08.cpp 
 myArray1$ ./a.out
 12
 54
-8
+12
 4
 in destructor
-Segmentation fault (core dumped)
+in destructor
 myArray1$ 

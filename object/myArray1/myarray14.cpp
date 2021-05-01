@@ -36,7 +36,7 @@ class myArray{
 		return *this;
 	}
 };
-void f1(myArray b){ /// int f1 ... 
+void f1(myArray& b){ /// int f1 ... 
 	myArray c;
 	c=b;
 	b[1]=8;

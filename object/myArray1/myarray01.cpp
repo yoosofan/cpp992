@@ -21,7 +21,7 @@ class myArray{
 	///
 	myArray(const double *ma, int n){ /// myArray(const *ma, ...
 		a = new double[this->n=n];
-		for(int i=0; i<n; i++)
+		for(int i=0; i < n; i++)
 			a[i] = ma[i];
 	}
 };

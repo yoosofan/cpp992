@@ -68,6 +68,7 @@ int main(){
 	cout<<d[3]<<endl;
 	cout<<d[1]<<endl;
 	cout<<d[1]<<endl;
-	myArray<int> x,y;	
+	myArray<int> s,y;	
+  myArray<string> z;
 	return 0;
 }

@@ -17,12 +17,12 @@ class myArray{
 	int n;
 	public:
 	///
-	myArray() = default; // delete
+	// myArray() = default; // delete
 	///
-	myArray(const double *ma,int n){ /// myArray(const *ma, ...
-		a=new double[this->n=n];
-		for(int i=0;i<n;i++)
-			a[i]=ma[i];
+	myArray(const double *ma, int n){ /// myArray(const *ma, ...
+		a = new double[this->n=n];
+		for(int i=0; i<n; i++)
+			a[i] = ma[i];
 	}
 };
 void f1(myArray b){ /// int f1 ... 
@@ -33,7 +33,7 @@ int main(){
 	//// double x= ...
 	double x[]={10,12,34,54};
 	////
-	myArray d(x,sizeof(x)/sizeof(double));
+	myArray d(x, sizeof(x)/sizeof(double));
 	f1(d);
 	return 0;
 }

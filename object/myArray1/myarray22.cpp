@@ -27,6 +27,13 @@ template<typename T> class myArray{
 				a[i]=ma[i];
 		}
 	}
+  
+  myArray(const myArray& b){
+    a = new T[n = b.n];
+    for(int i = 0; i < n; i++)
+      a[i] = b.a[i];
+  }
+
 	~myArray(){delete[]a;a=nullptr;n=0;cout<<"in destructor"<<endl;}
 	T& operator[](int index){return a[index];}
 	myArray& operator=(const myArray&b){

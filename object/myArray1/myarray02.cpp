@@ -14,18 +14,18 @@
 #include <iostream>
 using namespace std;
 class myArray{
-	double *a;
-	int n;
+	double *a = nullptr;
+	int n = 0;
 	public:
-	myArray(const double *ma=nullptr,int n=0){ /// myArray(const *ma, ...
-		if(n==0 || ma==nullptr){
+	myArray(const double *ma = nullptr, int n = 0){ /// myArray(const *ma, ...
+		if(n == 0 || ma == nullptr){
 			n=0;
-			a=nullptr;
+			a = nullptr;
 		}
 		else{
-			a=new double[this->n=n];
-			for(int i=0;i<n;i++)
-				a[i]=ma[i];
+			a = new double[this->n=n];
+			for(int i=0; i < n; i++)
+				a[i] = ma[i];
 		}
 	}
 };

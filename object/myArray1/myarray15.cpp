@@ -14,8 +14,8 @@
 #include <iostream>
 using namespace std;
 class myArray{
-	double *a;
-	int n;
+	double *a = nullptr;
+	int n = 0;
 	public:
 	myArray(const double *ma=nullptr,int n=0){ /// myArray(const *ma, ...
 		if(n==0 || ma==nullptr){
@@ -28,6 +28,13 @@ class myArray{
 				a[i]=ma[i];
 		}
 	}
+  
+  myArray(const myArray& b){
+    a = new double [n = b.n];
+    for(int i = 0 ; i < n; i++)
+      a[i] = b.a[i];
+  }
+
 	~myArray(){delete[]a;a=nullptr;n=0;cout<<"in destructor"<<endl;}
 	double& operator[](int index){return a[index];}
 	myArray& operator=(const myArray&b){
@@ -36,7 +43,7 @@ class myArray{
 		return *this;
 	}
 };
-void f1(myArray& b){ /// int f1 ... 
+void f1(myArray b){ /// int f1 ... 
 	myArray c;
 	c=b;
 	b[1]=8;

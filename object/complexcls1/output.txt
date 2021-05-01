@@ -1,12 +1,6 @@
-myArray1$ g++ myarray01.cpp 
-myarray01.cpp: In function ‘void f1(myArray)’:
-myarray01.cpp:29:10: error: call of overloaded ‘myArray()’ is ambiguous
-   29 |  myArray c;
-      |          ^
-myarray01.cpp:22:2: note: candidate: ‘myArray::myArray(const double*, int)’
-   22 |  myArray(const double *ma = nullptr, int n = 0){ /// myArray(const *ma, ...
-      |  ^~~~~~~
-myarray01.cpp:20:2: note: candidate: ‘myArray::myArray()’
-   20 |  myArray() = default; // delete;
-      |  ^~~~~~~
-myArray1$ 
+myArray1$ g++ myarray03.cpp 
+myArray1$ ./a.out
+12
+in destructor
+free(): double free detected in tcache 2
+Aborted (core dumped)

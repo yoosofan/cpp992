@@ -19,7 +19,7 @@ class myArray{
 	///
 	myArray() = default; // delete;
 	///
-	myArray(const double *ma = nullptr, int n = 0){ /// myArray(const *ma, ...
+	myArray(const double *ma, int n){ /// myArray(const *ma, ...
 		a = new double[this->n=n];
 		for(int i=0; i<n; i++)
 			a[i] = ma[i];
@@ -27,7 +27,7 @@ class myArray{
 };
 void f1(myArray b){ /// int f1 ... 
 	myArray c;
-	c=b;
+	c = b;
 }
 int main(){
 	//// double x= ...

@@ -1,6 +1,9 @@
-myArray1$ g++ myarray03.cpp 
+myArray1$ g++ myarray07.cpp 
 myArray1$ ./a.out
 12
+54
+8
+4
 in destructor
-free(): double free detected in tcache 2
-Aborted (core dumped)
+Segmentation fault (core dumped)
+myArray1$ 

@@ -49,7 +49,7 @@ int main(){
 	cout<<d[1]<<endl;
 	cout.flush();
 	myArray g,h;
-	h=g=d;
+	h = g = d;  // error
 	g[1]=8;
 	//f1(d);
 	cout<<d[3]<<endl;

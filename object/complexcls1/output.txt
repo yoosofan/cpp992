@@ -1,9 +1,13 @@
-myArray1$ g++ myarray08.cpp 
-myArray1$ ./a.out
-12
-54
-12
-4
-in destructor
-in destructor
+myArray1$ g++ myarray09.cpp 
+myarray09.cpp: In function ‘int main()’:
+myarray09.cpp:52:10: error: no match for ‘operator=’ (operand types are ‘myArray’ and ‘void’)
+   52 |  h = g = d;  // error
+      |          ^
+myarray09.cpp:33:7: note: candidate: ‘void myArray::operator=(const myArray&)’
+   33 |  void operator=(const myArray&b){
+      |       ^~~~~~~~
+myarray09.cpp:33:31: note:   no known conversion for argument 1 from ‘void’ to ‘const myArray&’
+   33 |  void operator=(const myArray&b){
+      |                 ~~~~~~~~~~~~~~^
 myArray1$ 
+

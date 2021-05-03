@@ -1,8 +1,10 @@
 #include<iostream>
 using namespace std;
-const int MAX=200;
 // #define MAX 200
-template<class Type> class array{Type a[MAX];  int n;
+template<class Type> class array{
+  static const int MAX=200;
+  Type a[MAX];  
+  int n;
 public:
   array(int n=20){this->n=n;}
   ~array(){n=0;}
@@ -11,6 +13,8 @@ public:
   }
 };
 int main(){
-  array<int> m1,m2,m3; array<double> dm;   array<char> cm;
+  array<int> m1,m2,m3; 
+  array<double> dm;   
+  array<char> cm;
   return 0;
 }

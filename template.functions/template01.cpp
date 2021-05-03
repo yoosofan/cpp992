@@ -20,7 +20,7 @@ int main(){
   cout << search(am, string("ali"), 4) << endl;
   string s3 = "kamran";
   cout << search(am, s3, 4) << endl;
-  auto z = 4 ; // 4.0;
+  auto z = 4.0; // 4 ; // 4.0;
   cout << search<double>(ae, z, 6) << endl;
   cout << search(ae, z, 6) << endl;
   return 0;

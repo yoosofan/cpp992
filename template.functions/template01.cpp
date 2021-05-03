@@ -12,6 +12,8 @@ int main(){
   double ae[20] = {3, 4, 5, 6, 8, 9};
   cout << search<double>(ae, 3, 6) << endl;
   cout << search<double>(ae, 33, 6) << endl;
+  // cout << search(ae, 33, 6) << endl;
+  cout << search(ae, double(33), 6) << endl;
   string am[] = {"ali", "reza", "kamran", "hamid"};
   cout << search<string>(am, "reza", 4) << endl; // type of "reza" is 'const char *'
   // cout << search(am, "ali", 4) << endl;

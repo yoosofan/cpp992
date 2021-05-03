@@ -1,112 +1,13 @@
-template.functions$ g++ template00
-template00.cpp       template00_swap.cpp  
-template.functions$ g++ template00.cpp 
-template.functions$ g++ template00.cpp 
-template00.cpp:4:12: error: ‘int search’ redeclared as different kind of entity
-    4 | int search(string *a, string v, int n);
-      |            ^~~~~~
-template00.cpp:3:5: note: previous declaration ‘int search(double*, double, int)’
-    3 | int search(double *a, double v, int n);
-      |     ^~~~~~
-template00.cpp:4:12: error: ‘string’ was not declared in this scope; did you mean ‘std::string’?
-    4 | int search(string *a, string v, int n);
-      |            ^~~~~~
-      |            std::string
-In file included from /usr/include/c++/9/iosfwd:39,
-                 from /usr/include/c++/9/ios:38,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from template00.cpp:1:
-/usr/include/c++/9/bits/stringfwd.h:79:33: note: ‘std::string’ declared here
-   79 |   typedef basic_string<char>    string;
-      |                                 ^~~~~~
-template00.cpp:4:20: error: ‘a’ was not declared in this scope
-    4 | int search(string *a, string v, int n);
-      |                    ^
-template00.cpp:4:23: error: ‘string’ was not declared in this scope; did you mean ‘std::string’?
-    4 | int search(string *a, string v, int n);
-      |                       ^~~~~~
-      |                       std::string
-In file included from /usr/include/c++/9/iosfwd:39,
-                 from /usr/include/c++/9/ios:38,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from template00.cpp:1:
-/usr/include/c++/9/bits/stringfwd.h:79:33: note: ‘std::string’ declared here
-   79 |   typedef basic_string<char>    string;
-      |                                 ^~~~~~
-template00.cpp:4:33: error: expected primary-expression before ‘int’
-    4 | int search(string *a, string v, int n);
-      |                                 ^~~
-template00.cpp: In function ‘int main()’:
-template00.cpp:7:3: error: ‘cout’ was not declared in this scope; did you mean ‘std::cout’?
-    7 |   cout << search(ae, 3, 6) << endl;
-      |   ^~~~
-      |   std::cout
-In file included from template00.cpp:1:
-/usr/include/c++/9/iostream:61:18: note: ‘std::cout’ declared here
-   61 |   extern ostream cout;  /// Linked to standard output
-      |                  ^~~~
-template00.cpp:7:31: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
-    7 |   cout << search(ae, 3, 6) << endl;
-      |                               ^~~~
-      |                               std::endl
-In file included from /usr/include/c++/9/iostream:39,
-                 from template00.cpp:1:
-/usr/include/c++/9/ostream:599:5: note: ‘std::endl’ declared here
-  599 |     endl(basic_ostream<_CharT, _Traits>& __os)
-      |     ^~~~
-template00.cpp:9:3: error: ‘string’ was not declared in this scope; did you mean ‘std::string’?
-    9 |   string am[]={"ali", "reza", "kamran", "hamid"};
-      |   ^~~~~~
-      |   std::string
-In file included from /usr/include/c++/9/iosfwd:39,
-                 from /usr/include/c++/9/ios:38,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from template00.cpp:1:
-/usr/include/c++/9/bits/stringfwd.h:79:33: note: ‘std::string’ declared here
-   79 |   typedef basic_string<char>    string;
-      |                                 ^~~~~~
-template00.cpp:10:18: error: ‘am’ was not declared in this scope; did you mean ‘ae’?
-   10 |   cout << search(am,"reza",4) << endl;
-      |                  ^~
-      |                  ae
-template00.cpp: At global scope:
-template00.cpp:19:12: error: ‘int search’ redeclared as different kind of entity
-   19 | int search(string *a, string v, int n){
-      |            ^~~~~~
-template00.cpp:13:5: note: previous declaration ‘int search(double*, double, int)’
-   13 | int search(double *a, double v, int n){
-      |     ^~~~~~
-template00.cpp:19:12: error: ‘string’ was not declared in this scope; did you mean ‘std::string’?
-   19 | int search(string *a, string v, int n){
-      |            ^~~~~~
-      |            std::string
-In file included from /usr/include/c++/9/iosfwd:39,
-                 from /usr/include/c++/9/ios:38,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from template00.cpp:1:
-/usr/include/c++/9/bits/stringfwd.h:79:33: note: ‘std::string’ declared here
-   79 |   typedef basic_string<char>    string;
-      |                                 ^~~~~~
-template00.cpp:19:20: error: ‘a’ was not declared in this scope
-   19 | int search(string *a, string v, int n){
-      |                    ^
-template00.cpp:19:23: error: ‘string’ was not declared in this scope; did you mean ‘std::string’?
-   19 | int search(string *a, string v, int n){
-      |                       ^~~~~~
-      |                       std::string
-In file included from /usr/include/c++/9/iosfwd:39,
-                 from /usr/include/c++/9/ios:38,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from template00.cpp:1:
-/usr/include/c++/9/bits/stringfwd.h:79:33: note: ‘std::string’ declared here
-   79 |   typedef basic_string<char>    string;
-      |                                 ^~~~~~
-template00.cpp:19:33: error: expected primary-expression before ‘int’
-   19 | int search(string *a, string v, int n){
-      |                                 ^~~
+template.functions$ g++ template01.cpp 
+template01.cpp: In function ‘int main()’:
+template01.cpp:17:30: error: no matching function for call to ‘search(std::string [4], const char [4], int)’
+   17 |   cout << search(am, "ali", 4) << endl;
+      |                              ^
+template01.cpp:4:26: note: candidate: ‘template<class T> int search(T*, T, int)’
+    4 | template<typename T> int search(T *a, T v, int n){
+      |                          ^~~~~~
+template01.cpp:4:26: note:   template argument deduction/substitution failed:
+template01.cpp:17:30: note:   deduced conflicting types for parameter ‘T’ (‘std::__cxx11::basic_string<char>’ and ‘const char*’)
+   17 |   cout << search(am, "ali", 4) << endl;
+      |                              ^
 template.functions$ 

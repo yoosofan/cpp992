@@ -14,5 +14,6 @@ int main(){
   cout << search<double>(ae, 33, 6) << endl;
   string am[] = {"ali", "reza", "kamran", "hamid"};
   cout << search<string>(am, "reza", 4) << endl;
+  cout << search(am, "ali", 4) << endl;
   return 0;
 }

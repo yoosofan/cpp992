@@ -7,6 +7,7 @@ template<typename T> int search(T *a, T v, int n){
       return i;
   return -1;
 }
+
 int main(){
   double ae[20] = {3, 4, 5, 6, 8, 9};
   cout << search<double>(ae, 3, 6) << endl;

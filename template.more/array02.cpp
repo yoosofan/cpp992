@@ -1,7 +1,9 @@
 #include<iostream>
 using namespace std;
-const int MAX=200;
-template<class Type> class array{Type a[MAX];  int n;
+
+template<class Type> class array{
+  static const int MAX = 200;
+  Type a[MAX];  int n;
 public:
   array(int n=20){this->n=n;}
   ~array(){n=0;}
@@ -11,7 +13,10 @@ public:
   void print(void){cout<<"n: "<<n<<endl;for(int i=0;i<n;i++)cout<<a[i]<<endl;}
 };
 int main(){
-  array<int> m1,m2,m3; array<double> dm;   array<char> cm;
-  m1.input();m1.print();
+  array<int> m1,m2,m3; 
+  array<double> dm;   
+  array<char> cm;
+  m1.input();
+  m1.print();
   return 0;
 }

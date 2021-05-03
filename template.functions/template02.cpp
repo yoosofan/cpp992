@@ -1,18 +1,32 @@
 #include<iostream>
 using namespace std;
-struct complexCls{ double r,i;   complexCls(double m=0 , double n=0){r=m;i=n;}};
-complexCls operator +(const complexCls& a,const complexCls& b)
-{complexCls result ;  result.r = a.r + b.r;  result.i = a.i + b.i;  return result;}
-complexCls operator -(const complexCls& a,const complexCls& b)
-{complexCls result ;  result.r = a.r - b.r;  result.i = a.i - b.i;  return result;}
-complexCls operator *(const complexCls& a,const complexCls& b)
-{complexCls result; result.r = a.r * b.r; result.i = a.i * b.i;  return result;}
-bool operator==(const complexCls& a,const complexCls& b)
-{return a.r==b.r && a.i==b.i;}
-ostream& operator<<(ostream&o1, complexCls&a)
-{o1<<'('<<a.r<<" , "<< a.i << ')' ; return o1;}
+class complexCls{
+  double r = 0, i = 0;
+  public:  
+  complexCls(double m=0 , double n=0)
+  {r=m;i=n;}
+
+  friend complexCls operator +(const complexCls& a,const complexCls& b)
+  {complexCls result ;  result.r = a.r + b.r;  result.i = a.i + b.i;  return result;}
+
+  friend complexCls operator -(const complexCls& a,const complexCls& b)
+  {complexCls result ;  result.r = a.r - b.r;  result.i = a.i - b.i;  return result;}
+
+  friend complexCls operator *(const complexCls& a,const complexCls& b)
+  {complexCls result; result.r = a.r * b.r; result.i = a.i * b.i;  return result;}
+
+  friend bool operator ==(const complexCls& a,const complexCls& b)
+  {return a.r==b.r && a.i==b.i;}
+
+  friend ostream& operator<<(ostream&o1, complexCls&a)
+  {o1<<'('<<a.r<<" , "<< a.i << ')' ; return o1;}
+
+};
+
 template<class T> int search(T *a, T v, int n){
-  for(int i=0; i<n; i++)     if(a[i]==v)       return i;
+  for(int i=0; i<n; i++)
+    if(a[i] == v)
+      return i;
   return -1;
 }
 int main(){
@@ -23,9 +37,9 @@ int main(){
   cout<<search<string>(am,"reza",4)<<endl;
   complexCls ac[]={complexCls(1,2),complexCls(3,4),complexCls(6,7)};
   //int mm=search<complexCls>(ac,complexCls(6,7),sizeof(ac)/sizeof(complexCls));
-  int mm=search<complexCls>(ac,complexCls(6,7),3);
+  int mm=search(ac, complexCls(6,7), 3);
   cout<<mm<<endl;
-  mm=search<complexCls>(ac,complexCls(1,7),3);
-  cout<<mm<<endl;
+  mm = search(ac, complexCls(1,7), 3);
+  cout << mm << endl;
   return 0;
 }

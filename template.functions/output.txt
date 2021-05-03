@@ -11,3 +11,4 @@ template01.cpp:17:30: note:   deduced conflicting types for parameter ‘T’ (�
    17 |   cout << search(am, "ali", 4) << endl;
       |                              ^
 template.functions$ 
+

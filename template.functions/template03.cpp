@@ -1,5 +1,5 @@
 #include<iostream>
-using namespace std;
+// using namespace std;
 
 class complexCls{ 
   double r,i;   
@@ -19,7 +19,7 @@ class complexCls{
   friend bool operator==(const complexCls& a,const complexCls& b)
   {return a.r==b.r && a.i==b.i;}
   
-  friend ostream& operator<<(ostream&o1, complexCls&a)
+  friend std::ostream& operator<<(std::ostream&o1, complexCls&a)
   {o1<<'('<<a.r<<" , "<< a.i << ')' ; return o1;}
 
 };
@@ -31,11 +31,11 @@ template<class T> void swap(T& a, T &b){
 }
 
 int main(){
-  int a=1,b=2; 
-  swap<int>(a,b);
-  cout << "a:" << a << "\tb:" << b << endl;
-  string s1 = "ali", s2 = "reza";
-  swap<string>(s1, s2);
-  cout << "s1:" << s1 << "\ts2:" << s2 << endl;
+  int a = 1, b = 2; 
+  swap<int>(a, b);
+  std::cout << "a:" << a << "\tb:" << b << std::endl;
+  std::string s1 = "ali", s2 = "reza";
+  swap(s1, s2);
+  std::cout << "s1:" << s1 << "\ts2:" << s2 << std::endl;
   return 0;
 }

@@ -1,14 +1,13 @@
 template.functions$ g++ template01.cpp 
 template01.cpp: In function ‘int main()’:
-template01.cpp:17:30: error: no matching function for call to ‘search(std::string [4], const char [4], int)’
-   17 |   cout << search(am, "ali", 4) << endl;
-      |                              ^
+template01.cpp:25:26: error: no matching function for call to ‘search(double [20], int&, int)’
+   25 |   cout << search(ae, z, 6) << endl;
+      |                          ^
 template01.cpp:4:26: note: candidate: ‘template<class T> int search(T*, T, int)’
-    4 | template<typename T> int search(T *a, T v, int n){
+    4 | template<typename T> int search(T* a, T v, int n){
       |                          ^~~~~~
 template01.cpp:4:26: note:   template argument deduction/substitution failed:
-template01.cpp:17:30: note:   deduced conflicting types for parameter ‘T’ (‘std::__cxx11::basic_string<char>’ and ‘const char*’)
-   17 |   cout << search(am, "ali", 4) << endl;
-      |                              ^
+template01.cpp:25:26: note:   deduced conflicting types for parameter ‘T’ (‘double’ and ‘int’)
+   25 |   cout << search(ae, z, 6) << endl;
+      |                          ^
 template.functions$ 
-

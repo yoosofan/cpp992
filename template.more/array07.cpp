@@ -52,12 +52,20 @@ public:
 int main(){
   //array<int> m1,m2,m3; array<double> dm;   array<char> cm;
   try{
-    array<complexCls> ccm1; ccm1.input();ccm1.print();
-    complexCls c2(4);if(c2==4) cout<<"equals"<<endl;
+    array<complexCls> ccm1; 
+    ccm1.input();
+    ccm1.print();
+    complexCls c2(4);
+    if(c2 == 4) 
+      cout<<"equals"<<endl;
     //complexCls c3(4);if(c3.operator==(4)) cout<<"equals"<<endl;
-    complexCls c1(4);if(4==c1) cout<<"equals"<<endl;
-    cout<<ccm1.search(c1)<<endl;
-  }catch(const char *st1){cout<<st1<<endl;}
+    complexCls c1(4);
+    if(4==c1) 
+      cout<<"equals"<<endl;
+    cout << ccm1.search(c1) << endl;
+  }catch(const char *st1){
+    cout<<st1<<endl;
+  }
   //m1.input();m1.print();
   return 0;
 }

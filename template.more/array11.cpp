@@ -47,10 +47,10 @@ template<typename Type> class array{
       a[i]=f.a[i];  
   }
 
-  array operator +(const array& m1){
-    array retVal;
+  array<Type> operator +(array<Type>& m1){
+    array<Type> retVal;
     int i; 
-    array *pmax,*pmin;
+    array<Type> *pmax,*pmin;
     pmax = m1.n > this->n ? &m1:this;
     pmin = m1.n <= this->n ? &m1:this;
     retVal.n = pmax->n;     
@@ -62,7 +62,7 @@ template<typename Type> class array{
     return retVal;
   } 
 
-  friend array<Type> operator-(const array<Type>&m1, const array<Type>&m2){
+  friend array<Type> operator-(array<Type>&m1, array<Type>&m2){
     array<Type> retVal;
     int i;
     array<Type> *pmax,*pmin; 

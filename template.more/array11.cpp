@@ -62,14 +62,14 @@ template<typename Type> class array{
     return retVal;
   } 
 
-  template<typename T> friend array<T> operator-(const array<T>&m1, const array<T>&m2){
-    array<T> retVal;
+  friend array<Type> operator-(const array<Type>&m1, const array<Type>&m2){
+    array<Type> retVal;
     int i;
-    array<T> *pmax,*pmin; 
+    array<Type> *pmax,*pmin; 
     pmax = m1.n > m2.n ? &m1:&m2; 
     pmin = m1.n <= m2.n ? &m1:&m2;
     retVal.n = pmax->n; 
-    retVal.a = new T[retVal.n];
+    retVal.a = new Type[retVal.n];
     for(i=0;i<pmin->n;i++)    
       retVal.a[i] = pmin->a[i] - pmax->a[i];
     for(;i<pmax->n;i++)       
@@ -77,7 +77,7 @@ template<typename Type> class array{
     return retVal;
   }  
 
-  template<typename T> friend ostream& operator<<(ostream&o1,array<T> m1){
+  friend ostream& operator<<(ostream&o1,array<Type> m1){
     o1<<m1.n<<endl;  
     for(int i=0;i<m1.n;i++)    
       o1<<m1.a[i]<<endl;  

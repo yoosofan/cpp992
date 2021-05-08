@@ -5,14 +5,20 @@ class complexCls{
   double re,im;
  public:
   complexCls(double a=0,double b=0){re=a;im=b;}
-  friend istream& operator>>(istream& io1,complexCls &m1);
-  friend ostream& operator<<(ostream& io1,complexCls &m1);
+
+  friend istream& operator>>(istream& io1,complexCls &m1){
+    cout<<"re: ";
+    io1>>m1.re;
+    cout<<"im: ";
+    io1>>m1.im; 
+    return io1;
+  }
+
+  friend ostream& operator<<(ostream& io1,complexCls &m1){
+    io1<<m1.re<<','<<m1.im<<endl;
+  }
 };
-istream& operator>>(istream& io1,complexCls &m1)
-{cout<<"re: ";io1>>m1.re;cout<<"im: ";io1>>m1.im; return io1;}
-//cout<<"dd"<<i<<"ee"<<34<<endl;cin>>i>>j>>k;
-ostream& operator<<(ostream& io1,complexCls &m1)
-{io1<<m1.re<<','<<m1.im<<endl;}
+
 template<class Type> class array{Type a[MAX];  int n;
 public:
   array(int n=20){this->n=n;}
@@ -24,7 +30,9 @@ public:
 };
 int main(){
   //array<int> m1,m2,m3; array<double> dm;   array<char> cm;
-  array<complexCls> ccm1; ccm1.input();ccm1.print();
+  array<complexCls> ccm1; 
+  ccm1.input();
+  ccm1.print();
   //m1.input();m1.print();
   return 0;
 }

@@ -17,12 +17,15 @@ istream& operator>>(istream& io1,complexCls &m1)
 {cout<<"re: ";io1>>m1.re;cout<<"im: ";io1>>m1.im; return io1;}
 //cout<<"dd"<<i<<"ee"<<34<<endl;cin>>i>>j>>k;
 //cout.flush()
-ostream& operator<<(ostream& io1,const complexCls &m1)
-{io1<<m1.re<<','<<m1.im<<endl;}
+ostream& operator<<(ostream& io1,const complexCls &m1){
+  io1<<m1.re<<','<<m1.im<<endl;
+  return io1;
+}
+
 template<class Type> class array{
+  static const int MAX=200;
   Type a[MAX];  
   int n = 0;
-  static const int MAX=200;
 public:
 
   array(int n = 20){

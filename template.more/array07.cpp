@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-const int MAX=200;
+
 class complexCls{
   double re,im;
  public:
@@ -19,13 +19,29 @@ istream& operator>>(istream& io1,complexCls &m1)
 //cout.flush()
 ostream& operator<<(ostream& io1,const complexCls &m1)
 {io1<<m1.re<<','<<m1.im<<endl;}
-template<class Type> class array{Type a[MAX];  int n;
+template<class Type> class array{
+  Type a[MAX];  
+  int n = 0;
+  static const int MAX=200;
 public:
-  array(int n=20){this->n=n;}
-  ~array(){n=0;}
-  void input(void){cout<<"Enter n: ";cin>>n;
-    if(n<0 || n>MAX) throw "n is greater than 200";
-    for(int i=0;i<n;i++){cout<<"Enter a["<<i<<"]: ";cin>>a[i];}
+
+  array(int n = 20){
+    this->n = n;
+  }
+
+  ~array(){
+    n = 0;
+  }
+  
+  void input(void){
+    cout<<"Enter n: ";
+    cin>>n;
+    if(n < 0 || n > MAX) 
+      throw "n is greater than 200";
+    for(int i=0;i<n;i++){
+      cout<<"Enter a["<<i<<"]: ";
+      cin>>a[i];
+    }
   }
   void print(void){cout<<"n: "<<n<<endl;for(int i=0;i<n;i++)cout<<a[i]<<endl;}
   int search(Type key){

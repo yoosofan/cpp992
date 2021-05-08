@@ -85,6 +85,7 @@ int main(){
     if(4==c1) 
       cout << "equals" << endl;
     cout << ccm1.search(c1) << endl;
+    // ccm1[340] = 3;
   }catch(const char *st1){
     cout<<st1<<endl;
   }

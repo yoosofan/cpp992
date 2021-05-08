@@ -11,10 +11,20 @@ class complexCls{
   //bool operator==(const complexCls &m1)
   //{if(re==m1.re && im==m1.im) return true;return false; }
 };
-bool operator==(const complexCls &m1,const complexCls&m2)
-{if(m1.re==m2.re && m1.im==m2.im) return true; return false;}
-istream& operator>>(istream& io1,complexCls &m1)
-{cout<<"re: ";io1>>m1.re;cout<<"im: ";io1>>m1.im; return io1;}
+
+bool operator==(const complexCls &m1,const complexCls&m2){
+  if(m1.re==m2.re && m1.im==m2.im) 
+    return true; 
+  return false;
+}
+
+istream& operator>>(istream& io1,complexCls &m1){
+  cout<<"re: ";
+  io1>>m1.re;
+  cout<<"im: ";
+  io1>>m1.im; 
+  return io1;
+}
 //cout<<"dd"<<i<<"ee"<<34<<endl;cin>>i>>j>>k;
 //cout.flush()
 ostream& operator<<(ostream& io1,const complexCls &m1){

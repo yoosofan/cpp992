@@ -10,20 +10,20 @@ class complexCls{
     i = b;
   }
   
-  complexCls operator+(const complexCls a){
+  friend complexCls operator +(const complexCls& b, const complexCls& a){
     complexCls ret;
-    ret.r = r + a.r;   
-    ret.i = i+a.i; 
+    ret.r = b.r + a.r;   
+    ret.i = b.i + a.i; 
     return ret;  
   }
   
-  friend ostream& operator<<(ostream&o1, const complexCls& m){
+  friend ostream& operator <<(ostream&o1, const complexCls& m){
     o1 << '(' << m.r << ',' << m.i << ')';
     return o1;
   }
 
-  bool operator ==(complexCls m2) const{
-    if(r == m2.r && i == m2.i)
+  friend bool operator ==(const complexCls& m1, const complexCls& m2) const{
+    if(m1.r == m2.r && m1.i == m2.i)
       return true; 
     return false;
   }

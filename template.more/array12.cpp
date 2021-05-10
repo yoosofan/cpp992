@@ -6,7 +6,7 @@ class complexCls{
 	double r,i;
 	public:
 
-  complexCls(double a=0,double b=0){
+  complexCls(double a=0, double b=0){
     r = a;
     i = b;
   }
@@ -23,7 +23,7 @@ class complexCls{
     return o1;
   }
 
-  bool operator==(complexCls m2){
+  bool operator== (complexCls m2){
     if(r == m2.r && i == m2.i)
       return true;
     return false;
@@ -32,12 +32,11 @@ class complexCls{
 
 template<typename T> class Node{
 	T v;
-  Node<T> *next;
+  Node<T>* next = nullptr;
   public:
 
-	Node(T*m1 = nullptr){
-    if(m1)
-      v = *m1;
+	Node(const T& m1){
+    v = m1;
     next = nullptr;
   }
 
@@ -50,25 +49,27 @@ template<typename T> class Node{
 
 template<typename Type, typename Index>
 class array{
-	Type *a;
+	Type *a = nullptr;
   int n, count;
-  Index *ind;
+  Index *ind  = nullptr;
   public:
 
-	array(int n=20){
+	array(int n = 20){
     this->n = n;
     a = new Type[n];
     ind = new Index[n];
-    count=0;
+    count = 0;
   }
 
 	~array(){
     n = 0;
     delete[] a;
     a = nullptr;
+    delete[] ind;
+    ind = nullptr;
   }
 
-	Type& operator [](Index index){
+	Type& operator [](const Index& index){
 		int i;
 		for(i=0; i < count; i++)
 		  if(ind[i] == index)
@@ -83,28 +84,29 @@ class array{
 	}
 
 	void print(void){
-    for(int i=0;i<count;i++)
+    for(int i = 0; i < count; i++)
       cout<<ind[i]<<" = "<<a[i]<<endl;
   }
 };
 
 int main(){
-	array<int,Node<int>> m1(10);
-  int aa=12;
-  Node<int> n1(&aa);
-	m1[n1]=34;
+	array<int, Node<int>> m1(10);
+  int aa = 12;
+  Node<int> n1(aa);
+	m1[n1] = 34;
   cout << m1[n1] << endl;
   aa=4;
-  m1[ Node<int>(&aa) ] = 4;
-	cout << m1[ Node<int>(new int(4))]<<endl;array<int,string> cm1;
+  m1[ Node<int>(aa) ] = 4;
+	cout << m1[Node<int>(4)]<<endl;
+  array<int, string> cm1;
 	array<string, complexCls> am1;
 	cm1["ali"] = 4;
   cm1["Reza"] = 7;
   cm1.print();
-  cout<<cm1["ali"]<<endl;
-	cout<<cm1["Reza"]<<endl;	
-  am1[complexCls(3,4)]="Hamid";
-	cout << am1[complexCls(3,4)]<<endl;  
+  cout << cm1["ali"] << endl;
+	cout << cm1["Reza"] << endl;	
+  am1[complexCls(3, 4)] = "Hamid";
+	cout << am1[complexCls(3,4)] << endl;  
   am1.print();
 	return 0;
 }

@@ -15,7 +15,7 @@ template<typename Type> class array{
   ~array(){
     n = 0;
     delete[] a; 
-    a =nullptr;
+    a = nullptr;
   }
 
   Type & operator[](int index){  

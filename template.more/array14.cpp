@@ -47,7 +47,8 @@ template<typename T> class Node{
   }
 };
 
-template<typename Type = string, typename Index = int, int N = 20> class array{
+template<typename Type = string, typename Index = int, int N = 20> 
+class array{
   Type a[N];  
   int n = N, count = 0; 
   Index ind[N];
@@ -92,7 +93,7 @@ int main(){
     array<int, string, 3> cm1; 
     array<string, complexCls> am1;
     array<string> kl1; 
-    arra<int, Node<int>> m8;
+    array<int, Node<int>> m8;
     kl1[0] = "dddd";
     kl1[13] = "asddd"; 
     cout << kl1;

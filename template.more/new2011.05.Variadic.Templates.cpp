@@ -21,6 +21,6 @@ void printAll(){
 
 template<typename T, typename... N>
 void printAll(T a, N... b){
-  cout<<a<<'\t';
+  cout << a << '\t';
   printAll(b...);
 }

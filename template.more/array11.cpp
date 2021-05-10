@@ -77,7 +77,7 @@ template<typename Type> class array{
     return retVal;
   }  
 
-  friend ostream& operator<<(ostream&o1,array<Type> m1){
+  friend ostream& operator<<(ostream&o1, array<Type> m1){
     o1<<m1.n<<endl;  
     for(int i=0;i<m1.n;i++)    
       o1<<m1.a[i]<<endl;  

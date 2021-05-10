@@ -35,6 +35,8 @@ template<typename T> class Node{
   Node<T>* next = nullptr;
   public:
 
+  Node() = default;
+  
 	Node(const T& m1){
     v = m1;
     next = nullptr;

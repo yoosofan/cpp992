@@ -111,7 +111,13 @@ template<typename Type = string, typename Index = int, int N = 20> class array{
 
 // template<class T,class I,int K>ostream&operator<<(ostream&o1,const array<T,I,K>m1){
 
-void f1(void){throw "dghdd";} 
+void f2(void){
+  throw "test";
+}
+
+void f1(void){
+  f2();
+} 
 //} void f1(void) throw(const char*){throw "dghdd";}
 int main(){
   array<int, Node<int>> m1;
@@ -140,6 +146,7 @@ int main(){
     cout << am1[complexCls(3,4)] << endl;
     cout << cm1;  
     cout << am1;
+    cout << "hello" << endl;
   }catch(const int& a){
     cout << "out of range" << endl;
   }

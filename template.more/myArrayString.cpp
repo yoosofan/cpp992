@@ -1,13 +1,15 @@
 #include<iostream>
 using namespace std;
-template<class T>
-class myArray{
+
+template<typename T> class myArray{
   T a[300];
-  int n;
+  int n = 0;
   string s[300];
   public:
-  myArray(){n=0;}
-  T& operator[](string m1){
+
+  myArray() = default;
+
+  T& operator[](const string& m1){
     int i;
     for(i=0; i<n; i++)
       if(s[i] == m1 )
@@ -18,8 +20,8 @@ class myArray{
 };
 int main(){
   myArray<double> m1;
-  m1["ali"]=23;
-  m1["reza"]=45;
-  cout<<m1["ali"]<<endl;
+  m1["ali"] = 23;
+  m1["reza"] = 45;
+  cout << m1["ali"] << endl;
   return 0;
 }

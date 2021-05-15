@@ -36,12 +36,17 @@ void f3(void){
 }
 struct RootCls{ double root1 , root2;};
 RootCls solve(double a, double b, double c){
-	RootCls retVal ; double delta;
-	if(a == 0 && b == 0) throw myException(7,"a == 0 and b == 0 ");
-	if(a==0){ retVal.root1 = retVal.root2 = -c / b ; }
+	RootCls retVal; 
+  double delta;
+	if(a == 0 && b == 0) 
+    throw myException(7,"a == 0 and b == 0 ");
+	if(a==0){ 
+    retVal.root1 = retVal.root2 = -c / b ; 
+  }
 	else{
 		delta = (b * b - 4 *a * c) ;
-		if(delta < 0 ) throw myException(8,"The equation does not have real root");
+		if(delta < 0 ) 
+      throw myException(8,"The equation does not have real root");
 		delta = sqrt(delta);
 		retVal.root1 = (-b + delta)/(2*a);
 		retVal.root2 = (-b - delta)/(2*a);

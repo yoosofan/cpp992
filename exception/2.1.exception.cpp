@@ -35,7 +35,7 @@ struct RootCls{
 	double root1 , root2;
 };
 RootCls solve(double a, double b, double c){
-	RootCls retVal ; 
+	RootCls retVal ; // a x^2 + b x + c = 0
 	double delta;
 	if(a == 0 && b == 0) 
 		throw 6;
@@ -43,7 +43,7 @@ RootCls solve(double a, double b, double c){
 		retVal.root1 = retVal.root2 = -c / b ; 
 	}
 	else{
-		delta = (b * b - 4 *a * c) ;
+		delta = (b * b - 4 * a * c) ;
 		if(delta < 0 ) 
 			throw 7;
 		delta = sqrt(delta);
@@ -64,7 +64,7 @@ int main(){
 	}
 	try{
 		f2(13);
-		RootCls rc1 =solve(4 , 55, 2);
+		RootCls rc1 = solve(4, 55, 2);
 		cout<< rc1.root1<<" root2  "<<rc1.root2<< endl;
 	}catch(int nn){
 		cout <<"Second catch in main "<<nn << endl;

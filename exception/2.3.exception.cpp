@@ -61,7 +61,7 @@ int main(){
 	}catch(int  ll){ cout <<"Third catch in main "<<endl;}
 	try{
 		int i=0; 
-		cout<<2/i<<endl;
+		cout << 2/i << endl;
 	}catch(...){cout<<"catch"<<endl;}
 	cout<< "End "<<endl;
 	return 0;

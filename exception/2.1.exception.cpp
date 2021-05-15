@@ -3,22 +3,25 @@
 using namespace std;
 void f1(int i){
 	if( i <= 0)   
-	throw 1;
+    throw 1;
 	else    
-	cout << i<<endl;
+    cout << i<<endl;
 }
+
 void f2(int mm){
 	if (mm > 20)    
 		throw 2;
 	else    
 		cout<<mm<<endl;
 }
+
 void f4(int mm){
 	char s1[20]="ldkjfld";
-	if(mm<10) 
+	if(mm < 10) 
 		throw s1;
-	cout << "In f4 mm "<< mm<<endl;
+	cout << "In f4 mm "<< mm <<endl;
 }
+
 void f3(void){
 	try {
 		f1(3);

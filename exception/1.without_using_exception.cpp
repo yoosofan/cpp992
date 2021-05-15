@@ -4,7 +4,7 @@ bool f1(int i){
   if( i <= 0)
     return false;
   else
-    cout << i<<endl;
+    cout << i <<endl;
   return true;
 }
 bool f2(int mm){

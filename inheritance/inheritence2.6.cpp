@@ -8,13 +8,19 @@ protected:
   string name;
   string color;
 public:
-  int Area(void){cout<<"in Shape"<<endl;return 0;}
+  int Area(void){
+    cout<<"in Shape"<<endl;
+    return 0;
+  }
 };
 
 class Square: public Shape{
   int d;
 public:
-  int Area(void){cout<<"in Square"<<endl;return d*d;}
+  int Area(void){
+    cout<<"in Square"<<endl;
+    return d*d;
+  }
   Square(int d=1){this->d=d;}
 };
 

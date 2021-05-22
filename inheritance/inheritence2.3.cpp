@@ -5,8 +5,8 @@ class A{};
 
 class Shape: public A{
 protected:
-  string name;
-  string color;
+  string name = "Shape";
+  string color = "white";
 public:
   int Area(void){return 0;}
 };
@@ -31,6 +31,7 @@ int main(){
   ps=&sq; 
   cout<<ps->Area()<<endl;
   sq.print_name();
+  cout << s.name << endl;
   A *pa;
   return 0;
 }

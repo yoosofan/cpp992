@@ -24,7 +24,7 @@ int main(){
   cout << sq.Area() << endl;
   Shape* ps = &s; 
   cout << ps->Area() << endl;
-  ps=&sq; 
+  ps = &sq; 
   cout << ps->Area() << endl;
   A *pa;
   return 0;

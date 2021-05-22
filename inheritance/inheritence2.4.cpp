@@ -19,7 +19,7 @@ public:
   Square(int d=1){this->d=d;}
 };
 
-void f1(shape a){cout<<a.Area()<<endl;}
+void f1(Shape a){cout<<a.Area()<<endl;}
 
 int main(){
   Shape s;

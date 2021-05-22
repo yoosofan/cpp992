@@ -16,6 +16,7 @@ class Square: public Shape{
 public:
   int Area(void){return d*d;}
   Square(int d=1){this->d=d;}
+  void print_name(void){cout << name << endl;
 };
 
 int main(){
@@ -27,6 +28,7 @@ int main(){
   cout<<ps->Area()<<endl;
   ps=&sq; 
   cout<<ps->Area()<<endl;
+  sq.print_name();
   A *pa;
   return 0;
 }

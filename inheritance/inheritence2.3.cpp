@@ -31,7 +31,7 @@ int main(){
   ps=&sq; 
   cout<<ps->Area()<<endl;
   sq.print_name();
-  cout << s.name << endl;
+  // cout << s.name << endl;
   A *pa;
   return 0;
 }

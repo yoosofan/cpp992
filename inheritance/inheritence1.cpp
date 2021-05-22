@@ -25,6 +25,6 @@ int main(){
   cout<< s.Area() << endl;
   Square sq(3);
   cout<< sq.Area() << endl;
-  cout<< sq.f1() << endl;
+  sq.f1();
   return 0;
 }

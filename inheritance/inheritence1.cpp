@@ -6,6 +6,7 @@ class Shape{
   string color;// strcpy, strcmp; char*color; str1=str2
  public:
   int Area(void){return 0;}
+  void f1(void){cout << "f1" << endl;}
 };
 
 class Square: public Shape{
@@ -24,5 +25,6 @@ int main(){
   cout<< s.Area() << endl;
   Square sq(3);
   cout<< sq.Area() << endl;
+  cout<< sq.f1() << endl;
   return 0;
 }

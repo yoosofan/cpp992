@@ -22,7 +22,7 @@ int main(){
   cout << s.Area() << endl;
   Square sq(3);
   cout << sq.Area() << endl;
-  Shape *ps=&s; 
+  Shape* ps = &s; 
   cout << ps->Area() << endl;
   ps=&sq; 
   cout << ps->Area() << endl;

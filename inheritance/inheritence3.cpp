@@ -23,6 +23,7 @@ public:
 
 int main(){
   Shape s;
+  cout << s.color << endl;
   cout << s.Area() << endl;
   Square sq(3);
   cout << sq.Area() << endl;

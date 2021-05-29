@@ -51,7 +51,9 @@ void f2(Square s1){
 int main(){
   Shape s;
   f1(s);
-  f2(s);
+  // f2(s);
+  // f2((Square)s); // c explicit conversion
+  f2(Square(s));
   Square sq(3); 
   f1(sq);
   drive1 d1; 

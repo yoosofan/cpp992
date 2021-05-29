@@ -1,9 +1,6 @@
-inheritance$ g++ inheritence3.cpp 
-inheritence3.cpp: In function ‘int main()’:
-inheritence3.cpp:26:13: error: ‘std::string Shape::color’ is protected within this context
-   26 |   cout << s.color << endl;
-      |             ^~~~~
-inheritence3.cpp:7:10: note: declared protected here
-    7 |   string color;
-      |          ^~~~~
+inheritance$ ./a.out
+0
+9
+0
+9
 inheritance$ 

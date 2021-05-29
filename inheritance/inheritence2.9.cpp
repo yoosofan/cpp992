@@ -22,7 +22,11 @@ public:
 
 class drive1: public Square{
     public:
-    void f(Shape a){cout<<a.Area()<<endl;a.show();}
+    void f(Shape a){
+      cout << a.Area() << endl;
+      a.show();
+    }
+
     drive1(int d=1):Square(d){}
 };
 

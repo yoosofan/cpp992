@@ -1,9 +1,18 @@
 inheritance$ g++ inheritence2.10.cpp 
 inheritence2.10.cpp: In function ‘int main()’:
-inheritence2.10.cpp:54:6: error: could not convert ‘s’ from ‘Shape’ to ‘Square’
-   54 |   f2(s);
-      |      ^
-      |      |
-      |      Shape
+inheritence2.10.cpp:56:14: error: no matching function for call to ‘Square::Square(Shape&)’
+   56 |   f2(Square(s));
+      |              ^
+inheritence2.10.cpp:29:3: note: candidate: ‘Square::Square(int)’
+   29 |   Square(int d=1){this->d=d;}
+      |   ^~~~~~
+inheritence2.10.cpp:29:14: note:   no known conversion for argument 1 from ‘Shape’ to ‘int’
+   29 |   Square(int d=1){this->d=d;}
+      |          ~~~~^~~
+inheritence2.10.cpp:21:7: note: candidate: ‘Square::Square(const Square&)’
+   21 | class Square: public Shape{
+      |       ^~~~~~
+inheritence2.10.cpp:21:7: note:   no known conversion for argument 1 from ‘Shape’ to ‘const Square&’
+inheritence2.10.cpp:21:7: note: candidate: ‘Square::Square(Square&&)’
+inheritence2.10.cpp:21:7: note:   no known conversion for argument 1 from ‘Shape’ to ‘Square&&’
 inheritance$ 
-

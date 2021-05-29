@@ -32,10 +32,10 @@ int main(){
   Square sq(3);
   f1(sq);
   //cout<<sq.Area()<<endl;
-  Shape *ps=&s; 
-  cout<<ps->Area()<<endl;
-  ps=&sq; 
-  cout<<ps->Area()<<endl;
+  Shape *ps = &s;
+  cout << ps->Area() << endl;
+  ps=&sq;
+  cout << ps->Area() << endl;
   A *pa;
   return 0;
 }

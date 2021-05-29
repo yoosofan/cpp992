@@ -26,12 +26,12 @@ void f1(Shape a){
 }
 
 int main(){
-  Shape s;  
+  Shape s;
   f1(s);
-  Square sq(3);  
+  Square sq(3);
   f1(sq);
   //cout<<sq.Area()<<endl;
-  Shape *ps=&s; 
+  Shape *ps=&s;
   cout<< ps->Area() << endl;
   //ps=&sq; cout<<ps->Area()<<endl;
   A *pa;

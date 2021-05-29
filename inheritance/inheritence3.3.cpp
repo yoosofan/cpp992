@@ -6,7 +6,7 @@ class Shape{
   string color;
 public:
   Shape(string name="shape", string color="white"):name(name),color(color){}
-  virtual int Area(void) = 0;
+  virtual int Area(void) { return 0; }
 };
 class Square: public Shape{
   int d;
@@ -24,7 +24,7 @@ int main(){
   Square sq(3);
   cout << sq.Area() << endl;
   //Shape *ps = &s;   cout << ps->Area() << endl;
-  Shape * ps = & sq; 
+  Shape* ps = &sq; 
   cout << ps -> Area() << endl;
   sq.printAll();
   return 0;

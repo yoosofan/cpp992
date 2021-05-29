@@ -23,9 +23,10 @@ int main(){
   // Shape s;  cout<<s.Area()<<endl;
   Square sq(3);
   cout << sq.Area() << endl;
-  //Shape *ps = &s;   cout << ps->Area() << endl;
+  Shape *ps = &s;   
+  cout << ps->Area() << endl;
   Shape* ps = &sq; 
   cout << ps -> Area() << endl;
-  sq.printAll();
+  // sq.printAll();
   return 0;
 }

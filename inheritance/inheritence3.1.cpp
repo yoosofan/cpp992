@@ -1,11 +1,12 @@
 #include<iostream>
 using namespace std;
+
 class Shape{
   protected:
-  string name;
-  string color;
+  string name = "shape";
+  string color = "white";
 public:
-  Shape(string name="shape", string color="white"):name(name),color(color){}
+  Shape(string name="shape", string color="white"):name(name), color(color){}
   int Area(void){return 0;}
 };
 class Square: public Shape{

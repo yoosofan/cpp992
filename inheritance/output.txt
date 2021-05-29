@@ -1,0 +1,9 @@
+inheritance$ g++ inheritence2.10.cpp 
+inheritence2.10.cpp: In function ‘int main()’:
+inheritence2.10.cpp:54:6: error: could not convert ‘s’ from ‘Shape’ to ‘Square’
+   54 |   f2(s);
+      |      ^
+      |      |
+      |      Shape
+inheritance$ 
+

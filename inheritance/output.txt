@@ -1,6 +1,20 @@
-inheritance$ ./a.out
-0
-9
-0
-9
+inheritance$ g++ polymorphism2.5.cpp 
+polymorphism2.5.cpp: In function ‘int main()’:
+polymorphism2.5.cpp:46:21: error: invalid abstract type ‘Person’ for ‘p2’
+   46 |     Person (* p2)[20];
+      |                     ^
+polymorphism2.5.cpp:3:7: note:   because the following virtual functions are pure within ‘Person’:
+    3 | class Person{
+      |       ^~~~~~
+polymorphism2.5.cpp:10:20: note: 	‘virtual std::string Person::getJob()’
+   10 |     virtual string getJob(void)=0; // abstract function
+      |                    ^~~~~~
+polymorphism2.5.cpp:47:17: error: invalid abstract type ‘Person’ for ‘p4’
+   47 |     Person p4[10];
+      |                 ^
+polymorphism2.5.cpp:48:10: error: cannot convert ‘Person [10]’ to ‘Person (*)[20]’ in assignment
+   48 |     p2 = p4;
+      |          ^~
+      |          |
+      |          Person [10]
 inheritance$ 

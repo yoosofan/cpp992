@@ -43,8 +43,8 @@ int main(){
     for(int i = 0; i < 4; i++)
       cout << p[i] -> getJob() << endl;
     
-    Person (* p2)[20];
-    Person p4[10];
+    Student (* p2)[20];
+    Student p4[10];
     p2 = p4;
     return 0;
 }

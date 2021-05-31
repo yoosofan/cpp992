@@ -31,14 +31,17 @@ class Employee: public Person{
 int main(){
     // Person p1;
     Student st1;
-    cout<< __LINE__ << " : "<< st1.getJob()<<endl;
-    Person *ps = nullptr; // ps = new Person;
-    //cout<<ps->getJob()<<endl;
-    ps = & st1;
-    cout<<__LINE__<< " : "<<ps->getJob()<<endl;
-    Employee em1("Hadi",20), *pem1 = & em1;
-    //cout <<__LINE__<< " : "; em1.print(); (*pem1).print(); pem1 -> print();
-    ps = & em1;
-    cout<<__LINE__<< " : " << ps -> getJob() << endl; 
+    Student st2("kamran", 49);
+    Employee em1("Hadi",20);
+    Employee em2("reze",56);
+    Person* p[20];
+    p[0] = &st1;
+    p[1] = &em1
+    p[2] = &st2;
+    p[3] = &em2;
+    
+    for(int i = 0; i < 4; i++)
+      cout << p[i] -> getJob() << endl;
+    
     return 0;
 }

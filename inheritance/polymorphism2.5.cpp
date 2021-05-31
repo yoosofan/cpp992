@@ -46,7 +46,7 @@ int main(){
     Student (* p2)[20];
     Student p4[10];
     Student p5[20];
-    p2 = & p4;
+    p2 = &p4;
     p2 = &p5;
 
     return 0;

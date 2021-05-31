@@ -36,7 +36,7 @@ int main(){
     Employee em2("reze",56);
     Person* p[20];
     p[0] = &st1;
-    p[1] = &em1
+    p[1] = &em1;
     p[2] = &st2;
     p[3] = &em2;
     

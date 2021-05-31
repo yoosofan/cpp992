@@ -6,7 +6,7 @@ class Shape{
   string color;
 public:
   Shape(string name="shape", string color="white"):name(name),color(color){}
-  virtual int Area(void) = 0;
+  virtual int Area(void) = 0; // abstract
   // virtual static void f(void){cout<<"Shape virtual static f"<<endl;}
 };
 class Square: public Shape{

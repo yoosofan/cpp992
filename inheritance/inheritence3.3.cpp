@@ -27,7 +27,9 @@ int main(){
   Shape *ps = &s;   
   cout << ps->Area() << endl;
   ps = &sq; 
-  cout << ps -> Area() << endl;
+  cout << ps -> Area() << endl; 
+  // (type(ps) == "shape") ? AreaOfShape() : AreaOfSquare() ;
+  // (type(ps) == "shape") ? AreaOfShape() : (type(ps) == "square") ? AreaOfSquare : ....
   // sq.printAll();
   return 0;
 }

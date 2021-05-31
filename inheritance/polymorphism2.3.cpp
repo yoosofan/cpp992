@@ -29,7 +29,7 @@ class Employee: public Person{
     Employee(string name1="Ali",int year1=12):Person(name1,year1){}
 };
 int main(){
-    //Person p1;
+    Person p1;
     Student st1;
     cout<< __LINE__ << " : "<< st1.getJob()<<endl;
     Person *ps = nullptr; // ps = new Person;

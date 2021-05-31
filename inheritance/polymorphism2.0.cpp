@@ -8,7 +8,7 @@ public:
   Person(string name1="Ali",int year1=12,
 	string job1="student"):name(name1),
 	year(year1), job(job1){}
-  virtual string getJop(void)
+  virtual string getJob(void)
   {return job;}
   void print(void){
     cout<<"name :"<<name<<endl;

@@ -1,7 +1,7 @@
-inheritance$ g++ polymorphism2.5.cpp 
+heritance$ g++ polymorphism2.5.cpp 
 polymorphism2.5.cpp: In function ‘int main()’:
-polymorphism2.5.cpp:48:10: error: cannot convert ‘Student [10]’ to ‘Student (*)[20]’ in assignment
-   48 |     p2 = p4;
+polymorphism2.5.cpp:49:10: error: cannot convert ‘Student [10]’ to ‘Student (*)[20]’ in assignment
+   49 |     p2 = p4;
       |          ^~
       |          |
       |          Student [10]

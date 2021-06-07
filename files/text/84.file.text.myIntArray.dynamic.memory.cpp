@@ -16,9 +16,9 @@ class myIntArray{
     }
     a = new int[2000]; 
     int k = 2000;
-    for(i=0; f1>>a[i]; i++)
+    for(i=0; f1 >> a[i]; i++)
       if(i>k-2){
-        int *b= new int[k*2];
+        int *b = new int[k*2];
         for(int j=0; j < i; j++)
           b[j] = a[j];
         delete[] a;

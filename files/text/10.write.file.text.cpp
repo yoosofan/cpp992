@@ -1,12 +1,12 @@
 #include<iostream>
 #include<fstream>
-#include<cstdlib>
+
 using namespace std;
 int main(){
-    fstream f1("2.out.txt");
+    ifstream f1("2.out.txt");
     if(!f1){
         cout << "The file could not be opened " << endl;
-        exit(0);
+        throw 1;
     }
     int i = 89; //cin>>i;
     f1 << i << " ";

@@ -1,6 +1,5 @@
 #include<iostream>
 #include<fstream>
-#include<cstdlib>
 using namespace std;
 
 class myIntArray{
@@ -14,7 +13,7 @@ class myIntArray{
     f1.open(fileName); 
     if(!f1){
       cout<<"file ";
-      exit(0); // throw
+      throw "cannot open file"; // throw
     }
     for(i = 0 ; f1 >> a[i] && i < N; i++) 
       ; 

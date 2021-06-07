@@ -17,7 +17,7 @@ int main(){
     }
     // f1 << st << endl << "Hamed" << endl;
     f1 << st << "  " << "Hamed" << endl;
-    f1 << st << "Hamed" << endl;
+    //f1 << st << "Hamed" << endl;
     f2 << "Sadegh" << "  Salehi " << endl;
     f2.close();
     f1.close();

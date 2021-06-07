@@ -9,11 +9,11 @@ int main(){
     fstream f2("3.out.txt", ios::out); //ofstream
     if(!f1){
         cout << "Can not open f1" << endl;
-        throw 4;
+        return 1;
     }
     if(! f2){
         cout << "Can not open f2" << endl;
-        throw 5;
+        return 2;
     }
     f1 << st << endl << "Hamed" << endl;
     f2 << "Sadegh" << "  Salehi " << endl;
@@ -22,7 +22,7 @@ int main(){
     fstream f3("2.out.txt", ios::in);
     if(!f3){
         cout << "Can not open f3" << endl;
-        throw 2;
+        return 0;
     }
     f3 >> st;
     cout << st << endl;

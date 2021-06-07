@@ -3,7 +3,7 @@
 
 using namespace std;
 int main(){
-    ifstream f1("2.out.txt");
+    fstream f1("2.out.txt");
     if(!f1){
         cout << "The file could not be opened " << endl;
         throw 1;

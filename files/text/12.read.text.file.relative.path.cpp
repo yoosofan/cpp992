@@ -1,6 +1,5 @@
 #include<iostream>
 #include<fstream>
-#include<cstdlib>
 using namespace std;
 
 int main(){
@@ -22,7 +21,7 @@ int main(){
 */
     if(!f1){
         cout<<"The file could not be opened "<<endl;
-        exit(0);
+        throw 1;
     }
     int i; //cin>>i;
     f1 >> i;

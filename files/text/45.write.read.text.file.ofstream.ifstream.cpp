@@ -34,6 +34,7 @@ int main(){
     //f4>>st; cout<<st<<endl;
     char cst[50];
     f4.getline(cst,50);
+    cout << cst << endl;
     f4.close();
     return 0;
 }

@@ -31,7 +31,7 @@ int main(){
     student m1;
     ifstream f1("input.students.txt"); // ofstream , ifstream, fstream
     m1.readFromFile(f1);
-    while( ! f1.eof()){ 
+    while(!f1.eof()){ 
         m1.print();
         m1.readFromFile(f1);
     }

@@ -2,7 +2,7 @@
 #include<fstream>
 using namespace std;
 int main(){
-    fstream f1("input.integers.txt");
+    ifstream f1("input.integers.txt");
     if(!f1){
         cout << "The file could not be opened " << endl;
         throw 1;

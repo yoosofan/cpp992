@@ -16,14 +16,14 @@ template<typename T>class myIntArray{
   
   ~myIntArray(){ f1.close();}
 
-  T read(int index){
+  T read(const int index){
     T j;
     f1.seekg(index*sizeof(T),ios::beg); // ios::end   ios::cur
     f1.read((char *)&j , sizeof(T));
     return j;
   }
   
-  void write(T j, int index){
+  void write(const T& j, int index){
     f1.seekp(index*sizeof(T),ios::beg);
     f1.write((char *) &j , sizeof(T));
   }
@@ -34,7 +34,7 @@ template<typename T>class myIntArray{
     return j;
   }
 
-  void writeNext(T j){
+  void writeNext(const T& j){
     f1.write((char *)&j, sizeof(T));
     f1.flush();
   }

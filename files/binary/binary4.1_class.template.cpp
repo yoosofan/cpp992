@@ -10,7 +10,7 @@ template<typename T>class myArray{
     f1.open(fname, ios::in | ios::out | ios::binary);
     if(!f1){
       f1.open(fname, ios::out | ios::binary);
-      if(!f1 ){
+      if(!f1){
         cout<<"Can not open file"<<endl;
         throw "Cannot Open File";
       }
@@ -23,16 +23,16 @@ template<typename T>class myArray{
 
   ~myArray(){f1.close();}
 
-  T read(int index){
+  T read(const int index){
     T data;
     f1.seekg(index*sizeof(T), ios::beg); // ios::end   ios::cur
     f1.read((char*) &data, sizeof(T));
     return data;
   }
 
-  void write(T data, int index){
+  void write(const T& data, int index){
     f1.seekp(index*sizeof(T), ios::beg);
-    f1.write((char *) & data , sizeof(T));
+    f1.write((char *) &data , sizeof(T));
   }
 
   T readNext(void){

@@ -1,4 +1,3 @@
-// Error
 #include <fstream>
 #include<iostream>
 #include <cstdlib>
@@ -56,10 +55,8 @@ struct student{
   char name[20];
   char stdno[14];
   double avg;
-  // Error
-  //friend ostream& operator<<(ostream & o1, student &);
   friend ostream& operator<< (ostream &o1, student );
-  char &operator[](int& index);
+  char &operator[](const int& index);
 };
 int mystrlen(char *s){
     int i;
@@ -67,7 +64,7 @@ int mystrlen(char *s){
     return i;
 }
 //if(unsigned(index)<strlen(stdno)) return stdno[index];
-char& student::operator[](int& index){
+char& student::operator[](const int& index){
   if(index < mystrlen(stdno))
     return stdno[index];
   return stdno[0];
@@ -86,7 +83,8 @@ int main()
     myIntArray<student> myi("temp6.in");
     student st1 {"Ali","933424",15.1};
     cout << st1[1] << endl;
-    st1[1] = '2'; // 50 int
+    char c = '2';
+    st1[1] = c; // 50 int
     myi.writeNext(st1);
     strcpy(st1.name, "Reza");
     strcpy(st1.stdno, "923434");

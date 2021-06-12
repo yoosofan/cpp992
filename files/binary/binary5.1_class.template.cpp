@@ -63,14 +63,13 @@ int mystrlen(char *s){
     for(i = 0; s[i]; i++);
     return i;
 }
-//if(unsigned(index)<strlen(stdno)) return stdno[index];
+
 char& student::operator[](const int& index){
   if(index < mystrlen(stdno))
     return stdno[index];
   return stdno[0];
 }
-// Error
-//ostream& operator<<(ostream & o1, student & m1){
+
 ostream& operator<<(ostream& o1, student m1){
   o1 << "( " << m1.name << " , " 
      << m1.stdno << " , " << 
@@ -78,26 +77,21 @@ ostream& operator<<(ostream& o1, student m1){
   return o1;
 }
 
-int main()
-{
-    myIntArray<student> myi("temp6.in");
-    student st1 {"Ali","933424",15.1};
-    cout << st1[1] << endl;
-    char c = '2';
-    st1[1] = c; // 50 int
-    myi.writeNext(st1);
-    strcpy(st1.name, "Reza");
-    strcpy(st1.stdno, "923434");
-    st1.avg = 14.2;
-    myi.writeNext(st1);
-    myi.rewind();
-    cout << myi.readNext() << endl;
-    //operator<<(cout,myi.readNext());
-    //student *ps= & myi.readNext(); Error
-    cout << myi.readNext() << endl;
-    cout << myi.read(0) << endl;
-    cout << myi.read(1) << endl;
-    //myi.write(54,10);
-    //cout<<myi.read(25)<<endl<<endl;
-    return 0;
+int main(){
+  myIntArray<student> myi("temp6.in");
+  student st1 {"Ali","933424",15.1};
+  cout << st1[1] << endl;
+  char c = '2';
+  st1[1] = c; // 50 int
+  myi.writeNext(st1);
+  strcpy(st1.name, "Reza");
+  strcpy(st1.stdno, "923434");
+  st1.avg = 14.2;
+  myi.writeNext(st1);
+  myi.rewind();
+  cout << myi.readNext() << endl;
+  cout << myi.readNext() << endl;
+  cout << myi.read(0) << endl;
+  cout << myi.read(1) << endl;
+  return 0;
 }

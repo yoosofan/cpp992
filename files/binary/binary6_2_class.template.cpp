@@ -7,16 +7,16 @@ template<typename T>class myIntArray{
   fstream f1;
   public:
   myIntArray(const char* fname="temp1.in"){
-    f1.open(fname,ios::in|ios::out|ios::binary);
+    f1.open(fname, ios::in|ios::out|ios::binary);
     if(!f1){
-      f1.open(fname,ios::out|ios::binary);
+      f1.open(fname, ios::out|ios::binary);
       if(!f1){
         cout << "Cannot open file" << endl;
         throw "Cannot open file";
       }
       else{
         f1.close();
-        f1.open(fname,ios::in|ios::out|ios::binary);
+        f1.open(fname, ios::in|ios::out|ios::binary);
       }
     }
   }

@@ -2,6 +2,8 @@
 #include<iostream>
 #include<cstring>
 using namespace std;
+int mystrlen(char *s);
+
 template<typename T>class myIntArray{
   fstream f1;
   public:
@@ -54,9 +56,9 @@ struct student{
   char name[20];
   char stdno[14];
   double avg;//  char c1;
-  friend ostream& operator<<(ostream & o1, const student &){
-    o1<<"( "<<m1.name<<" , "<<
-    m1.stdno<< " , "<<m1.avg<<" ) ";
+  friend ostream& operator<<(ostream &o1, const student& m1){
+    o1 << "( " << m1.name << " , " <<
+    m1.stdno << " , " << m1.avg << " ) ";
     return o1;
   }
 

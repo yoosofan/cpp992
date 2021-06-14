@@ -43,18 +43,16 @@ class complexCls{
       return r;
    }
 */
-   double & operator [] (const int index){
-     double &m = r;
-      if(index == 0)  
-        m = r;
-      if(index == 1)  
-        m = i;
-      else{
-        cout<< " Error in accessing the value;\n";
-        m=r;
-      }
-      return m;
-   }
+  double& operator [] (const int index){
+    double &m = r;
+    if(index == 0)  
+      return r;
+    if(index == 1)  
+        return i;
+    else
+      cout<< " Error in accessing the value;\n";
+    return m;
+  }
 
    double& operator ()(void){
       return r;

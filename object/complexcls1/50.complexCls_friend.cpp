@@ -52,9 +52,7 @@ class complexCls{
     return r;
   }
 
-   double& operator ()(void){
-      return r;
-   }
+  double& operator ()(void){return r;}
 
    double& operator ()(int index){
       double& m = r;
@@ -62,8 +60,7 @@ class complexCls{
          case 0:
          break;
          case 1:
-           m = i;
-         break;
+           return i;
          default:
             cout<<"Error index "<< endl;
          break;
